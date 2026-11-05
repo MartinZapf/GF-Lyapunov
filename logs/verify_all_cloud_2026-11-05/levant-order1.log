@@ -1,0 +1,16 @@
+$ /usr/bin/python3 verification/standalone/verify_certificate.py certificates/levant-order1/sta_exactgains_20261012T072209Z.printed_b07.record.json --grams certificates/levant-order1/sta_exactgains_grams_20261012T072209Z.json --json logs/verify_all_cloud_2026-11-05/levant-order1.verification.json
+[1/5] V admissible (C^1, homogeneous of degree 6, 5 terms)
+[2/5] no irrational gains (all rational, injected exactly)
+[3/5] V positivity: all 4 octants PASS (worst charge/eps 3.90e-07; 7 basis -> 2 parity blocks, largest 4)
+[4/5] W: 2 endpoint x corner combinations, all 4 octants each, PASS (worst charge/eps 2.33e-08; 6 basis -> 2 parity blocks, largest 3)
+[5/5] sta: certificate VERIFIED — V > 0 and -dV/dt > 0 (margin form) on every octant, both inclusion endpoints, every gain-bracket corner; exact rational arithmetic throughout (deck-group parity blocked LDL^T), delta0 = 1, epsilon = 4722366482869645/4722366482869645213696, kappa = -1 (derived from the rebuilt dynamics)
+      accepted under: charge < eps (strict, exact rational); WP P2-14 / decision D-l
+      eps_certified = eps - charge = 356811784131064741581864406086449449143/356811923176489970264571492362373784095686656 (~9.999996e-07); worst charge/eps 3.90e-07
+      note_half_margin_holds (charge <= eps/2, the inequality printed in the Automatica note; reported, never enforced): yes [12/12 octants]
+      psd_shift: eta = 0 on all 12 octants (the Gram itself is PSD; charge = ||E||_1)
+      summary written to logs/verify_all_cloud_2026-11-05/levant-order1.verification.json
+RESULT: VERIFIED (exit code 0): every check passed
+
+EXIT 0
+WALL_S 0.084
+PEAK_RSS_KB 21120

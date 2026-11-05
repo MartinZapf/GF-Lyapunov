@@ -1,0 +1,41 @@
+== printed functions against the records (term order ignored)
+[MATCH] eq. eq:sta-V = record of levant-order1 (5 terms)
+[MATCH] eq. eq:twisting-V = record of twisting (5 terms)
+[MATCH] Appendix B 'Levant's differentiator, order two' (29 terms) = record of levant-order2-a
+[MATCH] Appendix B 'Levant's differentiator, order two' (29 terms) = record of levant-order2-b
+[MATCH] Appendix B 'Continuous twisting' (9 terms) = record of continuous-twisting
+[MATCH] Appendix B 'PID-like controller' (21 terms) = record of pid-like
+== Table 2 (tab:results): delta0, m, terms
+[MATCH] Table 2 'k=1': m = 6, terms = 5 vs levant-order1: m = 6, terms = 5
+[MATCH] Table 2 'k=2$, tunings a and b': m = 8, terms = 29 vs levant-order2-a: m = 8, terms = 29
+[MATCH] Table 2 'k=2$, all tunings between': m = 11, terms = 96 vs levant-order2-box: m = 11, terms = 96
+[MATCH] Table 2 'k=3$, tuning a': m = 9, terms = 83 vs levant-order3-a: m = 9, terms = 83
+[MATCH] Table 2 'k=3$, tuning b': m = 9, terms = 83 vs levant-order3-b: m = 9, terms = 83
+[MATCH] Table 2 'k=4$, tuning a': m = 11, terms = 507 vs levant-order4: m = 11, terms = 507
+[MATCH] Table 2 'Twisting': m = 5, terms = 5 vs twisting: m = 5, terms = 5
+[MATCH] Table 2 'Continuous twisting': m = 5, terms = 9 vs continuous-twisting: m = 5, terms = 9
+[MATCH] Table 2 '(continued)': m = 9, terms = 52 vs continuous-twisting-frontier: m = 9, terms = 52
+[MATCH] Table 2 'PID-like': m = 7, terms = 21 vs pid-like: m = 7, terms = 21
+== numbers stated in the text
+[MATCH] text contains '[2.121,2.122]'
+[MATCH] text contains '[2.598,2.599]'
+[MATCH] text contains '\\gainbox=[2,3]\\times[2.121,2.599]\\times\\{1.1\\}'
+[MATCH] text contains '$L_0=1/16$'
+[MATCH] text contains '$\\delta_0=2047/4096=1/2-2^{-12}$'
+[MATCH] text contains '$\\delta_0=1.199$'
+[MATCH] text contains 'all $96$ even terms'
+[MATCH] text contains 'all $83$'
+[MATCH] text contains 'all $52$ even terms'
+[MATCH] text contains 'all $507$ terms of the library is certified at tuning a'
+[MATCH] text contains 'The functions with $52$, $83$, $96$ and $507$ terms'
+[MATCH] text contains 'Degree $m=8$, weights $\\rr=(3,2,1)$, $29$ terms'
+[MATCH] text contains 'Degree $m=5$, weights $\\rr=(3,2,1)$, $9$ terms'
+[MATCH] text contains 'Degree $m=7$, weights $\\rr=(3,2,1)$, $21$ terms'
+[MATCH] levant-order2-a bracket = [2.121, 2.122]
+[MATCH] levant-order2-b bracket = [2.598, 2.599]
+[MATCH] order two (App. B) eps = 1e-7 (source comment)
+[MATCH] continuous twisting (App. B) eps = 1e-9
+[MATCH] PID-like (App. B) eps = 1e-6
+[MATCH] worked example eps = 1e-6 (Section 5)
+
+NO MISMATCH

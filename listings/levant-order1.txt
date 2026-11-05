@@ -1,0 +1,18 @@
+# levant-order1: Super-twisting / Levant's differentiator of order one, standard tuning
+# role: reported
+# paper: Section 5, eq. (6); Table 2, row k = 1; Theorem 2 (k = 1); Figure 2
+# system: sta (super-twisting = Levant's differentiator of order one, error coordinates)
+#   x1' = -k1 [x1]^(1/2) + x2,  x2' = -k2 [x1]^0 + delta
+# weights r = (2, 1), homogeneity degree m = 6, 5 terms, 0 odd terms
+# delta0 = 1; rational gains {'k1': '3/2', 'k2': '11/10'}; brackets {}
+# scale: certified at L = 1; for every L > 0 the function V(e/L) (Corollary 1 with L0 = 1)
+# record: certificates/levant-order1/sta_exactgains_20261012T072209Z.printed_b07.record.json (sha256 9e0b9f12d69508ed0f1fdfac3a27c5296568af6d7d05aa8b22dfeb4c958e9399)
+# notation: |x|^a = |x| to the power a;  [x]^a = sign(x)|x|^a;  x = [x]^1;
+#           V(x) = sum_j alpha_j t_j(x); exact coefficients alpha_j as p/q
+#
+# j	alpha_j	t_j	parity
+1	1	|x1|^3	even
+2	43/1024	|x2|^6	even
+3	-29/16	[x1]^2 * [x2]^2	even
+4	111/64	|x1|^(3/2) * |x2|^3	even
+5	-17/32	x1 * [x2]^4	even

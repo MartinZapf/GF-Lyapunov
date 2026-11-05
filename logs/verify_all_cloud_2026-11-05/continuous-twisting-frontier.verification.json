@@ -1,0 +1,58 @@
+{
+ "verifier": "verification/standalone/verify_certificate.py",
+ "verdict": "VERIFIED",
+ "proof_inputs": {
+  "schema": "gf-proof-inputs/1",
+  "verifier": {
+   "path": "<release root>/verification/standalone/verify_certificate.py",
+   "sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5"
+  },
+  "record": {
+   "path": "<release root>/certificates/continuous-twisting-frontier/continuous_twisting_tgb_b10_delta1199_1000.printed_b10.even.record.json",
+   "sha256": "6920c520fdd0437beeaa0c71b7aace4c679e79ac6ee0c1db1310b20da5655c6e"
+  },
+  "grams": {
+   "path": "<release root>/certificates/continuous-twisting-frontier/continuous_twisting_tgb_b10_delta1199_1000.printed_b10.even.grams.json.gz",
+   "sha256": "91b68046430a0f7e2a601bf6e00b31b2653362ee400ab5c9d64b14d107728f0f"
+  }
+ },
+ "system": "continuous_twisting",
+ "record": "certificates/continuous-twisting-frontier/continuous_twisting_tgb_b10_delta1199_1000.printed_b10.even.record.json",
+ "grams": "certificates/continuous-twisting-frontier/continuous_twisting_tgb_b10_delta1199_1000.printed_b10.even.grams.json.gz",
+ "schema_version": "gf-certificate-record/2",
+ "path": "deck-group parity blocked",
+ "nominal": false,
+ "kappa_derived": "-1/1",
+ "delta0_exact": "1199/1000",
+ "epsilon_exact": "4722366482869645/4722366482869645213696",
+ "epsilon_float": 1e-06,
+ "margin_policy": "achieved",
+ "acceptance_rule": "charge < eps (strict, exact rational); WP P2-14 / decision D-l",
+ "eps_certified_exact": "31386725221269236366991072746355293563/32667107224410092492483962313449748299776000",
+ "eps_certified_float": 9.60805161156599e-07,
+ "worst_charge_over_eps": {
+  "V": 0.00023468230015695596,
+  "W": 0.03919483884340102,
+  "overall": 0.03919483884340102
+ },
+ "worst_charge_over_half_eps_legacy": {
+  "V": 0.0004693646003139119,
+  "W": 0.07838967768680204,
+  "overall": 0.07838967768680204
+ },
+ "note_half_margin_rule": "charge <= eps/2, the inequality printed in the Automatica note; reported, never enforced",
+ "note_half_margin_holds": {
+  "V": true,
+  "W": true,
+  "overall": true
+ },
+ "note_half_margin_octants": {
+  "ok": 24,
+  "total": 24
+ },
+ "psd_shift_eta": {
+  "max_exact": "0/1",
+  "n_octants_positive": 0,
+  "n_octants": 24
+ }
+}

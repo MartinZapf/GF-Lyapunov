@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gf-framework"
+version = "1.0.0"
+description = "Automatic discovery and formal certification of Lyapunov functions using Generalized Forms and SOS programming."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "sympy>=1.12",
+    "scipy>=1.11",
+    "cvxpy>=1.4",
+]
+
+[project.optional-dependencies]
+# Everything needed to COLLECT and run the test suite. `psutil` belongs here,
+# not in an optional convenience group: `scripts/_watchdog.py` imports it at
+# module level, `scripts/solver_comparison.py` imports the watchdog, and
+# `tests/test_solver_comparison.py` + `tests/test_instrumentation.py` import
+# that. Without psutil pytest fails during COLLECTION with exit 2 and no test
+# runs at all (measured in P7-05, contradiction 1). The floor matches the pin
+# recorded in requirements-lock.txt (psutil==7.2.2).
+test = [
+    "pytest>=8.0",
+    "psutil>=7.2",
+]
+# `dev` = `test` plus the parallel runner. Written out rather than referencing
+# the `test` extra, so that a plain `pip install -e ".[dev]"` needs no
+# self-referential-extra support. Keep the shared entries in sync.
+dev = [
+    "pytest>=8.0",
+    "pytest-xdist>=3.0",
+    "psutil>=7.2",
+]
+# MOSEK is the design-phase float solver. It is deliberately NOT a hard
+# dependency: the CI suite is MOSEK-free by design, and MOSEK needs a licence
+# file (mosek.lic) that is never committed. "design" and "mosek" are the same
+# extra under two names.
+design = [
+    "mosek>=11",
+]
+mosek = [
+    "mosek>=11",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["gf_framework*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "mosek: marks tests requiring MOSEK solver",
+]

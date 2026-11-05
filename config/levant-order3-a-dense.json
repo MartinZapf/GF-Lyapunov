@@ -1,0 +1,80 @@
+{
+ "id": "levant-order3-a-dense",
+ "note": "recorded configuration of the run that produced this certificate, read from the run records named below; see CONFIGURATION.md for the procedure. Not a proof input: the verifier reads none of it.",
+ "design": {
+  "run": "artifacts/campaign_2026-08/E4_levant4d/ratio1_2026-09-04/cell_x_p1_2_eps1e-4/p4_05_l4d_m9_p1_2_eps1e-4.json",
+  "driver": "<GF Framework checkout>/artifacts/campaign_2026-08/E4_levant4d/ratio1_2026-09-04/p4_05_design.py",
+  "command": "<GF Framework checkout>/.venv/bin/python <GF Framework checkout>/artifacts/campaign_2026-08/E4_levant4d/ratio1_2026-09-04/p4_05_design.py --p 1/2 --m 9 --epsilon 1e-4 --out-dir <GF Framework checkout>/artifacts/campaign_2026-08/E4_levant4d/ratio1_2026-09-04/cell_x_p1_2_eps1e-4 --tag l4d_m9_p1_2_eps1e-4",
+  "system": "levant4d",
+  "m": 9,
+  "qscale_p": "1/2",
+  "delta0_exact": "1/16",
+  "design_epsilon": 0.0001,
+  "solver": "MOSEK_DIRECT",
+  "library": {
+   "n_terms": 163,
+   "n_diag": 4,
+   "n_cross": 159,
+   "mu": [
+    8,
+    6,
+    4,
+    2
+   ],
+   "weights_r": [
+    4,
+    3,
+    2,
+    1
+   ],
+   "n_endpoints": 2,
+   "enumeration_s": 4.6
+  },
+  "typed_status": "feasible_candidate",
+  "y_parity_blocks_default": true,
+  "library_order": "grlex-v1",
+  "degree_ladder": [
+   {
+    "m": 9,
+    "design_status": "feasible_candidate",
+    "note": "single-degree design run; no ladder recorded"
+   }
+  ]
+ },
+ "degree_loop_evidence": null,
+ "rounding": {
+  "tier": "A",
+  "bits": 30,
+  "epsilon": "1e-4",
+  "witness": "the design's own Gram bundle (MOSEK_DIRECT), kept byte for byte",
+  "shorter_rejected": "tier A: 1 to 29 bits fail the verifier with the design Gram; tier B (fixed-V re-solve): no n in 1..29 or 53 passed",
+  "evidence": "X9 tier A/B scans in the development repository (2026-09-25)"
+ },
+ "even_part": null,
+ "exact_stage_of_source": {
+  "note": "the exact phase's OWN reported numbers, kept for audit; the portable verifier derives its own",
+  "worst_charge_ratio": 0.0008738046949244605,
+  "eps_certified": 9.995630976525379e-05,
+  "v_input_hash": "3a2182817d6a1504d55486761302531bbae301ef780caee02c6abc91e84776ca",
+  "gram_bundle_sha256": "f1f235ac6b2ca8ded4742333b4cc64fe69817c4d8d18ae8c61804f9a90c788b6",
+  "gram_bundle_fingerprint": "2b0fbb0c9f1135e870cf3d69512d20c89fc9aa32dba6b9b6246129dc69acad6a"
+ },
+ "witness": {
+  "source": "design_bundle",
+  "witness_source": "design_bundle",
+  "witness_solver": "MOSEK_DIRECT",
+  "witness_solver_used": "MOSEK_DIRECT",
+  "witness_charge_ratio": 0.0008735144964341323,
+  "parity_expanded": false
+ },
+ "representative_p": "1/2",
+ "margin_policy": "half",
+ "emitter": "scripts/emit_certificate_record.py",
+ "printed_coefficients": {
+  "tool": "scripts/round_certificate.py",
+  "unit": "bits",
+  "n": 30,
+  "source_record": "artifacts/campaign_2026-09/X1/portable_2026-09-25/portable/levant4d_p1_2_m9_delta1_16.record.json.gz",
+  "source_record_sha256": "0671a3923a52510fb2cf345fbfcd5b7fde20f31dba2f0a6608f0345c49fd7a49"
+ }
+}

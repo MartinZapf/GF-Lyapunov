@@ -1,0 +1,18 @@
+# twisting: Twisting at (c1, c2) = (2, 3/2), delta0 = 2047/4096
+# role: reported
+# paper: Section 7.1, eq. (13); Proposition 4 (Twisting below the ceiling); Table 2, row Twisting
+# system: twisting (twisting algorithm (paper eq. (12)))
+#   x1' = x2,  x2' = -c1 [x1]^0 - c2 [x2]^0 + delta   (record gains r1 = c1, r2 = c2)
+# weights r = (2, 1), homogeneity degree m = 5, 5 terms, 0 odd terms
+# delta0 = 2047/4096; rational gains {'r1': '2', 'r2': '3/2'}; brackets {}
+# scale: at the gains themselves; Proposition 1 gives (c1, c2) = q (2, 3/2) for bounds below q/2
+# record: certificates/twisting/twisting_x9b_b04_delta2047_4096.printed_b04.record.json (sha256 be4a8ec13591cee6c90cb9ac6f1b11121e7d7a1897b813603ec807e194d8c464)
+# notation: |x|^a = |x| to the power a;  [x]^a = sign(x)|x|^a;  x = [x]^1;
+#           V(x) = sum_j alpha_j t_j(x); exact coefficients alpha_j as p/q
+#
+# j	alpha_j	t_j	parity
+1	1	|x1|^(5/2)	even
+2	9/128	|x2|^5	even
+3	15/32	[x1]^2 * x2	even
+4	5/4	|x1|^(3/2) * |x2|^2	even
+5	-3/8	x1 * [x2]^3	even

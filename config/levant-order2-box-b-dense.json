@@ -1,0 +1,87 @@
+{
+ "id": "levant-order2-box-b-dense",
+ "note": "recorded configuration of the run that produced this certificate, read from the run records named below; see CONFIGURATION.md for the procedure. Not a proof input: the verifier reads none of it.",
+ "design": {
+  "run": "artifacts/campaign_2026-09/X2/design_box_m11/run.json",
+  "driver": "scripts/certify_gain_point.py",
+  "args": {
+   "system": "levant3d",
+   "gains": [
+    "lambda3=11/10"
+   ],
+   "bracket": [],
+   "box": [
+    "lambda1:2:3",
+    "lambda2:2121/1000:2599/1000"
+   ],
+   "point": null,
+   "delta0": "1",
+   "degrees": [
+    11
+   ],
+   "design_epsilon": 0.0001,
+   "design_solver": "MOSEK_DIRECT",
+   "sparsify": null,
+   "witness_solver": "MOSEK",
+   "fallback_solver": "CLARABEL",
+   "margin_policy": "achieved"
+  },
+  "degree_ladder": [
+   {
+    "m": 11,
+    "design_status": "designed",
+    "solver_status": "standard_sos:MOSEK_DIRECT",
+    "n_terms": 189,
+    "mu": [
+     6,
+     4,
+     2
+    ],
+    "library": {
+     "diag": 3,
+     "cross": 186
+    },
+    "n_vertices": 8,
+    "exact": {
+     "eps_certified": 9.999999121063151e-05,
+     "witness_source": "design_bundle"
+    }
+   }
+  ],
+  "certified_degree": 11,
+  "status": "certified_and_emitted"
+ },
+ "degree_loop_evidence": null,
+ "rounding": {
+  "tier": "B",
+  "bits": 18,
+  "epsilon": "1e-4",
+  "witness": "MOSEK fixed-V re-solve (spark-91bc, 2026-09-25)",
+  "evidence": "artifacts/campaign_2026-09/X9/printed_2026-09-25/tierB/c9.2_x2_box_m11/tierB_summary.json"
+ },
+ "even_part": null,
+ "exact_stage_of_source": {
+  "note": "the exact phase's OWN reported numbers, kept for audit; the portable verifier derives its own",
+  "worst_charge_ratio": 8.251731620219182e-06,
+  "eps_certified": 9.999917482683799e-05,
+  "v_input_hash": null,
+  "gram_bundle_sha256": null,
+  "gram_bundle_fingerprint": null
+ },
+ "witness": {
+  "source": "resolve",
+  "witness_source": "resolve",
+  "witness_solver": "MOSEK",
+  "witness_solver_used": "MOSEK_DIRECT",
+  "witness_charge_ratio": 8.251731620219182e-06,
+  "parity_expanded": false
+ },
+ "representative_p": null,
+ "margin_policy": "achieved",
+ "emitter": "scripts/emit_certificate_record.py",
+ "printed_coefficients": {
+  "tool": "scripts/round_certificate.py canonicalize",
+  "unit": "bits",
+  "n": 18
+ }
+}

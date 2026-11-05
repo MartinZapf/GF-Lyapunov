@@ -1,0 +1,11 @@
+[1/5] V admissible (C^1, homogeneous of degree 11, 507 terms)
+[2/5] bracket lambda2: lo^4 < 10125 < hi^4 verified in Q
+[2/5] bracket lambda3: lo^6 < 648000 < hi^6 verified in Q
+[2/5] bracket lambda4: lo^12 < 5380840125/64 < hi^12 verified in Q
+[3/5] V positivity: all 32 octants PASS (worst charge/eps 5.61e-02; 1365 basis -> 16 parity blocks, largest 126)
+[4/5] W: 8 corners, all 32 octants each, PASS (worst charge/eps 9.27e-01; 1001 basis -> 16 parity blocks, largest 126, one shared witness Gram set proved against every corner's own W)
+[5/5] levant5d: certificate VERIFIED — V > 0 and -dV/dt > 0 (margin form) on every octant, the nominal dynamics, every gain-bracket corner; exact rational arithmetic throughout (deck-group parity blocked LDL^T), delta0 = 0, epsilon = 7378697629483821/73786976294838206464, kappa = -1 (derived from the rebuilt dynamics)
+      accepted under: charge < eps (strict, exact rational); WP P2-14 / decision D-l
+      eps_certified = eps - charge = 65503281876540153956895377/9007199254740992000000000000000 (~7.272325e-06); worst charge/eps 9.27e-01
+      note_half_margin_holds (charge <= eps/2, the inequality printed in the Automatica note; reported, never enforced): NO [32/288 octants]
+      summary written to artifacts/campaign_2026-09/X9/printed_2026-09-25/tierA/c9.4_e5_levant5d_m11/levant5d_m11_nominal.printed_b26.insurance.verification.json

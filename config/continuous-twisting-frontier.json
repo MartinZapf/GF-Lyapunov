@@ -1,0 +1,135 @@
+{
+ "id": "continuous-twisting-frontier",
+ "note": "recorded configuration of the run that produced this certificate, read from the run records named below; see CONFIGURATION.md for the procedure. Not a proof input: the verifier reads none of it.",
+ "design": {
+  "run": "artifacts/campaign_2026-09/CTA_TG2017/g1_d1199_1000_e1e-6/run.json",
+  "driver": "scripts/certify_gain_point.py",
+  "args": {
+   "system": "continuous_twisting",
+   "gains": [
+    "k1=25,k2=15,k3=23/10,k4=11/10"
+   ],
+   "bracket": [],
+   "box": [],
+   "point": [],
+   "delta0": "1199/1000",
+   "degrees": [
+    8,
+    9,
+    10
+   ],
+   "design_epsilon": 1e-06,
+   "design_solver": "MOSEK_DIRECT",
+   "sparsify": null,
+   "witness_solver": "MOSEK",
+   "fallback_solver": "CLARABEL",
+   "margin_policy": "achieved"
+  },
+  "degree_ladder": [
+   {
+    "m": 8,
+    "design_status": "design_infeasible_or_error",
+    "solver_status": "unknown:MOSEK_DIRECT",
+    "n_terms": null,
+    "mu": [
+     6,
+     4,
+     2
+    ],
+    "library": {
+     "diag": 3,
+     "cross": 66
+    },
+    "n_vertices": 2
+   },
+   {
+    "m": 9,
+    "design_status": "designed",
+    "solver_status": "standard_sos:MOSEK_DIRECT",
+    "n_terms": 101,
+    "mu": [
+     6,
+     4,
+     2
+    ],
+    "library": {
+     "diag": 3,
+     "cross": 98
+    },
+    "n_vertices": 2,
+    "exact": {
+     "eps_certified": 9.99899072730087e-07,
+     "witness_source": "design_bundle"
+    }
+   }
+  ],
+  "certified_degree": 9,
+  "status": "certified_and_emitted"
+ },
+ "degree_loop_evidence": null,
+ "rounding": {
+  "tier": "B",
+  "bits": 10,
+  "epsilon": "1e-6",
+  "witness": "fixed-V re-solve (spark-91bc, 2026-09-28)",
+  "shorter_rejected": "1 to 9 bits (tier B scan)",
+  "evidence": "artifacts/campaign_2026-09/CTA_TG2017/printed/"
+ },
+ "even_part": {
+  "tool": "scripts/even_part_certificate.py",
+  "rule": "V_e = (V(x) + V(-x))/2 keeps the even terms; witnesses averaged over the orthants s and -s (W endpoints swapped), see the tool docstring",
+  "source_record": "artifacts/campaign_2026-09/CTA_TG2017/printed/tierB/c8.1_tg_g1_delta1199_1000_m9/printed/continuous_twisting_tgb_b10_delta1199_1000.printed_b10.record.json",
+  "source_record_sha256": "15419d39decb6e5380827396da7a2ba6a81652912af80dd67721d24f8e8fa54b",
+  "source_grams": "artifacts/campaign_2026-09/CTA_TG2017/printed/tierB/c8.1_tg_g1_delta1199_1000_m9/printed/continuous_twisting_tgb_b10_delta1199_1000.grams.json.gz",
+  "source_grams_sha256": "3b32b1b0fb3fea5e6e70ca4243dc51d401f811a019c77ef7f36402592874067d",
+  "terms_source": 101,
+  "terms_even": 52,
+  "terms_dropped_odd": 49,
+  "max_abs_dropped_coefficient": "267/65536",
+  "source_margin_declarations": {
+   "eps_certified": 9.392338909640921e-07,
+   "eps_certified_exact": "5113675704153982176939661276083292661/5444517870735015415413993718908291383296000",
+   "eps_certified_exact_is_float_transcription": false,
+   "eps_certified_source": "portable_verifier",
+   "note_half_margin_holds": true,
+   "worst_charge_over_eps": {
+    "V": 0.0003433327500279956,
+    "W": 0.06076610903590789,
+    "overall": 0.06076610903590789
+   },
+   "verifier": {
+    "acceptance_rule": "charge < eps (strict, exact rational); WP P2-14 / decision D-l",
+    "eps_certified_exact": "5113675704153982176939661276083292661/5444517870735015415413993718908291383296000",
+    "worst_charge_over_eps": {
+     "V": 0.0003433327500279956,
+     "W": 0.06076610903590789,
+     "overall": 0.06076610903590789
+    }
+   }
+  }
+ },
+ "exact_stage_of_source": {
+  "note": "the exact phase's OWN reported numbers, kept for audit; the portable verifier derives its own",
+  "worst_charge_ratio": 0.060766109035907886,
+  "eps_certified": 9.392338909640921e-07,
+  "v_input_hash": null,
+  "gram_bundle_sha256": null,
+  "gram_bundle_fingerprint": null
+ },
+ "witness": {
+  "source": "resolve",
+  "witness_source": "resolve",
+  "witness_solver": "MOSEK",
+  "witness_solver_used": "MOSEK_DIRECT",
+  "witness_charge_ratio": 0.060766109035907886,
+  "parity_expanded": false
+ },
+ "representative_p": null,
+ "margin_policy": "achieved",
+ "emitter": "scripts/emit_certificate_record.py",
+ "printed_coefficients": {
+  "tool": "scripts/round_certificate.py canonicalize",
+  "unit": "bits",
+  "n": 10
+ }
+}

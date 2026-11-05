@@ -1,0 +1,14 @@
+$ /usr/bin/python3 <GF Framework checkout>/verification/standalone/verify_certificate.py artifacts/campaign_2026-11/EVEN_PARTS/continuous-twisting-frontier/continuous_twisting_tgb_b10_delta1199_1000.printed_b10.even.record.json --grams artifacts/campaign_2026-11/EVEN_PARTS/continuous-twisting-frontier/continuous_twisting_tgb_b10_delta1199_1000.printed_b10.even.grams.json.gz --json artifacts/campaign_2026-11/EVEN_PARTS/continuous-twisting-frontier/continuous_twisting_tgb_b10_delta1199_1000.printed_b10.even.verification.json
+[1/5] V admissible (C^1, homogeneous of degree 9, 52 terms)
+[2/5] no irrational gains (all rational, injected exactly)
+[3/5] V positivity: all 8 octants PASS (worst charge/eps 2.35e-04; 55 basis -> 4 parity blocks, largest 15)
+[4/5] W: 2 endpoint x corner combinations, all 8 octants each, PASS (worst charge/eps 3.92e-02; 45 basis -> 4 parity blocks, largest 15)
+[5/5] continuous_twisting: certificate VERIFIED — V > 0 and -dV/dt > 0 (margin form) on every octant, both inclusion endpoints, every gain-bracket corner; exact rational arithmetic throughout (deck-group parity blocked LDL^T), delta0 = 1199/1000, epsilon = 4722366482869645/4722366482869645213696, kappa = -1 (derived from the rebuilt dynamics)
+      accepted under: charge < eps (strict, exact rational); WP P2-14 / decision D-l
+      eps_certified = eps - charge = 31386725221269236366991072746355293563/32667107224410092492483962313449748299776000 (~9.608052e-07); worst charge/eps 3.92e-02
+      note_half_margin_holds (charge <= eps/2, the inequality printed in the Automatica note; reported, never enforced): yes [24/24 octants]
+      psd_shift: eta = 0 on all 24 octants (the Gram itself is PSD; charge = ||E||_1)
+      summary written to artifacts/campaign_2026-11/EVEN_PARTS/continuous-twisting-frontier/continuous_twisting_tgb_b10_delta1199_1000.printed_b10.even.verification.json
+
+EXIT 0
+WALL_S 1.269

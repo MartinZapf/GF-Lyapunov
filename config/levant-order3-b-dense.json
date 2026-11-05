@@ -1,0 +1,78 @@
+{
+ "id": "levant-order3-b-dense",
+ "note": "recorded configuration of the run that produced this certificate, read from the run records named below; see CONFIGURATION.md for the procedure. Not a proof input: the verifier reads none of it.",
+ "design": {
+  "run": "artifacts/campaign_2026-09/X10/cell_p1_2_m9_eps1e-4/p4_05_l4d2003_m9_p1_2_eps1e-4.json",
+  "driver": "<GF Framework checkout>/artifacts/campaign_2026-08/E4_levant4d/ratio1_2026-09-04/p4_05_design.py",
+  "command": "<GF Framework checkout>/.venv/bin/python <GF Framework checkout>/artifacts/campaign_2026-08/E4_levant4d/ratio1_2026-09-04/p4_05_design.py --gain-point levant4d_2003print --p 1/2 --m 9 --epsilon 1e-4 --out-dir <GF Framework checkout>/artifacts/campaign_2026-09/X10/cell_p1_2_m9_eps1e-4 --tag l4d2003_m9_p1_2_eps1e-4",
+  "system": "levant4d_2003print",
+  "m": 9,
+  "qscale_p": "1/2",
+  "delta0_exact": "1/16",
+  "design_epsilon": 0.0001,
+  "solver": "MOSEK_DIRECT",
+  "library": {
+   "n_terms": 163,
+   "n_diag": 4,
+   "n_cross": 159,
+   "mu": [
+    8,
+    6,
+    4,
+    2
+   ],
+   "weights_r": [
+    4,
+    3,
+    2,
+    1
+   ],
+   "n_endpoints": 2,
+   "enumeration_s": 4.5
+  },
+  "typed_status": "feasible_candidate",
+  "y_parity_blocks_default": true,
+  "library_order": "grlex-v1",
+  "degree_ladder": [
+   {
+    "m": 9,
+    "design_status": "feasible_candidate",
+    "note": "single-degree design run; no ladder recorded"
+   }
+  ]
+ },
+ "degree_loop_evidence": null,
+ "rounding": {
+  "tier": "B",
+  "bits": 15,
+  "epsilon": "1e-4",
+  "witness": "fixed-V re-solve (spark-91bc, 2026-09-26)",
+  "shorter_rejected": "1 to 14 bits (X9 tier B scan, 2026-09-26)",
+  "evidence": "artifacts/campaign_2026-09/X9/printed_2026-09-26/"
+ },
+ "even_part": null,
+ "exact_stage_of_source": {
+  "note": "the exact phase's OWN reported numbers, kept for audit; the portable verifier derives its own",
+  "worst_charge_ratio": 4.6423309361816416e-05,
+  "eps_certified": 9.999535766906382e-05,
+  "v_input_hash": null,
+  "gram_bundle_sha256": null,
+  "gram_bundle_fingerprint": null
+ },
+ "witness": {
+  "source": "resolve",
+  "witness_source": "resolve",
+  "witness_solver": "MOSEK",
+  "witness_solver_used": "MOSEK_DIRECT",
+  "witness_charge_ratio": 4.6423309361816416e-05,
+  "parity_expanded": false
+ },
+ "representative_p": null,
+ "margin_policy": "achieved",
+ "emitter": "scripts/emit_certificate_record.py",
+ "printed_coefficients": {
+  "tool": "scripts/round_certificate.py canonicalize",
+  "unit": "bits",
+  "n": 15
+ }
+}

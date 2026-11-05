@@ -1,0 +1,58 @@
+{
+ "verifier": "verification/standalone/verify_certificate.py",
+ "verdict": "VERIFIED",
+ "proof_inputs": {
+  "schema": "gf-proof-inputs/1",
+  "verifier": {
+   "path": "<release root>/verification/standalone/verify_certificate.py",
+   "sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5"
+  },
+  "record": {
+   "path": "<release root>/certificates/levant-order2-a/levant3d_lev2_b09_e7_point0_delta1.record.json.gz",
+   "sha256": "6af6214320a7208f261172a5cbc918953c61c30460f608f23e5b99af1c2e586d"
+  },
+  "grams": {
+   "path": "<release root>/certificates/levant-order2-a/levant3d_lev2_b09_e7_point0_delta1.grams.json.gz",
+   "sha256": "7dfb155c788f73bea33cb88581a56b0bdb6eba6850b5ff46a5cfd16fb4c1a0dd"
+  }
+ },
+ "system": "levant3d",
+ "record": "certificates/levant-order2-a/levant3d_lev2_b09_e7_point0_delta1.record.json.gz",
+ "grams": "certificates/levant-order2-a/levant3d_lev2_b09_e7_point0_delta1.grams.json.gz",
+ "schema_version": "gf-certificate-record/2",
+ "path": "deck-group parity blocked",
+ "nominal": false,
+ "kappa_derived": "-1/1",
+ "delta0_exact": "1/1",
+ "epsilon_exact": "944473296573929/9444732965739290427392",
+ "epsilon_float": 1e-07,
+ "margin_policy": "achieved",
+ "acceptance_rule": "charge < eps (strict, exact rational); WP P2-14 / decision D-l",
+ "eps_certified_exact": "71341998424075849889387670337470552789547/713623846352979940529142984724747568191373312000",
+ "eps_certified_float": 9.9971432833521e-08,
+ "worst_charge_over_eps": {
+  "V": 1.6546433791924422e-06,
+  "W": 0.00028567166478987444,
+  "overall": 0.00028567166478987444
+ },
+ "worst_charge_over_half_eps_legacy": {
+  "V": 3.3092867583848844e-06,
+  "W": 0.0005713433295797489,
+  "overall": 0.0005713433295797489
+ },
+ "note_half_margin_rule": "charge <= eps/2, the inequality printed in the Automatica note; reported, never enforced",
+ "note_half_margin_holds": {
+  "V": true,
+  "W": true,
+  "overall": true
+ },
+ "note_half_margin_octants": {
+  "ok": 40,
+  "total": 40
+ },
+ "psd_shift_eta": {
+  "max_exact": "0/1",
+  "n_octants_positive": 0,
+  "n_octants": 40
+ }
+}

@@ -1,0 +1,120 @@
+{
+ "id": "levant-order2-box-a",
+ "note": "recorded configuration of the run that produced this certificate, read from the run records named below; see CONFIGURATION.md for the procedure. Not a proof input: the verifier reads none of it.",
+ "design": {
+  "run": "artifacts/campaign_2026-09/X2/design_box_m11/run.json",
+  "driver": "scripts/certify_gain_point.py",
+  "args": {
+   "system": "levant3d",
+   "gains": [
+    "lambda3=11/10"
+   ],
+   "bracket": [],
+   "box": [
+    "lambda1:2:3",
+    "lambda2:2121/1000:2599/1000"
+   ],
+   "point": null,
+   "delta0": "1",
+   "degrees": [
+    11
+   ],
+   "design_epsilon": 0.0001,
+   "design_solver": "MOSEK_DIRECT",
+   "sparsify": null,
+   "witness_solver": "MOSEK",
+   "fallback_solver": "CLARABEL",
+   "margin_policy": "achieved"
+  },
+  "degree_ladder": [
+   {
+    "m": 11,
+    "design_status": "designed",
+    "solver_status": "standard_sos:MOSEK_DIRECT",
+    "n_terms": 189,
+    "mu": [
+     6,
+     4,
+     2
+    ],
+    "library": {
+     "diag": 3,
+     "cross": 186
+    },
+    "n_vertices": 8,
+    "exact": {
+     "eps_certified": 9.999999121063151e-05,
+     "witness_source": "design_bundle"
+    }
+   }
+  ],
+  "certified_degree": 11,
+  "status": "certified_and_emitted"
+ },
+ "degree_loop_evidence": null,
+ "rounding": {
+  "tier": "B",
+  "bits": 18,
+  "epsilon": "1e-4",
+  "witness": "MOSEK fixed-V re-solve (spark-91bc, 2026-09-25)",
+  "shorter_rejected": "1 to 17 bits (X9 tier B scan)",
+  "evidence": "artifacts/campaign_2026-09/X9/printed_2026-09-25/tierB/c9.2_x2_box_m11/tierB_summary.json"
+ },
+ "even_part": {
+  "tool": "scripts/even_part_certificate.py",
+  "rule": "V_e = (V(x) + V(-x))/2 keeps the even terms; witnesses averaged over the orthants s and -s (W endpoints swapped), see the tool docstring",
+  "source_record": "artifacts/campaign_2026-09/X9/printed_2026-09-25/tierB/c9.2_x2_box_m11/printed/levant3d_x9b_b18_sub_lambda1_2_delta1.printed_b18.record.json",
+  "source_record_sha256": "f3827dbfa59c5abfa81ef6821eceff9701d94086fc280383e5559ce1562ca6a7",
+  "source_grams": "artifacts/campaign_2026-09/X9/printed_2026-09-25/tierB/c9.2_x2_box_m11/printed/levant3d_x9b_b18_sub_lambda1_2_delta1.grams.json.gz",
+  "source_grams_sha256": "c3982b438d7ad26dd2d9f0b9fedd028ac55e98cdb4b9945cb567941f81dd577c",
+  "terms_source": 189,
+  "terms_even": 96,
+  "terms_dropped_odd": 93,
+  "max_abs_dropped_coefficient": "153351/536870912",
+  "source_margin_declarations": {
+   "eps_certified": 9.999933827472137e-05,
+   "eps_certified_exact": "778839374969096049020686142230861/7788445287802241442795744493830144000",
+   "eps_certified_exact_is_float_transcription": false,
+   "eps_certified_source": "portable_verifier",
+   "note_half_margin_holds": true,
+   "worst_charge_over_eps": {
+    "V": 1.0011997170954456e-08,
+    "W": 6.617252786257801e-06,
+    "overall": 6.617252786257801e-06
+   },
+   "verifier": {
+    "acceptance_rule": "charge < eps (strict, exact rational); WP P2-14 / decision D-l",
+    "eps_certified_exact": "778839374969096049020686142230861/7788445287802241442795744493830144000",
+    "worst_charge_over_eps": {
+     "V": 1.0011997170954456e-08,
+     "W": 6.617252786257801e-06,
+     "overall": 6.617252786257801e-06
+    }
+   }
+  }
+ },
+ "exact_stage_of_source": {
+  "note": "the exact phase's OWN reported numbers, kept for audit; the portable verifier derives its own",
+  "worst_charge_ratio": 8.251731620219182e-06,
+  "eps_certified": 9.999917482683799e-05,
+  "v_input_hash": null,
+  "gram_bundle_sha256": null,
+  "gram_bundle_fingerprint": null
+ },
+ "witness": {
+  "source": "resolve",
+  "witness_source": "resolve",
+  "witness_solver": "MOSEK",
+  "witness_solver_used": "MOSEK_DIRECT",
+  "witness_charge_ratio": 8.251731620219182e-06,
+  "parity_expanded": false
+ },
+ "representative_p": null,
+ "margin_policy": "achieved",
+ "emitter": "scripts/emit_certificate_record.py",
+ "printed_coefficients": {
+  "tool": "scripts/round_certificate.py canonicalize",
+  "unit": "bits",
+  "n": 18
+ }
+}

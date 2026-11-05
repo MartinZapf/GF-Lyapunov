@@ -1,0 +1,162 @@
+== manifest, records and listings
+[PASS] levant-order1: record sha256
+[PASS] levant-order1: Gram file sha256
+[PASS] levant-order1: system, m, weights, 5 terms, delta0, eps, gains, brackets equal the manifest
+[PASS] levant-order1: listing listings/levant-order1.txt equals the record term for term (5 rows)
+[PASS] levant-order2-a: record sha256
+[PASS] levant-order2-a: Gram file sha256
+[PASS] levant-order2-a: system, m, weights, 29 terms, delta0, eps, gains, brackets equal the manifest
+[PASS] levant-order2-a: listing listings/levant-order2-a.txt equals the record term for term (29 rows)
+[PASS] levant-order2-b: record sha256
+[PASS] levant-order2-b: Gram file sha256
+[PASS] levant-order2-b: system, m, weights, 29 terms, delta0, eps, gains, brackets equal the manifest
+[PASS] levant-order2-b: listing listings/levant-order2-b.txt equals the record term for term (29 rows)
+[PASS] levant-order2-box: record sha256
+[PASS] levant-order2-box: Gram file sha256
+[PASS] levant-order2-box: system, m, weights, 96 terms, delta0, eps, gains, brackets equal the manifest
+[PASS] levant-order2-box: listing listings/levant-order2-box.txt equals the record term for term (96 rows)
+[PASS] levant-order3-a: record sha256
+[PASS] levant-order3-a: Gram file sha256
+[PASS] levant-order3-a: system, m, weights, 83 terms, delta0, eps, gains, brackets equal the manifest
+[PASS] levant-order3-a: listing listings/levant-order3-a.txt equals the record term for term (83 rows)
+[PASS] levant-order3-b: record sha256
+[PASS] levant-order3-b: Gram file sha256
+[PASS] levant-order3-b: system, m, weights, 83 terms, delta0, eps, gains, brackets equal the manifest
+[PASS] levant-order3-b: listing listings/levant-order3-b.txt equals the record term for term (83 rows)
+[PASS] levant-order4: record sha256
+[PASS] levant-order4: Gram file sha256
+[PASS] levant-order4: system, m, weights, 507 terms, delta0, eps, gains, brackets equal the manifest
+[PASS] levant-order4: listing listings/levant-order4.txt equals the record term for term (507 rows)
+[PASS] twisting: record sha256
+[PASS] twisting: Gram file sha256
+[PASS] twisting: system, m, weights, 5 terms, delta0, eps, gains, brackets equal the manifest
+[PASS] twisting: listing listings/twisting.txt equals the record term for term (5 rows)
+[PASS] continuous-twisting: record sha256
+[PASS] continuous-twisting: Gram file sha256
+[PASS] continuous-twisting: system, m, weights, 9 terms, delta0, eps, gains, brackets equal the manifest
+[PASS] continuous-twisting: listing listings/continuous-twisting.txt equals the record term for term (9 rows)
+[PASS] continuous-twisting-frontier: record sha256
+[PASS] continuous-twisting-frontier: Gram file sha256
+[PASS] continuous-twisting-frontier: system, m, weights, 52 terms, delta0, eps, gains, brackets equal the manifest
+[PASS] continuous-twisting-frontier: listing listings/continuous-twisting-frontier.txt equals the record term for term (52 rows)
+[PASS] pid-like: record sha256
+[PASS] pid-like: Gram file sha256
+[PASS] pid-like: system, m, weights, 21 terms, delta0, eps, gains, brackets equal the manifest
+[PASS] pid-like: listing listings/pid-like.txt equals the record term for term (21 rows)
+[PASS] levant-order2-box-a: record sha256
+[PASS] levant-order2-box-a: Gram file sha256
+[PASS] levant-order2-box-a: system, m, weights, 96 terms, delta0, eps, gains, brackets equal the manifest
+[PASS] levant-order2-box-a: listing listings/levant-order2-box-a.txt equals the record term for term (96 rows)
+[PASS] levant-order2-box-b: record sha256
+[PASS] levant-order2-box-b: Gram file sha256
+[PASS] levant-order2-box-b: system, m, weights, 96 terms, delta0, eps, gains, brackets equal the manifest
+[PASS] levant-order2-box-b: listing listings/levant-order2-box-b.txt equals the record term for term (96 rows)
+[PASS] levant-order2-box-dense: record sha256
+[PASS] levant-order2-box-dense: Gram file sha256
+[PASS] levant-order2-box-dense: system, m, weights, 189 terms, delta0, eps, gains, brackets equal the manifest
+[PASS] levant-order2-box-dense: listing listings/levant-order2-box-dense.txt equals the record term for term (189 rows)
+[PASS] levant-order2-box-a-dense: record sha256
+[PASS] levant-order2-box-a-dense: Gram file sha256
+[PASS] levant-order2-box-a-dense: system, m, weights, 189 terms, delta0, eps, gains, brackets equal the manifest
+[PASS] levant-order2-box-a-dense: listing listings/levant-order2-box-a-dense.txt equals the record term for term (189 rows)
+[PASS] levant-order2-box-b-dense: record sha256
+[PASS] levant-order2-box-b-dense: Gram file sha256
+[PASS] levant-order2-box-b-dense: system, m, weights, 189 terms, delta0, eps, gains, brackets equal the manifest
+[PASS] levant-order2-box-b-dense: listing listings/levant-order2-box-b-dense.txt equals the record term for term (189 rows)
+[PASS] levant-order3-a-dense: record sha256
+[PASS] levant-order3-a-dense: Gram file sha256
+[PASS] levant-order3-a-dense: system, m, weights, 163 terms, delta0, eps, gains, brackets equal the manifest
+[PASS] levant-order3-a-dense: listing listings/levant-order3-a-dense.txt equals the record term for term (163 rows)
+[PASS] levant-order3-b-dense: record sha256
+[PASS] levant-order3-b-dense: Gram file sha256
+[PASS] levant-order3-b-dense: system, m, weights, 163 terms, delta0, eps, gains, brackets equal the manifest
+[PASS] levant-order3-b-dense: listing listings/levant-order3-b-dense.txt equals the record term for term (163 rows)
+[PASS] continuous-twisting-frontier-dense: record sha256
+[PASS] continuous-twisting-frontier-dense: Gram file sha256
+[PASS] continuous-twisting-frontier-dense: system, m, weights, 101 terms, delta0, eps, gains, brackets equal the manifest
+[PASS] continuous-twisting-frontier-dense: listing listings/continuous-twisting-frontier-dense.txt equals the record term for term (101 rows)
+== evenness of the reported functions
+[PASS] levant-order1: reported function is even (0 odd terms)
+[PASS] levant-order2-a: reported function is even (0 odd terms)
+[PASS] levant-order2-b: reported function is even (0 odd terms)
+[PASS] levant-order2-box: reported function is even (0 odd terms)
+[PASS] levant-order3-a: reported function is even (0 odd terms)
+[PASS] levant-order3-b: reported function is even (0 odd terms)
+[PASS] levant-order4: nominal dense function reported with all its terms (507 terms, 251 of them odd)
+[PASS] twisting: reported function is even (0 odd terms)
+[PASS] continuous-twisting: reported function is even (0 odd terms)
+[PASS] continuous-twisting-frontier: reported function is even (0 odd terms)
+[PASS] pid-like: reported function is even (0 odd terms)
+[PASS] levant-order2-box-a: reported function is even (0 odd terms)
+[PASS] levant-order2-box-b: reported function is even (0 odd terms)
+== library of Definition 1 (from the field rebuilt by the verifier)
+[PASS] levant-order1: k* = 2, mu* = (4, 2), library at m = 6: 14 terms, 8 even; V uses 5 (all on the library)
+[PASS] levant-order1: library of Section 5 has 14 terms
+[PASS] levant-order2-a: k* = 2, mu* = (6, 4, 2), library at m = 8: 69 terms, 36 even; V uses 29 (all on the library)
+[PASS] levant-order2-b: k* = 2, mu* = (6, 4, 2), library at m = 8: 69 terms, 36 even; V uses 29 (all on the library)
+[PASS] levant-order2-box: k* = 2, mu* = (6, 4, 2), library at m = 11: 189 terms, 96 even; V uses 96 (all on the library)
+[PASS] levant-order2-box: the even part uses every even library term (96 = 96)
+[PASS] levant-order3-a: k* = 2, mu* = (8, 6, 4, 2), library at m = 9: 163 terms, 83 even; V uses 83 (all on the library)
+[PASS] levant-order3-a: the even part uses every even library term (83 = 83)
+[PASS] levant-order3-b: k* = 2, mu* = (8, 6, 4, 2), library at m = 9: 163 terms, 83 even; V uses 83 (all on the library)
+[PASS] levant-order3-b: the even part uses every even library term (83 = 83)
+[PASS] levant-order4: k* = 2, mu* = (10, 8, 6, 4, 2), library at m = 11: 507 terms, 256 even; V uses 507 (all on the library)
+[PASS] levant-order4: library size 507 = paper 507
+[PASS] levant-order4: the dense function uses every library term
+[PASS] twisting: k* = 2, mu* = (4, 2), library at m = 5: 10 terms, 6 even; V uses 5 (all on the library)
+[PASS] continuous-twisting: k* = 2, mu* = (6, 4, 2), library at m = 5: 16 terms, 10 even; V uses 9 (all on the library)
+[PASS] continuous-twisting-frontier: k* = 2, mu* = (6, 4, 2), library at m = 9: 101 terms, 52 even; V uses 52 (all on the library)
+[PASS] continuous-twisting-frontier: the even part uses every even library term (52 = 52)
+[PASS] pid-like: k* = 2, mu* = (6, 4, 2), library at m = 7: 45 terms, 24 even; V uses 21 (all on the library)
+[PASS] levant-order2-box-a: k* = 2, mu* = (6, 4, 2), library at m = 11: 189 terms, 96 even; V uses 96 (all on the library)
+[PASS] levant-order2-box-a: the even part uses every even library term (96 = 96)
+[PASS] levant-order2-box-b: k* = 2, mu* = (6, 4, 2), library at m = 11: 189 terms, 96 even; V uses 96 (all on the library)
+[PASS] levant-order2-box-b: the even part uses every even library term (96 = 96)
+[PASS] levant-order2-box-dense: k* = 2, mu* = (6, 4, 2), library at m = 11: 189 terms, 96 even; V uses 189 (all on the library)
+[PASS] levant-order2-box-dense: library size 189 = paper 189, even terms 96 = paper 96
+[PASS] levant-order2-box-dense: the dense function uses every library term
+[PASS] levant-order2-box-a-dense: k* = 2, mu* = (6, 4, 2), library at m = 11: 189 terms, 96 even; V uses 189 (all on the library)
+[PASS] levant-order2-box-b-dense: k* = 2, mu* = (6, 4, 2), library at m = 11: 189 terms, 96 even; V uses 189 (all on the library)
+[PASS] levant-order3-a-dense: k* = 2, mu* = (8, 6, 4, 2), library at m = 9: 163 terms, 83 even; V uses 163 (all on the library)
+[PASS] levant-order3-a-dense: library size 163 = paper 163, even terms 83 = paper 83
+[PASS] levant-order3-a-dense: the dense function uses every library term
+[PASS] levant-order3-b-dense: k* = 2, mu* = (8, 6, 4, 2), library at m = 9: 163 terms, 83 even; V uses 163 (all on the library)
+[PASS] levant-order3-b-dense: library size 163 = paper 163, even terms 83 = paper 83
+[PASS] levant-order3-b-dense: the dense function uses every library term
+[PASS] continuous-twisting-frontier-dense: k* = 2, mu* = (6, 4, 2), library at m = 9: 101 terms, 52 even; V uses 101 (all on the library)
+[PASS] continuous-twisting-frontier-dense: library size 101 = paper 101, even terms 52 = paper 52
+[PASS] continuous-twisting-frontier-dense: the dense function uses every library term
+== Levant gains, scale and delta0 (Table 1, eq. (10), Corollary 1)
+[PASS] levant-order1: gains = lambda_i p^i of Table 1 with p = 1 (brackets enclose them, in Q)
+[PASS] levant-order1: delta0 = 1
+[PASS] levant-order2-a: gains = lambda_i p^i of Table 1 with p = 1 (brackets enclose them, in Q)
+[PASS] levant-order2-a: delta0 = 1
+[PASS] levant-order2-b: gains = lambda_i p^i of Table 1 with p = 1 (brackets enclose them, in Q)
+[PASS] levant-order2-b: delta0 = 1
+[PASS] levant-order3-a: gains = lambda_i p^i of Table 1 with p = 1/2 (brackets enclose them, in Q)
+[PASS] levant-order3-a: delta0 = 1/16 = L0 = p^4
+[PASS] levant-order3-b: gains = lambda_i p^i of Table 1 with p = 1/2 (brackets enclose them, in Q)
+[PASS] levant-order3-b: delta0 = 1/16 = L0 = p^4
+[PASS] levant-order3-a-dense: gains = lambda_i p^i of Table 1 with p = 1/2 (brackets enclose them, in Q)
+[PASS] levant-order3-a-dense: delta0 = 1/16 = L0 = p^4
+[PASS] levant-order3-b-dense: gains = lambda_i p^i of Table 1 with p = 1/2 (brackets enclose them, in Q)
+[PASS] levant-order3-b-dense: delta0 = 1/16 = L0 = p^4
+[PASS] levant-order4: gains = lambda_i p^i of Table 1 with p = 1 (brackets enclose them, in Q)
+[PASS] levant-order4: delta0 = 0
+== order-two box
+[PASS] 2.121^2 < 9/2 and 27/4 < 2.599^2: the box contains (c, (3/2) sqrt c, 1.1), 2 <= c <= 3
+[PASS] levant-order2-box: corners span [2,3] x [2.121,2.599] x {11/10}
+== disturbance bounds of the controllers
+[PASS] twisting: (c1, c2) = (2, 3/2), delta0 = 2047/4096 = 1/2 - 2^-12 = (2047/2048)(c1 - c2)
+[PASS] continuous-twisting: G1 = (25, 15, 23/10, 11/10), delta0 = 1
+[PASS] continuous-twisting-frontier: G1 = (25, 15, 23/10, 11/10), delta0 = 1199/1000 = (1199/1200)(k3 - k4) > k4
+[PASS] pid-like: D1 = (2.7, 5.345, 1.1) at Delta = delta0 = 1
+== worked example, Section 5
+[PASS] levant-order1: 12 Gram matrices, size 7 for V and 6 for W (12, {7}, {6})
+[PASS] levant-order1: parity blocks 4+3 (V) and 3+3 (W)
+== twisting below the ceiling (Proposition 4)
+[PASS] scripts/twisting_below_ceiling.py exit 0
+[PASS] the four polynomials derived by the script are those printed in the paper's proof of Proposition 4
+[PASS] the V of twisting_below_ceiling.py equals the twisting record's V
+
+ALL CHECKS PASS

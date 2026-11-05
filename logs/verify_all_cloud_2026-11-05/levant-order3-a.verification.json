@@ -1,0 +1,58 @@
+{
+ "verifier": "verification/standalone/verify_certificate.py",
+ "verdict": "VERIFIED",
+ "proof_inputs": {
+  "schema": "gf-proof-inputs/1",
+  "verifier": {
+   "path": "<release root>/verification/standalone/verify_certificate.py",
+   "sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5"
+  },
+  "record": {
+   "path": "<release root>/certificates/levant-order3-a/levant4d_p1_2_m9_delta1_16.printed_b30.even.record.json",
+   "sha256": "4636bf676eba661dcd9699abe5eebdc5b99bc57384b3b54629ad13da950cdeee"
+  },
+  "grams": {
+   "path": "<release root>/certificates/levant-order3-a/levant4d_p1_2_m9_delta1_16.printed_b30.even.grams.json.gz",
+   "sha256": "a4f85e65ab474a6bb0b777f0db2ca20b2ae91a0c55bddd69a8ab1d8a7709ba14"
+  }
+ },
+ "system": "levant4d",
+ "record": "certificates/levant-order3-a/levant4d_p1_2_m9_delta1_16.printed_b30.even.record.json",
+ "grams": "certificates/levant-order3-a/levant4d_p1_2_m9_delta1_16.printed_b30.even.grams.json.gz",
+ "schema_version": "gf-certificate-record/2",
+ "path": "deck-group parity blocked",
+ "nominal": false,
+ "kappa_derived": "-1/1",
+ "delta0_exact": "1/16",
+ "epsilon_exact": "7378697629483821/73786976294838206464",
+ "epsilon_float": 0.0001,
+ "margin_policy": "achieved",
+ "acceptance_rule": "charge < eps (strict, exact rational); WP P2-14 / decision D-l",
+ "eps_certified_exact": "12157827698762243865517941/450359962737049600000000000000",
+ "eps_certified_float": 2.699580048118265e-05,
+ "worst_charge_over_eps": {
+  "V": 0.24766553102261568,
+  "W": 0.7300419951881735,
+  "overall": 0.7300419951881735
+ },
+ "worst_charge_over_half_eps_legacy": {
+  "V": 0.49533106204523136,
+  "W": 1.460083990376347,
+  "overall": 1.460083990376347
+ },
+ "note_half_margin_rule": "charge <= eps/2, the inequality printed in the Automatica note; reported, never enforced",
+ "note_half_margin_holds": {
+  "V": true,
+  "W": false,
+  "overall": false
+ },
+ "note_half_margin_octants": {
+  "ok": 80,
+  "total": 144
+ },
+ "psd_shift_eta": {
+  "max_exact": "0/1",
+  "n_octants_positive": 0,
+  "n_octants": 144
+ }
+}

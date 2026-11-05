@@ -1,0 +1,16 @@
+$ /usr/bin/python3 verification/standalone/verify_certificate.py certificates/continuous-twisting/continuous_twisting_cta_b05_e9_delta1.record.json.gz --grams certificates/continuous-twisting/continuous_twisting_cta_b05_e9_delta1.grams.json.gz --json logs/verify_all_cloud_2026-11-05/continuous-twisting.verification.json
+[1/5] V admissible (C^1, homogeneous of degree 5, 9 terms)
+[2/5] no irrational gains (all rational, injected exactly)
+[3/5] V positivity: all 8 octants PASS (worst charge/eps 2.57e-06; 21 basis -> 4 parity blocks, largest 6)
+[4/5] W: 2 endpoint x corner combinations, all 8 octants each, PASS (worst charge/eps 1.74e-04; 15 basis -> 4 parity blocks, largest 6)
+[5/5] continuous_twisting: certificate VERIFIED — V > 0 and -dV/dt > 0 (margin form) on every octant, both inclusion endpoints, every gain-bracket corner; exact rational arithmetic throughout (deck-group parity blocked LDL^T), delta0 = 1, epsilon = 4835703278458517/4835703278458516698824704, kappa = -1 (derived from the rebuilt dynamics)
+      accepted under: charge < eps (strict, exact rational); WP P2-14 / decision D-l
+      eps_certified = eps - charge = 17534966849530619856389307593822947314349/17538019647970835018444217992595396235871190515712 (~9.998259e-10); worst charge/eps 1.74e-04
+      note_half_margin_holds (charge <= eps/2, the inequality printed in the Automatica note; reported, never enforced): yes [24/24 octants]
+      psd_shift: eta = 0 on all 24 octants (the Gram itself is PSD; charge = ||E||_1)
+      summary written to logs/verify_all_cloud_2026-11-05/continuous-twisting.verification.json
+RESULT: VERIFIED (exit code 0): every check passed
+
+EXIT 0
+WALL_S 0.158
+PEAK_RSS_KB 22296

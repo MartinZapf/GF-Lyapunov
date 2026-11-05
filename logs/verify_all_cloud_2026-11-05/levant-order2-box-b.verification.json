@@ -1,0 +1,58 @@
+{
+ "verifier": "verification/standalone/verify_certificate.py",
+ "verdict": "VERIFIED",
+ "proof_inputs": {
+  "schema": "gf-proof-inputs/1",
+  "verifier": {
+   "path": "<release root>/verification/standalone/verify_certificate.py",
+   "sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5"
+  },
+  "record": {
+   "path": "<release root>/certificates/levant-order2-box-b/levant3d_x9b_b18_sub_lambda1_3_delta1.printed_b18.even.record.json",
+   "sha256": "e0bc41997c6222a21d36d6381ced024965d40d65e83719a7304a53b0e418442b"
+  },
+  "grams": {
+   "path": "<release root>/certificates/levant-order2-box-b/levant3d_x9b_b18_sub_lambda1_3_delta1.printed_b18.even.grams.json.gz",
+   "sha256": "1f4c3bedd22fa0914ccb5032fd26d01fde311c1785592ee77912c58cb81b39a7"
+  }
+ },
+ "system": "levant3d",
+ "record": "certificates/levant-order2-box-b/levant3d_x9b_b18_sub_lambda1_3_delta1.printed_b18.even.record.json",
+ "grams": "certificates/levant-order2-box-b/levant3d_x9b_b18_sub_lambda1_3_delta1.printed_b18.even.grams.json.gz",
+ "schema_version": "gf-certificate-record/2",
+ "path": "deck-group parity blocked",
+ "nominal": false,
+ "kappa_derived": "-1/1",
+ "delta0_exact": "1/1",
+ "epsilon_exact": "7378697629483821/73786976294838206464",
+ "epsilon_float": 0.0001,
+ "margin_policy": "achieved",
+ "acceptance_rule": "charge < eps (strict, exact rational); WP P2-14 / decision D-l",
+ "eps_certified_exact": "194710188163337560604196390911417/1947111321950560360698936123457536000",
+ "eps_certified_float": 9.999951516294532e-05,
+ "worst_charge_over_eps": {
+  "V": 6.4809624561101945e-09,
+  "W": 4.848370546883229e-06,
+  "overall": 4.848370546883229e-06
+ },
+ "worst_charge_over_half_eps_legacy": {
+  "V": 1.2961924912220389e-08,
+  "W": 9.696741093766458e-06,
+  "overall": 9.696741093766458e-06
+ },
+ "note_half_margin_rule": "charge <= eps/2, the inequality printed in the Automatica note; reported, never enforced",
+ "note_half_margin_holds": {
+  "V": true,
+  "W": true,
+  "overall": true
+ },
+ "note_half_margin_octants": {
+  "ok": 40,
+  "total": 40
+ },
+ "psd_shift_eta": {
+  "max_exact": "0/1",
+  "n_octants_positive": 0,
+  "n_octants": 40
+ }
+}

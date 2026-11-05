@@ -1,0 +1,1564 @@
+{
+ "schema_version": "gf-certificate-record/2",
+ "timestamp_utc": "20260928T074143Z",
+ "git_sha": "98dc5175c421080f80654fbcba63ac35223142ee",
+ "system": "continuous_twisting",
+ "system_family": "continuous_twisting",
+ "nominal": false,
+ "channel": 2,
+ "weights_r": [
+  3,
+  2,
+  1
+ ],
+ "kappa": "-1",
+ "campaign_block": "CTA_TG2017",
+ "row_source": "row.json",
+ "witness": {
+  "source": "resolve",
+  "witness_source": "resolve",
+  "witness_solver": "MOSEK",
+  "witness_solver_used": "MOSEK_DIRECT",
+  "witness_charge_ratio": 0.060766109035907886,
+  "witness_charge_over_eps": 0.060766109035907886,
+  "witness_attempts": [
+   {
+    "index": 0,
+    "source": "resolve",
+    "solver": "MOSEK",
+    "solver_used": "MOSEK_DIRECT",
+    "ok": true,
+    "worst_charge_ratio": 0.060766109035907886,
+    "worst_charge_over_eps": 0.060766109035907886,
+    "shortfall": "",
+    "detail": "",
+    "adopted": true,
+    "time_s": 2.489
+   }
+  ],
+  "gram_bundle_fingerprint": null,
+  "parity_expanded": false,
+  "v_reused": false,
+  "v_proof_cache": {
+   "enabled": false,
+   "hit": false,
+   "stored": false,
+   "reason": "vproof_cache_disabled",
+   "store_reason": "",
+   "detail": "",
+   "root": "",
+   "path": "",
+   "key": "",
+   "revalidated": false,
+   "code_version": "",
+   "written_by_pid": null,
+   "written_at": "",
+   "entry_bytes": 0,
+   "load_s": 0.0,
+   "revalidate_s": 0.0,
+   "store_s": 0.0
+  },
+  "parallel": {
+   "scope": "octant",
+   "jobs": 1,
+   "enabled": false,
+   "start_method": "",
+   "max_workers": 1,
+   "n_octant_batches": 0,
+   "n_octants": 0,
+   "cpu_count": 20
+  },
+  "recorded_by_source": true
+ },
+ "margin_policy": "achieved",
+ "margin_policy_source": "exact_phase",
+ "eps_certified": 9.392338909640921e-07,
+ "eps_certified_exact": "5113675704153982176939661276083292661/5444517870735015415413993718908291383296000",
+ "eps_certified_exact_is_float_transcription": false,
+ "eps_certified_source": "portable_verifier",
+ "note_half_margin_holds": true,
+ "delta0_exact": "1199/1000",
+ "epsilon": 1e-06,
+ "epsilon_exact": "4722366482869645/4722366482869645213696",
+ "rational_gains": {
+  "k1": "25",
+  "k2": "15",
+  "k3": "23/10",
+  "k4": "11/10"
+ },
+ "V": {
+  "degree_m": 9,
+  "weights_r": [
+   3,
+   2,
+   1
+  ],
+  "terms": [
+   {
+    "coefficient": "1/1",
+    "exponents": [
+     "3",
+     "0",
+     "0"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "613/4096",
+    "exponents": [
+     "0",
+     "9/2",
+     "0"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "357/4194304",
+    "exponents": [
+     "0",
+     "0",
+     "9"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-985/67108864",
+    "exponents": [
+     "7/3",
+     "1",
+     "0"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "683/512",
+    "exponents": [
+     "7/3",
+     "1",
+     "0"
+    ],
+    "term_types": [
+     "signed",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "503/32",
+    "exponents": [
+     "2",
+     "3/2",
+     "0"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "645/4194304",
+    "exponents": [
+     "2",
+     "3/2",
+     "0"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "775/8388608",
+    "exponents": [
+     "2",
+     "3/2",
+     "0"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "321/32",
+    "exponents": [
+     "2",
+     "3/2",
+     "0"
+    ],
+    "term_types": [
+     "signed",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "903/256",
+    "exponents": [
+     "5/3",
+     "2",
+     "0"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-943/4194304",
+    "exponents": [
+     "5/3",
+     "2",
+     "0"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-543/4194304",
+    "exponents": [
+     "5/3",
+     "2",
+     "0"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "975/64",
+    "exponents": [
+     "5/3",
+     "2",
+     "0"
+    ],
+    "term_types": [
+     "signed",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "367/16777216",
+    "exponents": [
+     "8/3",
+     "0",
+     "1"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "-555/256",
+    "exponents": [
+     "8/3",
+     "0",
+     "1"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "181/64",
+    "exponents": [
+     "4/3",
+     "5/2",
+     "0"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "755/8388608",
+    "exponents": [
+     "4/3",
+     "5/2",
+     "0"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "891/33554432",
+    "exponents": [
+     "4/3",
+     "5/2",
+     "0"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-275/32",
+    "exponents": [
+     "4/3",
+     "5/2",
+     "0"
+    ],
+    "term_types": [
+     "signed",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "1021/67108864",
+    "exponents": [
+     "1",
+     "3",
+     "0"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "273/64",
+    "exponents": [
+     "1",
+     "3",
+     "0"
+    ],
+    "term_types": [
+     "signed",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-32/1",
+    "exponents": [
+     "2",
+     "1",
+     "1"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "245/1048576",
+    "exponents": [
+     "2",
+     "1",
+     "1"
+    ],
+    "term_types": [
+     "signed",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "81/65536",
+    "exponents": [
+     "5/3",
+     "3/2",
+     "1"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "793/8",
+    "exponents": [
+     "5/3",
+     "3/2",
+     "1"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "785/32",
+    "exponents": [
+     "5/3",
+     "3/2",
+     "1"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "713/1048576",
+    "exponents": [
+     "5/3",
+     "3/2",
+     "1"
+    ],
+    "term_types": [
+     "signed",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "-877/524288",
+    "exponents": [
+     "4/3",
+     "2",
+     "1"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "-367/4",
+    "exponents": [
+     "4/3",
+     "2",
+     "1"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "-423/16",
+    "exponents": [
+     "4/3",
+     "2",
+     "1"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "-641/524288",
+    "exponents": [
+     "4/3",
+     "2",
+     "1"
+    ],
+    "term_types": [
+     "signed",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "691/2",
+    "exponents": [
+     "7/3",
+     "0",
+     "2"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-221/65536",
+    "exponents": [
+     "7/3",
+     "0",
+     "2"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "-849/262144",
+    "exponents": [
+     "7/3",
+     "0",
+     "2"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "519/2",
+    "exponents": [
+     "7/3",
+     "0",
+     "2"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "-673/32",
+    "exponents": [
+     "1",
+     "5/2",
+     "1"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "-219/2097152",
+    "exponents": [
+     "1",
+     "5/2",
+     "1"
+    ],
+    "term_types": [
+     "signed",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "81/1048576",
+    "exponents": [
+     "5/3",
+     "1",
+     "2"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-751/8",
+    "exponents": [
+     "5/3",
+     "1",
+     "2"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "641/2",
+    "exponents": [
+     "5/3",
+     "1",
+     "2"
+    ],
+    "term_types": [
+     "signed",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "25/131072",
+    "exponents": [
+     "5/3",
+     "1",
+     "2"
+    ],
+    "term_types": [
+     "signed",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "725/4",
+    "exponents": [
+     "4/3",
+     "3/2",
+     "2"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "435/2097152",
+    "exponents": [
+     "4/3",
+     "3/2",
+     "2"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "43/32768",
+    "exponents": [
+     "4/3",
+     "3/2",
+     "2"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "419/2",
+    "exponents": [
+     "4/3",
+     "3/2",
+     "2"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "705/1048576",
+    "exponents": [
+     "4/3",
+     "3/2",
+     "2"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-977/64",
+    "exponents": [
+     "4/3",
+     "3/2",
+     "2"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "-641/8",
+    "exponents": [
+     "4/3",
+     "3/2",
+     "2"
+    ],
+    "term_types": [
+     "signed",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "415/2097152",
+    "exponents": [
+     "4/3",
+     "3/2",
+     "2"
+    ],
+    "term_types": [
+     "signed",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "529/134217728",
+    "exponents": [
+     "0",
+     "4",
+     "1"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "-901/2048",
+    "exponents": [
+     "0",
+     "4",
+     "1"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "-249/524288",
+    "exponents": [
+     "1",
+     "2",
+     "2"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "649/8",
+    "exponents": [
+     "1",
+     "2",
+     "2"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "677/8",
+    "exponents": [
+     "1",
+     "2",
+     "2"
+    ],
+    "term_types": [
+     "signed",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "835/1048576",
+    "exponents": [
+     "1",
+     "2",
+     "2"
+    ],
+    "term_types": [
+     "signed",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "839/2",
+    "exponents": [
+     "2",
+     "0",
+     "3"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "459/131072",
+    "exponents": [
+     "2",
+     "0",
+     "3"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "267/65536",
+    "exponents": [
+     "2",
+     "0",
+     "3"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "727/4",
+    "exponents": [
+     "2",
+     "0",
+     "3"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "-1017/2097152",
+    "exponents": [
+     "4/3",
+     "1",
+     "3"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-291/1",
+    "exponents": [
+     "4/3",
+     "1",
+     "3"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "773/8",
+    "exponents": [
+     "4/3",
+     "1",
+     "3"
+    ],
+    "term_types": [
+     "signed",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-237/524288",
+    "exponents": [
+     "4/3",
+     "1",
+     "3"
+    ],
+    "term_types": [
+     "signed",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "301/64",
+    "exponents": [
+     "0",
+     "7/2",
+     "2"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "395/16777216",
+    "exponents": [
+     "0",
+     "7/2",
+     "2"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "-547/16777216",
+    "exponents": [
+     "0",
+     "7/2",
+     "2"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-587/256",
+    "exponents": [
+     "0",
+     "7/2",
+     "2"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "629/16777216",
+    "exponents": [
+     "1",
+     "3/2",
+     "3"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-665/8",
+    "exponents": [
+     "1",
+     "3/2",
+     "3"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "-927/8",
+    "exponents": [
+     "1",
+     "3/2",
+     "3"
+    ],
+    "term_types": [
+     "signed",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-121/524288",
+    "exponents": [
+     "1",
+     "3/2",
+     "3"
+    ],
+    "term_types": [
+     "signed",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "-617/4",
+    "exponents": [
+     "5/3",
+     "0",
+     "4"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-779/524288",
+    "exponents": [
+     "5/3",
+     "0",
+     "4"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "-753/524288",
+    "exponents": [
+     "5/3",
+     "0",
+     "4"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-273/1",
+    "exponents": [
+     "5/3",
+     "0",
+     "4"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "907/256",
+    "exponents": [
+     "0",
+     "3",
+     "3"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-883/536870912",
+    "exponents": [
+     "0",
+     "3",
+     "3"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "731/67108864",
+    "exponents": [
+     "0",
+     "3",
+     "3"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-759/128",
+    "exponents": [
+     "0",
+     "3",
+     "3"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "999/16",
+    "exponents": [
+     "1",
+     "1",
+     "4"
+    ],
+    "term_types": [
+     "signed",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "591/16777216",
+    "exponents": [
+     "1",
+     "1",
+     "4"
+    ],
+    "term_types": [
+     "signed",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "103/2",
+    "exponents": [
+     "4/3",
+     "0",
+     "5"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "157/1048576",
+    "exponents": [
+     "4/3",
+     "0",
+     "5"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "831/4194304",
+    "exponents": [
+     "4/3",
+     "0",
+     "5"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "659/32",
+    "exponents": [
+     "4/3",
+     "0",
+     "5"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "-613/256",
+    "exponents": [
+     "0",
+     "5/2",
+     "4"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "197/16777216",
+    "exponents": [
+     "0",
+     "5/2",
+     "4"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "-37/2097152",
+    "exponents": [
+     "0",
+     "5/2",
+     "4"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "323/128",
+    "exponents": [
+     "0",
+     "5/2",
+     "4"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "459/512",
+    "exponents": [
+     "0",
+     "2",
+     "5"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-801/67108864",
+    "exponents": [
+     "0",
+     "2",
+     "5"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "111/8388608",
+    "exponents": [
+     "0",
+     "2",
+     "5"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-555/1024",
+    "exponents": [
+     "0",
+     "2",
+     "5"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "-131/16777216",
+    "exponents": [
+     "1",
+     "0",
+     "6"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-43/32",
+    "exponents": [
+     "1",
+     "0",
+     "6"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "743/8192",
+    "exponents": [
+     "0",
+     "3/2",
+     "6"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "319/2147483648",
+    "exponents": [
+     "0",
+     "3/2",
+     "6"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "433/549755813888",
+    "exponents": [
+     "0",
+     "3/2",
+     "6"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-869/16384",
+    "exponents": [
+     "0",
+     "3/2",
+     "6"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "591/8796093022208",
+    "exponents": [
+     "0",
+     "1",
+     "7"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-231/65536",
+    "exponents": [
+     "0",
+     "1",
+     "7"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "signed"
+    ]
+   }
+  ]
+ },
+ "brackets": {},
+ "corners": [
+  {
+   "assignment": {},
+   "corner_label": "rational gains only"
+  }
+ ],
+ "gain_point": {
+  "system": "continuous_twisting",
+  "factory": "create_cta_spec",
+  "module": "gf_framework.systems.continuous_twisting",
+  "channel": 2,
+  "source": "exact_record",
+  "note": "command-line gain point, not a printed-gain registry point: gains, brackets, box and delta0 were read from the exact-gains record of scripts/certify_gain_point.py and re-checked in Q against the portable verifier's equations",
+  "rational_gains": {
+   "k1": "25",
+   "k2": "15",
+   "k3": "23/10",
+   "k4": "11/10"
+  },
+  "brackets": {},
+  "box_encoding": null,
+  "corner_subset": {},
+  "n_corners": 1
+ },
+ "encoding": {
+  "float64": "hex (float.hex(), exact round trip)",
+  "exact": "rational string p/q; gains, delta0, margin and bracket endpoints are never float encoded",
+  "container": "gzip (stdlib), compact JSON separators",
+  "shared_W": null
+ },
+ "coverage": {
+  "octants_per_form": 8,
+  "bracket_corners": 1,
+  "inclusion_endpoints": 2,
+  "rule": "nominal: one dynamics, 2^n octants for V and 2^n for W per corner. perturbed: 2^n for V, and 2 endpoints x 2^n octants per corner."
+ },
+ "shared_W_witness": false,
+ "source_artifacts": [
+  {
+   "role": "row",
+   "path": "artifacts/campaign_2026-09/CTA_TG2017/printed/tierB/c8.1_tg_g1_delta1199_1000_m9/b10/run/m9/row.json",
+   "sha256": "9088a9fd6862551da69ac1eb2c563ac6848f2fa3e616e04d1ddbf9039aa62e28"
+  },
+  {
+   "role": "exact_phase",
+   "path": "artifacts/campaign_2026-09/CTA_TG2017/printed/tierB/c8.1_tg_g1_delta1199_1000_m9/b10/run/m9/exact.json",
+   "sha256": "ed2c90a49544cac616b0d65a010d2992632d8aaac1bc750dd00ff79eb641be03"
+  },
+  {
+   "role": "grams",
+   "path": "artifacts/campaign_2026-09/CTA_TG2017/printed/tierB/c8.1_tg_g1_delta1199_1000_m9/b10/run/m9/exact_grams.json.gz",
+   "sha256": "e0d9d88277af2dd1378ed9ccba7737c84aac7eb76b1a8d8c783061ef4cf66150"
+  }
+ ],
+ "env": {
+  "timestamp_utc": "2026-09-28T07:41:39.904009+00:00",
+  "python_version": "3.12.3",
+  "platform": "Linux-6.17.0-1032-nvidia-aarch64-with-glibc2.39",
+  "hostname": "spark-91bc",
+  "cpu": "aarch64",
+  "ram": "121.7 GiB",
+  "packages": {
+   "numpy": "2.4.2",
+   "scipy": "1.17.0",
+   "sympy": "1.14.0",
+   "cvxpy": "1.8.1",
+   "clarabel": "0.11.1",
+   "scs": "3.2.11"
+  },
+  "mosek_version": "11.1.11",
+  "git_sha": "98dc5175c421080f80654fbcba63ac35223142ee",
+  "git_dirty": false
+ },
+ "provenance": {
+  "note": "unverified provenance, not part of the proved statement; the portable verifier ignores every key in this object",
+  "emitter": "scripts/emit_certificate_record.py",
+  "emitter_options": {
+   "gain_point": "exact-record",
+   "share_w_grams": false,
+   "margin_policy": null,
+   "source_shape": "row_and_exact",
+   "corner_subset": {},
+   "bracket_targets": {}
+  },
+  "margin_policy_override": null,
+  "source_reported_eps_certified": {
+   "note": "the source stage's reported achieved margin, UNVERIFIED by the portable stage; the record's own eps_certified is the verifier's derivation whenever self-verification ran",
+   "value": 9.392338909640921e-07,
+   "exact": "8870813292528143/9444732965739290427392",
+   "exact_is_float_transcription": true
+  },
+  "shared_W_grams_requested": false,
+  "source_claim": "certify_gain_point (WP TB): design stage fixed_v_row_not_D; NOT on the D -> X chain (no MOSEK_DIRECT design bundle); the exact phase re-solved its own witness, adopted resolve (MOSEK_DIRECT)",
+  "exact_stage": {
+   "note": "the exact phase's OWN reported numbers, kept for audit; the portable verifier derives its own",
+   "worst_charge_ratio": 0.060766109035907886,
+   "eps_certified": 9.392338909640921e-07,
+   "v_input_hash": null,
+   "gram_bundle_sha256": null,
+   "gram_bundle_fingerprint": null
+  },
+  "gain_point_source": {
+   "note": "the gain point came from the exact-gains record named here, NOT from the printed-gain registry (gf_framework.systems.printed_gains); the verifier proves the gains, brackets and delta0 it reads as data",
+   "kind": "exact_record",
+   "exact_record": "artifacts/campaign_2026-09/CTA_TG2017/printed/tierB/c8.1_tg_g1_delta1199_1000_m9/b10/run/m9/exact.json",
+   "exact_record_sha256": "ed2c90a49544cac616b0d65a010d2992632d8aaac1bc750dd00ff79eb641be03",
+   "gain_source": "scripts/certify_gain_point.py command line",
+   "gain_binding": "printed_rationals",
+   "design_stage": {
+    "label": "fixed_v_row_not_D",
+    "citable_chain": false
+   },
+   "source_rational_gains": {
+    "k1": "25",
+    "k2": "15",
+    "k3": "23/10",
+    "k4": "11/10"
+   },
+   "source_brackets": {},
+   "source_box": {},
+   "source_n_corners": 1,
+   "corner_subset": {},
+   "bracket_targets": {},
+   "exact_stage_scope": "provenance.exact_stage numbers are over all 1 corners of the source record"
+  },
+  "printed_coefficients": {
+   "tool": "scripts/round_certificate.py canonicalize",
+   "tier": "B (fixed-V re-solve witness)",
+   "unit": "bits",
+   "n": 10,
+   "emitted_record": "artifacts/campaign_2026-09/CTA_TG2017/printed/tierB/c8.1_tg_g1_delta1199_1000_m9/b10/run/m9/portable/continuous_twisting_tgb_b10_delta1199_1000.record.json.gz",
+   "emitted_record_sha256": "26ba46fb3ca2241c9cc520b5e51dc7913b3ba4c23c333bde74e2f4c4b2bf42ee",
+   "rounded_row": "artifacts/campaign_2026-09/CTA_TG2017/printed/tierB/c8.1_tg_g1_delta1199_1000_m9/b10/row_b10.json",
+   "note": "V's coefficients rewritten from EM's hex floats to the exact printed strings; the values are identical (asserted exactly), nothing else changed."
+  }
+ },
+ "grams_file": "continuous_twisting_tgb_b10_delta1199_1000.grams.json.gz",
+ "worst_charge_over_eps": {
+  "V": 0.0003433327500279956,
+  "W": 0.06076610903590789,
+  "overall": 0.06076610903590789
+ },
+ "verifier": {
+  "acceptance_rule": "charge < eps (strict, exact rational); WP P2-14 / decision D-l",
+  "eps_certified_exact": "5113675704153982176939661276083292661/5444517870735015415413993718908291383296000",
+  "worst_charge_over_eps": {
+   "V": 0.0003433327500279956,
+   "W": 0.06076610903590789,
+   "overall": 0.06076610903590789
+  }
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "verifier": "verification/standalone/verify_certificate.py",
+ "verdict": "VERIFIED",
+ "proof_inputs": {
+  "schema": "gf-proof-inputs/1",
+  "verifier": {
+   "path": "<GF Framework checkout>/verification/standalone/verify_certificate.py",
+   "sha256": "a90047176958d679049a0a23687ac87d72a373087b25c5a68fab22de5e4e8cf9"
+  },
+  "record": {
+   "path": "<GF Framework checkout>/artifacts/campaign_2026-09/X9/printed_2026-09-25/tierA/c9.4_e5_levant5d_m11/levant5d_m11_nominal.printed_b26.record.json",
+   "sha256": "3386556ae24bea092195d94ae7fd65f40165b01489d7daff96f116e6007977c6"
+  },
+  "grams": {
+   "path": "<GF Framework checkout>/artifacts/campaign_2026-09/X9/printed_2026-09-25/tierA/c9.4_e5_levant5d_m11/levant5d_m11_nominal.grams.json.gz",
+   "sha256": "15fa28be0cec34636d1e0be2dd37477f495a58707dab13400ea7f01b916306bd"
+  }
+ },
+ "system": "levant5d",
+ "record": "artifacts/campaign_2026-09/X9/printed_2026-09-25/tierA/c9.4_e5_levant5d_m11/levant5d_m11_nominal.printed_b26.record.json",
+ "grams": "artifacts/campaign_2026-09/X9/printed_2026-09-25/tierA/c9.4_e5_levant5d_m11/levant5d_m11_nominal.grams.json.gz",
+ "schema_version": "gf-certificate-record/2",
+ "path": "deck-group parity blocked",
+ "nominal": true,
+ "kappa_derived": "-1/1",
+ "delta0_exact": "0/1",
+ "epsilon_exact": "7378697629483821/73786976294838206464",
+ "epsilon_float": 0.0001,
+ "margin_policy": "achieved",
+ "acceptance_rule": "charge < eps (strict, exact rational); WP P2-14 / decision D-l",
+ "eps_certified_exact": "65503281876540153956895377/9007199254740992000000000000000",
+ "eps_certified_float": 7.272325172784661e-06,
+ "worst_charge_over_eps": {
+  "V": 0.05612239986190983,
+  "W": 0.9272767482721533,
+  "overall": 0.9272767482721533
+ },
+ "worst_charge_over_half_eps_legacy": {
+  "V": 0.11224479972381966,
+  "W": 1.8545534965443067,
+  "overall": 1.8545534965443067
+ },
+ "note_half_margin_rule": "charge <= eps/2, the inequality printed in the Automatica note; reported, never enforced",
+ "note_half_margin_holds": {
+  "V": true,
+  "W": false,
+  "overall": false
+ },
+ "note_half_margin_octants": {
+  "ok": 32,
+  "total": 288
+ }
+}

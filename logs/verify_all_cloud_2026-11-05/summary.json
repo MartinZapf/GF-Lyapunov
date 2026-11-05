@@ -1,0 +1,942 @@
+{
+ "environment": {
+  "python": "3.13.16",
+  "implementation": "CPython",
+  "platform": "Linux-6.18.44-fc-v236-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "cpu_count": 4,
+  "cpu_model": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+  "ram_total_kb": 16472088,
+  "verifier_sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5",
+  "started_utc": "20261105T131043Z",
+  "python_used_for_verifier": "/usr/bin/python3",
+  "finished_utc": "20261105T132009Z"
+ },
+ "all_ok": true,
+ "results": [
+  {
+   "id": "levant-order1",
+   "role": "reported",
+   "verdict": "VERIFIED",
+   "exit_code": 0,
+   "wall_s": 0.084,
+   "peak_rss_kb": 21120,
+   "command": "verification/standalone/verify_certificate.py certificates/levant-order1/sta_exactgains_20261012T072209Z.printed_b07.record.json --grams certificates/levant-order1/sta_exactgains_grams_20261012T072209Z.json --json logs/verify_all_cloud_2026-11-05/levant-order1.verification.json",
+   "log": "logs/verify_all_cloud_2026-11-05/levant-order1.log",
+   "eps_line": "356811784131064741581864406086449449143/356811923176489970264571492362373784095686656",
+   "eps_matches_manifest": null,
+   "log_basis_lines": {
+    "V": {
+     "n_basis_max": 7,
+     "n_blocks_min": 2,
+     "largest_block": 4
+    },
+    "W": {
+     "n_basis_max": 6,
+     "n_blocks_min": 2,
+     "largest_block": 3
+    }
+   },
+   "psd_shift_eta": "eta = 0 on all 12 octants (the Gram itself is PSD; charge = ||E||_1)",
+   "eps_certified_exact": "356811784131064741581864406086449449143/356811923176489970264571492362373784095686656",
+   "worst_charge_over_eps": {
+    "V": 3.896882816434366e-07,
+    "W": 2.3270274596144204e-08,
+    "overall": 3.896882816434366e-07
+   },
+   "proof_inputs": {
+    "schema": "gf-proof-inputs/1",
+    "verifier": {
+     "path": "<release root>/verification/standalone/verify_certificate.py",
+     "sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5"
+    },
+    "record": {
+     "path": "<release root>/certificates/levant-order1/sta_exactgains_20261012T072209Z.printed_b07.record.json",
+     "sha256": "9e0b9f12d69508ed0f1fdfac3a27c5296568af6d7d05aa8b22dfeb4c958e9399"
+    },
+    "grams": {
+     "path": "<release root>/certificates/levant-order1/sta_exactgains_grams_20261012T072209Z.json",
+     "sha256": "c980f14cb65ab4e741126341ad66c03a6e57669b1ce8d946f282a6a8a91303ee"
+    }
+   },
+   "psd_shift_eta_json": {
+    "max_exact": "0/1",
+    "n_octants_positive": 0,
+    "n_octants": 12
+   }
+  },
+  {
+   "id": "levant-order2-a",
+   "role": "reported",
+   "verdict": "VERIFIED",
+   "exit_code": 0,
+   "wall_s": 1.025,
+   "peak_rss_kb": 28328,
+   "command": "verification/standalone/verify_certificate.py certificates/levant-order2-a/levant3d_lev2_b09_e7_point0_delta1.record.json.gz --grams certificates/levant-order2-a/levant3d_lev2_b09_e7_point0_delta1.grams.json.gz --json logs/verify_all_cloud_2026-11-05/levant-order2-a.verification.json",
+   "log": "logs/verify_all_cloud_2026-11-05/levant-order2-a.log",
+   "eps_line": "71341998424075849889387670337470552789547/713623846352979940529142984724747568191373312000",
+   "eps_matches_manifest": null,
+   "log_basis_lines": {
+    "V": {
+     "n_basis_max": 45,
+     "n_blocks_min": 4,
+     "largest_block": 15
+    },
+    "W": {
+     "n_basis_max": 36,
+     "n_blocks_min": 4,
+     "largest_block": 10
+    }
+   },
+   "psd_shift_eta": "eta = 0 on all 40 octants (the Gram itself is PSD; charge = ||E||_1)",
+   "eps_certified_exact": "71341998424075849889387670337470552789547/713623846352979940529142984724747568191373312000",
+   "worst_charge_over_eps": {
+    "V": 1.6546433791924422e-06,
+    "W": 0.00028567166478987444,
+    "overall": 0.00028567166478987444
+   },
+   "proof_inputs": {
+    "schema": "gf-proof-inputs/1",
+    "verifier": {
+     "path": "<release root>/verification/standalone/verify_certificate.py",
+     "sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5"
+    },
+    "record": {
+     "path": "<release root>/certificates/levant-order2-a/levant3d_lev2_b09_e7_point0_delta1.record.json.gz",
+     "sha256": "6af6214320a7208f261172a5cbc918953c61c30460f608f23e5b99af1c2e586d"
+    },
+    "grams": {
+     "path": "<release root>/certificates/levant-order2-a/levant3d_lev2_b09_e7_point0_delta1.grams.json.gz",
+     "sha256": "7dfb155c788f73bea33cb88581a56b0bdb6eba6850b5ff46a5cfd16fb4c1a0dd"
+    }
+   },
+   "psd_shift_eta_json": {
+    "max_exact": "0/1",
+    "n_octants_positive": 0,
+    "n_octants": 40
+   }
+  },
+  {
+   "id": "levant-order2-b",
+   "role": "reported",
+   "verdict": "VERIFIED",
+   "exit_code": 0,
+   "wall_s": 1.111,
+   "peak_rss_kb": 28340,
+   "command": "verification/standalone/verify_certificate.py certificates/levant-order2-b/levant3d_lev2_b09_e7_point1_delta1.record.json.gz --grams certificates/levant-order2-b/levant3d_lev2_b09_e7_point1_delta1.grams.json.gz --json logs/verify_all_cloud_2026-11-05/levant-order2-b.verification.json",
+   "log": "logs/verify_all_cloud_2026-11-05/levant-order2-b.log",
+   "eps_line": "3345032005670454423053024982060415234679/33451117797795934712303577408972542258970624000",
+   "eps_matches_manifest": null,
+   "log_basis_lines": {
+    "V": {
+     "n_basis_max": 45,
+     "n_blocks_min": 4,
+     "largest_block": 15
+    },
+    "W": {
+     "n_basis_max": 36,
+     "n_blocks_min": 4,
+     "largest_block": 10
+    }
+   },
+   "psd_shift_eta": "eta = 0 on all 40 octants (the Gram itself is PSD; charge = ||E||_1)",
+   "eps_certified_exact": "3345032005670454423053024982060415234679/33451117797795934712303577408972542258970624000",
+   "worst_charge_over_eps": {
+    "V": 1.6546433791924422e-06,
+    "W": 2.3847965147566177e-05,
+    "overall": 2.3847965147566177e-05
+   },
+   "proof_inputs": {
+    "schema": "gf-proof-inputs/1",
+    "verifier": {
+     "path": "<release root>/verification/standalone/verify_certificate.py",
+     "sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5"
+    },
+    "record": {
+     "path": "<release root>/certificates/levant-order2-b/levant3d_lev2_b09_e7_point1_delta1.record.json.gz",
+     "sha256": "4faebe05a7f6764bb031164223163d43da7db97f989ed01cf74b9895f65176b2"
+    },
+    "grams": {
+     "path": "<release root>/certificates/levant-order2-b/levant3d_lev2_b09_e7_point1_delta1.grams.json.gz",
+     "sha256": "cfb06e78f08112d174990a0564987d173ab7599ce68ee8e2e865be6cd19869f8"
+    }
+   },
+   "psd_shift_eta_json": {
+    "max_exact": "0/1",
+    "n_octants_positive": 0,
+    "n_octants": 40
+   }
+  },
+  {
+   "id": "levant-order2-box",
+   "role": "reported",
+   "verdict": "VERIFIED",
+   "exit_code": 0,
+   "wall_s": 9.977,
+   "peak_rss_kb": 74556,
+   "command": "verification/standalone/verify_certificate.py certificates/levant-order2-box/levant3d_x9b_b18_delta1.printed_b18.even.record.json --grams certificates/levant-order2-box/levant3d_x9b_b18_delta1.printed_b18.even.grams.json.gz --json logs/verify_all_cloud_2026-11-05/levant-order2-box.verification.json",
+   "log": "logs/verify_all_cloud_2026-11-05/levant-order2-box.log",
+   "eps_line": "194709999609081582874636760368487/1947111321950560360698936123457536000",
+   "eps_matches_manifest": null,
+   "log_basis_lines": {
+    "V": {
+     "n_basis_max": 78,
+     "n_blocks_min": 4,
+     "largest_block": 21
+    },
+    "W": {
+     "n_basis_max": 66,
+     "n_blocks_min": 4,
+     "largest_block": 21
+    }
+   },
+   "psd_shift_eta": "eta = 0 on all 72 octants (the Gram itself is PSD; charge = ||E||_1)",
+   "eps_certified_exact": "194709999609081582874636760368487/1947111321950560360698936123457536000",
+   "worst_charge_over_eps": {
+    "V": 6.4809624561101945e-09,
+    "W": 5.81674998082767e-06,
+    "overall": 5.81674998082767e-06
+   },
+   "proof_inputs": {
+    "schema": "gf-proof-inputs/1",
+    "verifier": {
+     "path": "<release root>/verification/standalone/verify_certificate.py",
+     "sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5"
+    },
+    "record": {
+     "path": "<release root>/certificates/levant-order2-box/levant3d_x9b_b18_delta1.printed_b18.even.record.json",
+     "sha256": "0e0717dd5fbb71c69ff96cb299897168df61e369dbc37348674c913785e473f5"
+    },
+    "grams": {
+     "path": "<release root>/certificates/levant-order2-box/levant3d_x9b_b18_delta1.printed_b18.even.grams.json.gz",
+     "sha256": "9316aefd8976f66c3bba67d58e65e0c031243e1b653528965e87a716076f770c"
+    }
+   },
+   "psd_shift_eta_json": {
+    "max_exact": "0/1",
+    "n_octants_positive": 0,
+    "n_octants": 72
+   }
+  },
+  {
+   "id": "levant-order3-a",
+   "role": "reported",
+   "verdict": "VERIFIED",
+   "exit_code": 0,
+   "wall_s": 119.104,
+   "peak_rss_kb": 446392,
+   "command": "verification/standalone/verify_certificate.py certificates/levant-order3-a/levant4d_p1_2_m9_delta1_16.printed_b30.even.record.json --grams certificates/levant-order3-a/levant4d_p1_2_m9_delta1_16.printed_b30.even.grams.json.gz --json logs/verify_all_cloud_2026-11-05/levant-order3-a.verification.json",
+   "log": "logs/verify_all_cloud_2026-11-05/levant-order3-a.log",
+   "eps_line": "12157827698762243865517941/450359962737049600000000000000",
+   "eps_matches_manifest": null,
+   "log_basis_lines": {
+    "V": {
+     "n_basis_max": 220,
+     "n_blocks_min": 8,
+     "largest_block": 35
+    },
+    "W": {
+     "n_basis_max": 165,
+     "n_blocks_min": 8,
+     "largest_block": 35
+    }
+   },
+   "psd_shift_eta": "eta = 0 on all 144 octants (the Gram itself is PSD; charge = ||E||_1)",
+   "eps_certified_exact": "12157827698762243865517941/450359962737049600000000000000",
+   "worst_charge_over_eps": {
+    "V": 0.24766553102261568,
+    "W": 0.7300419951881735,
+    "overall": 0.7300419951881735
+   },
+   "proof_inputs": {
+    "schema": "gf-proof-inputs/1",
+    "verifier": {
+     "path": "<release root>/verification/standalone/verify_certificate.py",
+     "sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5"
+    },
+    "record": {
+     "path": "<release root>/certificates/levant-order3-a/levant4d_p1_2_m9_delta1_16.printed_b30.even.record.json",
+     "sha256": "4636bf676eba661dcd9699abe5eebdc5b99bc57384b3b54629ad13da950cdeee"
+    },
+    "grams": {
+     "path": "<release root>/certificates/levant-order3-a/levant4d_p1_2_m9_delta1_16.printed_b30.even.grams.json.gz",
+     "sha256": "a4f85e65ab474a6bb0b777f0db2ca20b2ae91a0c55bddd69a8ab1d8a7709ba14"
+    }
+   },
+   "psd_shift_eta_json": {
+    "max_exact": "0/1",
+    "n_octants_positive": 0,
+    "n_octants": 144
+   }
+  },
+  {
+   "id": "levant-order3-b",
+   "role": "reported",
+   "verdict": "VERIFIED",
+   "exit_code": 0,
+   "wall_s": 148.863,
+   "peak_rss_kb": 720016,
+   "command": "verification/standalone/verify_certificate.py certificates/levant-order3-b/levant4d_2003print_x9b_b15_delta1_16.printed_b15.even.record.json --grams certificates/levant-order3-b/levant4d_2003print_x9b_b15_delta1_16.printed_b15.even.grams.json.gz --json logs/verify_all_cloud_2026-11-05/levant-order3-b.verification.json",
+   "log": "logs/verify_all_cloud_2026-11-05/levant-order3-b.log",
+   "eps_line": "11883945951582837340004524119364845695329/118842243771396506390315925504000000000000000",
+   "eps_matches_manifest": null,
+   "log_basis_lines": {
+    "V": {
+     "n_basis_max": 220,
+     "n_blocks_min": 8,
+     "largest_block": 35
+    },
+    "W": {
+     "n_basis_max": 165,
+     "n_blocks_min": 8,
+     "largest_block": 35
+    }
+   },
+   "psd_shift_eta": "eta = 0 on all 144 octants (the Gram itself is PSD; charge = ||E||_1)",
+   "eps_certified_exact": "11883945951582837340004524119364845695329/118842243771396506390315925504000000000000000",
+   "worst_charge_over_eps": {
+    "V": 8.059668837243348e-06,
+    "W": 2.3428163923717607e-05,
+    "overall": 2.3428163923717607e-05
+   },
+   "proof_inputs": {
+    "schema": "gf-proof-inputs/1",
+    "verifier": {
+     "path": "<release root>/verification/standalone/verify_certificate.py",
+     "sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5"
+    },
+    "record": {
+     "path": "<release root>/certificates/levant-order3-b/levant4d_2003print_x9b_b15_delta1_16.printed_b15.even.record.json",
+     "sha256": "1d0d37819d73045fa9fe546e0552515cd1150448f66ce373cd7ccba6bd39824a"
+    },
+    "grams": {
+     "path": "<release root>/certificates/levant-order3-b/levant4d_2003print_x9b_b15_delta1_16.printed_b15.even.grams.json.gz",
+     "sha256": "db7eea134d6b0373662d06fb77f1a875cd3c2ab18d98779c6cc8d7eed58e080c"
+    }
+   },
+   "psd_shift_eta_json": {
+    "max_exact": "0/1",
+    "n_octants_positive": 0,
+    "n_octants": 144
+   }
+  },
+  {
+   "id": "levant-order4",
+   "role": "reported",
+   "verdict": "SKIPPED (long; use --include-long)",
+   "note": "VERIFIED on the workstation (not re-run here)"
+  },
+  {
+   "id": "twisting",
+   "role": "reported",
+   "verdict": "VERIFIED",
+   "exit_code": 0,
+   "wall_s": 0.076,
+   "peak_rss_kb": 21272,
+   "command": "verification/standalone/verify_certificate.py certificates/twisting/twisting_x9b_b04_delta2047_4096.printed_b04.record.json --grams certificates/twisting/twisting_x9b_b04_delta2047_4096.grams.json.gz --json logs/verify_all_cloud_2026-11-05/twisting.verification.json",
+   "log": "logs/verify_all_cloud_2026-11-05/twisting.log",
+   "eps_line": "259614836037198660742765353747/2596148429267413814265248164610048",
+   "eps_matches_manifest": null,
+   "log_basis_lines": {
+    "V": {
+     "n_basis_max": 6,
+     "n_blocks_min": 2,
+     "largest_block": 3
+    },
+    "W": {
+     "n_basis_max": 5,
+     "n_blocks_min": 2,
+     "largest_block": 3
+    }
+   },
+   "psd_shift_eta": "eta = 0 on all 12 octants (the Gram itself is PSD; charge = ||E||_1)",
+   "eps_certified_exact": "259614836037198660742765353747/2596148429267413814265248164610048",
+   "worst_charge_over_eps": {
+    "V": 2.248201624899376e-11,
+    "W": 2.6537553305721652e-08,
+    "overall": 2.6537553305721652e-08
+   },
+   "proof_inputs": {
+    "schema": "gf-proof-inputs/1",
+    "verifier": {
+     "path": "<release root>/verification/standalone/verify_certificate.py",
+     "sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5"
+    },
+    "record": {
+     "path": "<release root>/certificates/twisting/twisting_x9b_b04_delta2047_4096.printed_b04.record.json",
+     "sha256": "be4a8ec13591cee6c90cb9ac6f1b11121e7d7a1897b813603ec807e194d8c464"
+    },
+    "grams": {
+     "path": "<release root>/certificates/twisting/twisting_x9b_b04_delta2047_4096.grams.json.gz",
+     "sha256": "75fe6a97944fe5fc85f84a158ba6a058faa797a6996b2ebce5b03503da4ce745"
+    }
+   },
+   "psd_shift_eta_json": {
+    "max_exact": "0/1",
+    "n_octants_positive": 0,
+    "n_octants": 12
+   }
+  },
+  {
+   "id": "continuous-twisting",
+   "role": "reported",
+   "verdict": "VERIFIED",
+   "exit_code": 0,
+   "wall_s": 0.158,
+   "peak_rss_kb": 22296,
+   "command": "verification/standalone/verify_certificate.py certificates/continuous-twisting/continuous_twisting_cta_b05_e9_delta1.record.json.gz --grams certificates/continuous-twisting/continuous_twisting_cta_b05_e9_delta1.grams.json.gz --json logs/verify_all_cloud_2026-11-05/continuous-twisting.verification.json",
+   "log": "logs/verify_all_cloud_2026-11-05/continuous-twisting.log",
+   "eps_line": "17534966849530619856389307593822947314349/17538019647970835018444217992595396235871190515712",
+   "eps_matches_manifest": null,
+   "log_basis_lines": {
+    "V": {
+     "n_basis_max": 21,
+     "n_blocks_min": 4,
+     "largest_block": 6
+    },
+    "W": {
+     "n_basis_max": 15,
+     "n_blocks_min": 4,
+     "largest_block": 6
+    }
+   },
+   "psd_shift_eta": "eta = 0 on all 24 octants (the Gram itself is PSD; charge = ||E||_1)",
+   "eps_certified_exact": "17534966849530619856389307593822947314349/17538019647970835018444217992595396235871190515712",
+   "worst_charge_over_eps": {
+    "V": 2.567445876653892e-06,
+    "W": 0.00017406745467806942,
+    "overall": 0.00017406745467806942
+   },
+   "proof_inputs": {
+    "schema": "gf-proof-inputs/1",
+    "verifier": {
+     "path": "<release root>/verification/standalone/verify_certificate.py",
+     "sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5"
+    },
+    "record": {
+     "path": "<release root>/certificates/continuous-twisting/continuous_twisting_cta_b05_e9_delta1.record.json.gz",
+     "sha256": "b847924c4720898e166a8ba19a64325f61614d812d14167b1b26865587818c5d"
+    },
+    "grams": {
+     "path": "<release root>/certificates/continuous-twisting/continuous_twisting_cta_b05_e9_delta1.grams.json.gz",
+     "sha256": "897a79b399a17cc900217ea60445f08d9f96e4574a6629b019bae3e233c78d43"
+    }
+   },
+   "psd_shift_eta_json": {
+    "max_exact": "0/1",
+    "n_octants_positive": 0,
+    "n_octants": 24
+   }
+  },
+  {
+   "id": "continuous-twisting-frontier",
+   "role": "reported",
+   "verdict": "VERIFIED",
+   "exit_code": 0,
+   "wall_s": 1.2,
+   "peak_rss_kb": 30444,
+   "command": "verification/standalone/verify_certificate.py certificates/continuous-twisting-frontier/continuous_twisting_tgb_b10_delta1199_1000.printed_b10.even.record.json --grams certificates/continuous-twisting-frontier/continuous_twisting_tgb_b10_delta1199_1000.printed_b10.even.grams.json.gz --json logs/verify_all_cloud_2026-11-05/continuous-twisting-frontier.verification.json",
+   "log": "logs/verify_all_cloud_2026-11-05/continuous-twisting-frontier.log",
+   "eps_line": "31386725221269236366991072746355293563/32667107224410092492483962313449748299776000",
+   "eps_matches_manifest": null,
+   "log_basis_lines": {
+    "V": {
+     "n_basis_max": 55,
+     "n_blocks_min": 4,
+     "largest_block": 15
+    },
+    "W": {
+     "n_basis_max": 45,
+     "n_blocks_min": 4,
+     "largest_block": 15
+    }
+   },
+   "psd_shift_eta": "eta = 0 on all 24 octants (the Gram itself is PSD; charge = ||E||_1)",
+   "eps_certified_exact": "31386725221269236366991072746355293563/32667107224410092492483962313449748299776000",
+   "worst_charge_over_eps": {
+    "V": 0.00023468230015695596,
+    "W": 0.03919483884340102,
+    "overall": 0.03919483884340102
+   },
+   "proof_inputs": {
+    "schema": "gf-proof-inputs/1",
+    "verifier": {
+     "path": "<release root>/verification/standalone/verify_certificate.py",
+     "sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5"
+    },
+    "record": {
+     "path": "<release root>/certificates/continuous-twisting-frontier/continuous_twisting_tgb_b10_delta1199_1000.printed_b10.even.record.json",
+     "sha256": "6920c520fdd0437beeaa0c71b7aace4c679e79ac6ee0c1db1310b20da5655c6e"
+    },
+    "grams": {
+     "path": "<release root>/certificates/continuous-twisting-frontier/continuous_twisting_tgb_b10_delta1199_1000.printed_b10.even.grams.json.gz",
+     "sha256": "91b68046430a0f7e2a601bf6e00b31b2653362ee400ab5c9d64b14d107728f0f"
+    }
+   },
+   "psd_shift_eta_json": {
+    "max_exact": "0/1",
+    "n_octants_positive": 0,
+    "n_octants": 24
+   }
+  },
+  {
+   "id": "pid-like",
+   "role": "reported",
+   "verdict": "VERIFIED",
+   "exit_code": 0,
+   "wall_s": 0.411,
+   "peak_rss_kb": 24068,
+   "command": "verification/standalone/verify_certificate.py certificates/pid-like/pidsmc_x9b_b14_delta1.printed_b14.record.json --grams certificates/pid-like/pidsmc_x9b_b14_delta1.grams.json.gz --json logs/verify_all_cloud_2026-11-05/pid-like.verification.json",
+   "log": "logs/verify_all_cloud_2026-11-05/pid-like.log",
+   "eps_line": "16102533130475393163343698871/16225927682921336339157801028812800",
+   "eps_matches_manifest": null,
+   "log_basis_lines": {
+    "V": {
+     "n_basis_max": 36,
+     "n_blocks_min": 4,
+     "largest_block": 10
+    },
+    "W": {
+     "n_basis_max": 28,
+     "n_blocks_min": 4,
+     "largest_block": 10
+    }
+   },
+   "psd_shift_eta": "eta = 0 on all 24 octants (the Gram itself is PSD; charge = ||E||_1)",
+   "eps_certified_exact": "16102533130475393163343698871/16225927682921336339157801028812800",
+   "worst_charge_over_eps": {
+    "V": 1.1141507520387038e-05,
+    "W": 0.007604776432956858,
+    "overall": 0.007604776432956858
+   },
+   "proof_inputs": {
+    "schema": "gf-proof-inputs/1",
+    "verifier": {
+     "path": "<release root>/verification/standalone/verify_certificate.py",
+     "sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5"
+    },
+    "record": {
+     "path": "<release root>/certificates/pid-like/pidsmc_x9b_b14_delta1.printed_b14.record.json",
+     "sha256": "b08dc00562e8d0af319ee503c591a4c595f13f9734126219f22cca3a9f40cd31"
+    },
+    "grams": {
+     "path": "<release root>/certificates/pid-like/pidsmc_x9b_b14_delta1.grams.json.gz",
+     "sha256": "d4fac96113104e11817abb902610650d8d637dfc2426d0ecba14e2d58f645b67"
+    }
+   },
+   "psd_shift_eta_json": {
+    "max_exact": "0/1",
+    "n_octants_positive": 0,
+    "n_octants": 24
+   }
+  },
+  {
+   "id": "levant-order2-box-a",
+   "role": "reported",
+   "verdict": "VERIFIED",
+   "exit_code": 0,
+   "wall_s": 6.216,
+   "peak_rss_kb": 51852,
+   "command": "verification/standalone/verify_certificate.py certificates/levant-order2-box-a/levant3d_x9b_b18_sub_lambda1_2_delta1.printed_b18.even.record.json --grams certificates/levant-order2-box-a/levant3d_x9b_b18_sub_lambda1_2_delta1.printed_b18.even.grams.json.gz --json logs/verify_all_cloud_2026-11-05/levant-order2-box-a.verification.json",
+   "log": "logs/verify_all_cloud_2026-11-05/levant-order2-box-a.log",
+   "eps_line": "194709999609081582874636760368487/1947111321950560360698936123457536000",
+   "eps_matches_manifest": null,
+   "log_basis_lines": {
+    "V": {
+     "n_basis_max": 78,
+     "n_blocks_min": 4,
+     "largest_block": 21
+    },
+    "W": {
+     "n_basis_max": 66,
+     "n_blocks_min": 4,
+     "largest_block": 21
+    }
+   },
+   "psd_shift_eta": "eta = 0 on all 40 octants (the Gram itself is PSD; charge = ||E||_1)",
+   "eps_certified_exact": "194709999609081582874636760368487/1947111321950560360698936123457536000",
+   "worst_charge_over_eps": {
+    "V": 6.4809624561101945e-09,
+    "W": 5.81674998082767e-06,
+    "overall": 5.81674998082767e-06
+   },
+   "proof_inputs": {
+    "schema": "gf-proof-inputs/1",
+    "verifier": {
+     "path": "<release root>/verification/standalone/verify_certificate.py",
+     "sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5"
+    },
+    "record": {
+     "path": "<release root>/certificates/levant-order2-box-a/levant3d_x9b_b18_sub_lambda1_2_delta1.printed_b18.even.record.json",
+     "sha256": "a093592552bcd0cc8b7690b189dd12b20731a9e9b1ef5511fd03248a0503f4ee"
+    },
+    "grams": {
+     "path": "<release root>/certificates/levant-order2-box-a/levant3d_x9b_b18_sub_lambda1_2_delta1.printed_b18.even.grams.json.gz",
+     "sha256": "4d0a68530948661c22f94fd6d4624cd2704a98ab474d77b8a0179f0100278bcb"
+    }
+   },
+   "psd_shift_eta_json": {
+    "max_exact": "0/1",
+    "n_octants_positive": 0,
+    "n_octants": 40
+   }
+  },
+  {
+   "id": "levant-order2-box-b",
+   "role": "reported",
+   "verdict": "VERIFIED",
+   "exit_code": 0,
+   "wall_s": 5.819,
+   "peak_rss_kb": 51856,
+   "command": "verification/standalone/verify_certificate.py certificates/levant-order2-box-b/levant3d_x9b_b18_sub_lambda1_3_delta1.printed_b18.even.record.json --grams certificates/levant-order2-box-b/levant3d_x9b_b18_sub_lambda1_3_delta1.printed_b18.even.grams.json.gz --json logs/verify_all_cloud_2026-11-05/levant-order2-box-b.verification.json",
+   "log": "logs/verify_all_cloud_2026-11-05/levant-order2-box-b.log",
+   "eps_line": "194710188163337560604196390911417/1947111321950560360698936123457536000",
+   "eps_matches_manifest": null,
+   "log_basis_lines": {
+    "V": {
+     "n_basis_max": 78,
+     "n_blocks_min": 4,
+     "largest_block": 21
+    },
+    "W": {
+     "n_basis_max": 66,
+     "n_blocks_min": 4,
+     "largest_block": 21
+    }
+   },
+   "psd_shift_eta": "eta = 0 on all 40 octants (the Gram itself is PSD; charge = ||E||_1)",
+   "eps_certified_exact": "194710188163337560604196390911417/1947111321950560360698936123457536000",
+   "worst_charge_over_eps": {
+    "V": 6.4809624561101945e-09,
+    "W": 4.848370546883229e-06,
+    "overall": 4.848370546883229e-06
+   },
+   "proof_inputs": {
+    "schema": "gf-proof-inputs/1",
+    "verifier": {
+     "path": "<release root>/verification/standalone/verify_certificate.py",
+     "sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5"
+    },
+    "record": {
+     "path": "<release root>/certificates/levant-order2-box-b/levant3d_x9b_b18_sub_lambda1_3_delta1.printed_b18.even.record.json",
+     "sha256": "e0bc41997c6222a21d36d6381ced024965d40d65e83719a7304a53b0e418442b"
+    },
+    "grams": {
+     "path": "<release root>/certificates/levant-order2-box-b/levant3d_x9b_b18_sub_lambda1_3_delta1.printed_b18.even.grams.json.gz",
+     "sha256": "1f4c3bedd22fa0914ccb5032fd26d01fde311c1785592ee77912c58cb81b39a7"
+    }
+   },
+   "psd_shift_eta_json": {
+    "max_exact": "0/1",
+    "n_octants_positive": 0,
+    "n_octants": 40
+   }
+  },
+  {
+   "id": "levant-order2-box-dense",
+   "role": "source",
+   "verdict": "VERIFIED",
+   "exit_code": 0,
+   "wall_s": 9.253,
+   "peak_rss_kb": 61336,
+   "command": "verification/standalone/verify_certificate.py certificates/levant-order2-box-dense/levant3d_x9b_b18_delta1.printed_b18.record.json --grams certificates/levant-order2-box-dense/levant3d_x9b_b18_delta1.grams.json.gz --json logs/verify_all_cloud_2026-11-05/levant-order2-box-dense.verification.json",
+   "log": "logs/verify_all_cloud_2026-11-05/levant-order2-box-dense.log",
+   "eps_line": "8112896895460404282478337327819/81129638414606681695789005144064000",
+   "eps_matches_manifest": null,
+   "log_basis_lines": {
+    "V": {
+     "n_basis_max": 78,
+     "n_blocks_min": 4,
+     "largest_block": 21
+    },
+    "W": {
+     "n_basis_max": 66,
+     "n_blocks_min": 4,
+     "largest_block": 21
+    }
+   },
+   "psd_shift_eta": "eta = 0 on all 72 octants (the Gram itself is PSD; charge = ||E||_1)",
+   "eps_certified_exact": "8112896895460404282478337327819/81129638414606681695789005144064000",
+   "worst_charge_over_eps": {
+    "V": 1.0011997170954456e-08,
+    "W": 8.251731620219183e-06,
+    "overall": 8.251731620219183e-06
+   },
+   "proof_inputs": {
+    "schema": "gf-proof-inputs/1",
+    "verifier": {
+     "path": "<release root>/verification/standalone/verify_certificate.py",
+     "sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5"
+    },
+    "record": {
+     "path": "<release root>/certificates/levant-order2-box-dense/levant3d_x9b_b18_delta1.printed_b18.record.json",
+     "sha256": "34d1779a64142ee43311dfb51748d4438908fa1600ce1b6bccb53fa1638e8cc4"
+    },
+    "grams": {
+     "path": "<release root>/certificates/levant-order2-box-dense/levant3d_x9b_b18_delta1.grams.json.gz",
+     "sha256": "f66216b6bfe4ca5fa72661f54ba26d2ece16e4fbc7fa9ef56acfcc9f9d1f581e"
+    }
+   },
+   "psd_shift_eta_json": {
+    "max_exact": "0/1",
+    "n_octants_positive": 0,
+    "n_octants": 72
+   }
+  },
+  {
+   "id": "levant-order2-box-a-dense",
+   "role": "source",
+   "verdict": "VERIFIED",
+   "exit_code": 0,
+   "wall_s": 5.309,
+   "peak_rss_kb": 44156,
+   "command": "verification/standalone/verify_certificate.py certificates/levant-order2-box-a-dense/levant3d_x9b_b18_sub_lambda1_2_delta1.printed_b18.record.json --grams certificates/levant-order2-box-a-dense/levant3d_x9b_b18_sub_lambda1_2_delta1.grams.json.gz --json logs/verify_all_cloud_2026-11-05/levant-order2-box-a-dense.verification.json",
+   "log": "logs/verify_all_cloud_2026-11-05/levant-order2-box-a-dense.log",
+   "eps_line": "778839374969096049020686142230861/7788445287802241442795744493830144000",
+   "eps_matches_manifest": null,
+   "log_basis_lines": {
+    "V": {
+     "n_basis_max": 78,
+     "n_blocks_min": 4,
+     "largest_block": 21
+    },
+    "W": {
+     "n_basis_max": 66,
+     "n_blocks_min": 4,
+     "largest_block": 21
+    }
+   },
+   "psd_shift_eta": "eta = 0 on all 40 octants (the Gram itself is PSD; charge = ||E||_1)",
+   "eps_certified_exact": "778839374969096049020686142230861/7788445287802241442795744493830144000",
+   "worst_charge_over_eps": {
+    "V": 1.0011997170954456e-08,
+    "W": 6.617252786257801e-06,
+    "overall": 6.617252786257801e-06
+   },
+   "proof_inputs": {
+    "schema": "gf-proof-inputs/1",
+    "verifier": {
+     "path": "<release root>/verification/standalone/verify_certificate.py",
+     "sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5"
+    },
+    "record": {
+     "path": "<release root>/certificates/levant-order2-box-a-dense/levant3d_x9b_b18_sub_lambda1_2_delta1.printed_b18.record.json",
+     "sha256": "f3827dbfa59c5abfa81ef6821eceff9701d94086fc280383e5559ce1562ca6a7"
+    },
+    "grams": {
+     "path": "<release root>/certificates/levant-order2-box-a-dense/levant3d_x9b_b18_sub_lambda1_2_delta1.grams.json.gz",
+     "sha256": "c3982b438d7ad26dd2d9f0b9fedd028ac55e98cdb4b9945cb567941f81dd577c"
+    }
+   },
+   "psd_shift_eta_json": {
+    "max_exact": "0/1",
+    "n_octants_positive": 0,
+    "n_octants": 40
+   }
+  },
+  {
+   "id": "levant-order2-box-b-dense",
+   "role": "source",
+   "verdict": "VERIFIED",
+   "exit_code": 0,
+   "wall_s": 5.472,
+   "peak_rss_kb": 44160,
+   "command": "verification/standalone/verify_certificate.py certificates/levant-order2-box-b-dense/levant3d_x9b_b18_sub_lambda1_3_delta1.printed_b18.record.json --grams certificates/levant-order2-box-b-dense/levant3d_x9b_b18_sub_lambda1_3_delta1.grams.json.gz --json logs/verify_all_cloud_2026-11-05/levant-order2-box-b-dense.verification.json",
+   "log": "logs/verify_all_cloud_2026-11-05/levant-order2-box-b-dense.log",
+   "eps_line": "8112896895460404282478337327819/81129638414606681695789005144064000",
+   "eps_matches_manifest": null,
+   "log_basis_lines": {
+    "V": {
+     "n_basis_max": 78,
+     "n_blocks_min": 4,
+     "largest_block": 21
+    },
+    "W": {
+     "n_basis_max": 66,
+     "n_blocks_min": 4,
+     "largest_block": 21
+    }
+   },
+   "psd_shift_eta": "eta = 0 on all 40 octants (the Gram itself is PSD; charge = ||E||_1)",
+   "eps_certified_exact": "8112896895460404282478337327819/81129638414606681695789005144064000",
+   "worst_charge_over_eps": {
+    "V": 1.0011997170954456e-08,
+    "W": 8.251731620219183e-06,
+    "overall": 8.251731620219183e-06
+   },
+   "proof_inputs": {
+    "schema": "gf-proof-inputs/1",
+    "verifier": {
+     "path": "<release root>/verification/standalone/verify_certificate.py",
+     "sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5"
+    },
+    "record": {
+     "path": "<release root>/certificates/levant-order2-box-b-dense/levant3d_x9b_b18_sub_lambda1_3_delta1.printed_b18.record.json",
+     "sha256": "4dc56c1bb9e25516620818adfb26df1bb8c793d8e4fee24903eb2aac9e22b3be"
+    },
+    "grams": {
+     "path": "<release root>/certificates/levant-order2-box-b-dense/levant3d_x9b_b18_sub_lambda1_3_delta1.grams.json.gz",
+     "sha256": "30f031b54db7bee53774103e1056746434acbdd5ac15050aef7973f793b2ae82"
+    }
+   },
+   "psd_shift_eta_json": {
+    "max_exact": "0/1",
+    "n_octants_positive": 0,
+    "n_octants": 40
+   }
+  },
+  {
+   "id": "levant-order3-a-dense",
+   "role": "source",
+   "verdict": "VERIFIED",
+   "exit_code": 0,
+   "wall_s": 115.371,
+   "peak_rss_kb": 434352,
+   "command": "verification/standalone/verify_certificate.py certificates/levant-order3-a-dense/levant4d_p1_2_m9_delta1_16.printed_b30.record.json --grams certificates/levant-order3-a-dense/levant4d_p1_2_m9_delta1_16.grams.json.gz --json logs/verify_all_cloud_2026-11-05/levant-order3-a-dense.verification.json",
+   "log": "logs/verify_all_cloud_2026-11-05/levant-order3-a-dense.log",
+   "eps_line": "36473225356696126285318031/1351079888211148800000000000000",
+   "eps_matches_manifest": null,
+   "log_basis_lines": {
+    "V": {
+     "n_basis_max": 220,
+     "n_blocks_min": 8,
+     "largest_block": 35
+    },
+    "W": {
+     "n_basis_max": 165,
+     "n_blocks_min": 8,
+     "largest_block": 35
+    }
+   },
+   "psd_shift_eta": "eta = 0 on all 144 octants (the Gram itself is PSD; charge = ||E||_1)",
+   "eps_certified_exact": "36473225356696126285318031/1351079888211148800000000000000",
+   "worst_charge_over_eps": {
+    "V": 0.24766755675900448,
+    "W": 0.7300439028443592,
+    "overall": 0.7300439028443592
+   },
+   "proof_inputs": {
+    "schema": "gf-proof-inputs/1",
+    "verifier": {
+     "path": "<release root>/verification/standalone/verify_certificate.py",
+     "sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5"
+    },
+    "record": {
+     "path": "<release root>/certificates/levant-order3-a-dense/levant4d_p1_2_m9_delta1_16.printed_b30.record.json",
+     "sha256": "99d5bf8897726c2043acbfdaf9e73f1385a8583d779af568dbf9e2dfc26660e1"
+    },
+    "grams": {
+     "path": "<release root>/certificates/levant-order3-a-dense/levant4d_p1_2_m9_delta1_16.grams.json.gz",
+     "sha256": "323abcf345daa952498e1d867e7e6b8e01397465477c5037310f6a9917715f9c"
+    }
+   },
+   "psd_shift_eta_json": {
+    "max_exact": "0/1",
+    "n_octants_positive": 0,
+    "n_octants": 144
+   }
+  },
+  {
+   "id": "levant-order3-b-dense",
+   "role": "source",
+   "verdict": "VERIFIED",
+   "exit_code": 0,
+   "wall_s": 135.336,
+   "peak_rss_kb": 531288,
+   "command": "verification/standalone/verify_certificate.py certificates/levant-order3-b-dense/levant4d_2003print_x9b_b15_delta1_16.printed_b15.record.json --grams certificates/levant-order3-b-dense/levant4d_2003print_x9b_b15_delta1_16.grams.json.gz --json logs/verify_all_cloud_2026-11-05/levant-order3-b-dense.verification.json",
+   "log": "logs/verify_all_cloud_2026-11-05/levant-order3-b-dense.log",
+   "eps_line": "95069381376918928115833401705123313804019/950737950171172051122527404032000000000000000",
+   "eps_matches_manifest": null,
+   "log_basis_lines": {
+    "V": {
+     "n_basis_max": 220,
+     "n_blocks_min": 8,
+     "largest_block": 35
+    },
+    "W": {
+     "n_basis_max": 165,
+     "n_blocks_min": 8,
+     "largest_block": 35
+    }
+   },
+   "psd_shift_eta": "eta = 0 on all 144 octants (the Gram itself is PSD; charge = ||E||_1)",
+   "eps_certified_exact": "95069381376918928115833401705123313804019/950737950171172051122527404032000000000000000",
+   "worst_charge_over_eps": {
+    "V": 1.2621113175663165e-05,
+    "W": 4.6423309361816416e-05,
+    "overall": 4.6423309361816416e-05
+   },
+   "proof_inputs": {
+    "schema": "gf-proof-inputs/1",
+    "verifier": {
+     "path": "<release root>/verification/standalone/verify_certificate.py",
+     "sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5"
+    },
+    "record": {
+     "path": "<release root>/certificates/levant-order3-b-dense/levant4d_2003print_x9b_b15_delta1_16.printed_b15.record.json",
+     "sha256": "e8aaddc0127363bf69286ce045f7a7a141eeb2518bd8d8e717705876ff089d6e"
+    },
+    "grams": {
+     "path": "<release root>/certificates/levant-order3-b-dense/levant4d_2003print_x9b_b15_delta1_16.grams.json.gz",
+     "sha256": "4a4d78c8aedbf65cd51821cf1d2dde9f58619bad452c5d9189d9a62d61b5cbe6"
+    }
+   },
+   "psd_shift_eta_json": {
+    "max_exact": "0/1",
+    "n_octants_positive": 0,
+    "n_octants": 144
+   }
+  },
+  {
+   "id": "continuous-twisting-frontier-dense",
+   "role": "source",
+   "verdict": "VERIFIED",
+   "exit_code": 0,
+   "wall_s": 1.157,
+   "peak_rss_kb": 28396,
+   "command": "verification/standalone/verify_certificate.py certificates/continuous-twisting-frontier-dense/continuous_twisting_tgb_b10_delta1199_1000.printed_b10.record.json --grams certificates/continuous-twisting-frontier-dense/continuous_twisting_tgb_b10_delta1199_1000.grams.json.gz --json logs/verify_all_cloud_2026-11-05/continuous-twisting-frontier-dense.verification.json",
+   "log": "logs/verify_all_cloud_2026-11-05/continuous-twisting-frontier-dense.log",
+   "eps_line": "5113675704153982176939661276083292661/5444517870735015415413993718908291383296000",
+   "eps_matches_manifest": null,
+   "log_basis_lines": {
+    "V": {
+     "n_basis_max": 55,
+     "n_blocks_min": 4,
+     "largest_block": 15
+    },
+    "W": {
+     "n_basis_max": 45,
+     "n_blocks_min": 4,
+     "largest_block": 15
+    }
+   },
+   "psd_shift_eta": "eta = 0 on all 24 octants (the Gram itself is PSD; charge = ||E||_1)",
+   "eps_certified_exact": "5113675704153982176939661276083292661/5444517870735015415413993718908291383296000",
+   "worst_charge_over_eps": {
+    "V": 0.0003433327500279956,
+    "W": 0.06076610903590789,
+    "overall": 0.06076610903590789
+   },
+   "proof_inputs": {
+    "schema": "gf-proof-inputs/1",
+    "verifier": {
+     "path": "<release root>/verification/standalone/verify_certificate.py",
+     "sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5"
+    },
+    "record": {
+     "path": "<release root>/certificates/continuous-twisting-frontier-dense/continuous_twisting_tgb_b10_delta1199_1000.printed_b10.record.json",
+     "sha256": "15419d39decb6e5380827396da7a2ba6a81652912af80dd67721d24f8e8fa54b"
+    },
+    "grams": {
+     "path": "<release root>/certificates/continuous-twisting-frontier-dense/continuous_twisting_tgb_b10_delta1199_1000.grams.json.gz",
+     "sha256": "3b32b1b0fb3fea5e6e70ca4243dc51d401f811a019c77ef7f36402592874067d"
+    }
+   },
+   "psd_shift_eta_json": {
+    "max_exact": "0/1",
+    "n_octants_positive": 0,
+    "n_octants": 24
+   }
+  }
+ ]
+}

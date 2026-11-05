@@ -1,0 +1,17 @@
+$ /usr/bin/python3 verification/standalone/verify_certificate.py certificates/levant-order2-box/levant3d_x9b_b18_delta1.printed_b18.even.record.json --grams certificates/levant-order2-box/levant3d_x9b_b18_delta1.printed_b18.even.grams.json.gz --json logs/verify_all_cloud_2026-11-05/levant-order2-box.verification.json
+[1/5] V admissible (C^1, homogeneous of degree 11, 96 terms)
+[2/5] bracket lambda1: lo^1 < 5/2 < hi^1 verified in Q
+[2/5] bracket lambda2: lo^1 < 59/25 < hi^1 verified in Q
+[3/5] V positivity: all 8 octants PASS (worst charge/eps 6.48e-09; 78 basis -> 4 parity blocks, largest 21)
+[4/5] W: 8 endpoint x corner combinations, all 8 octants each, PASS (worst charge/eps 5.82e-06; 66 basis -> 4 parity blocks, largest 21)
+[5/5] levant3d: certificate VERIFIED — V > 0 and -dV/dt > 0 (margin form) on every octant, both inclusion endpoints, every gain-bracket corner; exact rational arithmetic throughout (deck-group parity blocked LDL^T), delta0 = 1, epsilon = 7378697629483821/73786976294838206464, kappa = -1 (derived from the rebuilt dynamics)
+      accepted under: charge < eps (strict, exact rational); WP P2-14 / decision D-l
+      eps_certified = eps - charge = 194709999609081582874636760368487/1947111321950560360698936123457536000 (~9.999942e-05); worst charge/eps 5.82e-06
+      note_half_margin_holds (charge <= eps/2, the inequality printed in the Automatica note; reported, never enforced): yes [72/72 octants]
+      psd_shift: eta = 0 on all 72 octants (the Gram itself is PSD; charge = ||E||_1)
+      summary written to logs/verify_all_cloud_2026-11-05/levant-order2-box.verification.json
+RESULT: VERIFIED (exit code 0): every check passed
+
+EXIT 0
+WALL_S 9.977
+PEAK_RSS_KB 74556

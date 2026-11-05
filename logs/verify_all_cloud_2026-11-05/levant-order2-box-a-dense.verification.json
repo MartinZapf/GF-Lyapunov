@@ -1,0 +1,58 @@
+{
+ "verifier": "verification/standalone/verify_certificate.py",
+ "verdict": "VERIFIED",
+ "proof_inputs": {
+  "schema": "gf-proof-inputs/1",
+  "verifier": {
+   "path": "<release root>/verification/standalone/verify_certificate.py",
+   "sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5"
+  },
+  "record": {
+   "path": "<release root>/certificates/levant-order2-box-a-dense/levant3d_x9b_b18_sub_lambda1_2_delta1.printed_b18.record.json",
+   "sha256": "f3827dbfa59c5abfa81ef6821eceff9701d94086fc280383e5559ce1562ca6a7"
+  },
+  "grams": {
+   "path": "<release root>/certificates/levant-order2-box-a-dense/levant3d_x9b_b18_sub_lambda1_2_delta1.grams.json.gz",
+   "sha256": "c3982b438d7ad26dd2d9f0b9fedd028ac55e98cdb4b9945cb567941f81dd577c"
+  }
+ },
+ "system": "levant3d",
+ "record": "certificates/levant-order2-box-a-dense/levant3d_x9b_b18_sub_lambda1_2_delta1.printed_b18.record.json",
+ "grams": "certificates/levant-order2-box-a-dense/levant3d_x9b_b18_sub_lambda1_2_delta1.grams.json.gz",
+ "schema_version": "gf-certificate-record/2",
+ "path": "deck-group parity blocked",
+ "nominal": false,
+ "kappa_derived": "-1/1",
+ "delta0_exact": "1/1",
+ "epsilon_exact": "7378697629483821/73786976294838206464",
+ "epsilon_float": 0.0001,
+ "margin_policy": "achieved",
+ "acceptance_rule": "charge < eps (strict, exact rational); WP P2-14 / decision D-l",
+ "eps_certified_exact": "778839374969096049020686142230861/7788445287802241442795744493830144000",
+ "eps_certified_float": 9.999933827472137e-05,
+ "worst_charge_over_eps": {
+  "V": 1.0011997170954456e-08,
+  "W": 6.617252786257801e-06,
+  "overall": 6.617252786257801e-06
+ },
+ "worst_charge_over_half_eps_legacy": {
+  "V": 2.002399434190891e-08,
+  "W": 1.3234505572515602e-05,
+  "overall": 1.3234505572515602e-05
+ },
+ "note_half_margin_rule": "charge <= eps/2, the inequality printed in the Automatica note; reported, never enforced",
+ "note_half_margin_holds": {
+  "V": true,
+  "W": true,
+  "overall": true
+ },
+ "note_half_margin_octants": {
+  "ok": 40,
+  "total": 40
+ },
+ "psd_shift_eta": {
+  "max_exact": "0/1",
+  "n_octants_positive": 0,
+  "n_octants": 40
+ }
+}

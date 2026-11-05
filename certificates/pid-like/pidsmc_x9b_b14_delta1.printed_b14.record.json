@@ -1,0 +1,514 @@
+{
+ "schema_version": "gf-certificate-record/2",
+ "timestamp_utc": "20260925T085934Z",
+ "git_sha": "3607b568ecdb1276ecb32172d91182cd673226b9",
+ "system": "pidsmc",
+ "system_family": "pidsmc",
+ "nominal": false,
+ "channel": 2,
+ "weights_r": [
+  3,
+  2,
+  1
+ ],
+ "kappa": "-1",
+ "campaign_block": "X9",
+ "row_source": "row.json",
+ "witness": {
+  "source": "resolve",
+  "witness_source": "resolve",
+  "witness_solver": "MOSEK",
+  "witness_solver_used": "MOSEK_DIRECT",
+  "witness_charge_ratio": 0.007604776432956857,
+  "witness_charge_over_eps": 0.007604776432956857,
+  "witness_attempts": [
+   {
+    "index": 0,
+    "source": "resolve",
+    "solver": "MOSEK",
+    "solver_used": "MOSEK_DIRECT",
+    "ok": true,
+    "worst_charge_ratio": 0.007604776432956857,
+    "worst_charge_over_eps": 0.007604776432956857,
+    "shortfall": "",
+    "detail": "",
+    "adopted": true,
+    "time_s": 0.881
+   }
+  ],
+  "gram_bundle_fingerprint": null,
+  "parity_expanded": false,
+  "v_reused": false,
+  "v_proof_cache": {
+   "enabled": false,
+   "hit": false,
+   "stored": false,
+   "reason": "vproof_cache_disabled",
+   "store_reason": "",
+   "detail": "",
+   "root": "",
+   "path": "",
+   "key": "",
+   "revalidated": false,
+   "code_version": "",
+   "written_by_pid": null,
+   "written_at": "",
+   "entry_bytes": 0,
+   "load_s": 0.0,
+   "revalidate_s": 0.0,
+   "store_s": 0.0
+  },
+  "parallel": {
+   "scope": "octant",
+   "jobs": 1,
+   "enabled": false,
+   "start_method": "",
+   "max_workers": 1,
+   "n_octant_batches": 0,
+   "n_octants": 0,
+   "cpu_count": 20
+  },
+  "recorded_by_source": true
+ },
+ "margin_policy": "achieved",
+ "margin_policy_source": "exact_phase",
+ "eps_certified": 9.923952235670432e-07,
+ "eps_certified_exact": "16102533130475393163343698871/16225927682921336339157801028812800",
+ "eps_certified_exact_is_float_transcription": false,
+ "eps_certified_source": "portable_verifier",
+ "note_half_margin_holds": true,
+ "delta0_exact": "1",
+ "epsilon": 1e-06,
+ "epsilon_exact": "4722366482869645/4722366482869645213696",
+ "rational_gains": {
+  "delta": "1",
+  "lambda1": "27/10",
+  "lambda2": "1069/200",
+  "lambda3": "11/10"
+ },
+ "V": {
+  "degree_m": 7,
+  "weights_r": [
+   3,
+   2,
+   1
+  ],
+  "terms": [
+   {
+    "coefficient": "1/1",
+    "exponents": [
+     "7/3",
+     "0",
+     "0"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "9489/4096",
+    "exponents": [
+     "0",
+     "7/2",
+     "0"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "5479/33554432",
+    "exponents": [
+     "0",
+     "0",
+     "7"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "7475/8192",
+    "exponents": [
+     "5/3",
+     "1",
+     "0"
+    ],
+    "term_types": [
+     "signed",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "8141/4096",
+    "exponents": [
+     "4/3",
+     "3/2",
+     "0"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "3107/2048",
+    "exponents": [
+     "4/3",
+     "3/2",
+     "0"
+    ],
+    "term_types": [
+     "signed",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-14669/524288",
+    "exponents": [
+     "2",
+     "0",
+     "1"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "9083/16384",
+    "exponents": [
+     "4/3",
+     "1",
+     "1"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "5283/8192",
+    "exponents": [
+     "1",
+     "3/2",
+     "1"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "14299/262144",
+    "exponents": [
+     "5/3",
+     "0",
+     "2"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-9387/32768",
+    "exponents": [
+     "5/3",
+     "0",
+     "2"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "-9445/2048",
+    "exponents": [
+     "0",
+     "3",
+     "1"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "2047/8192",
+    "exponents": [
+     "1",
+     "1",
+     "2"
+    ],
+    "term_types": [
+     "signed",
+     "signed",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "1817/32768",
+    "exponents": [
+     "4/3",
+     "0",
+     "3"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "3257/32768",
+    "exponents": [
+     "4/3",
+     "0",
+     "3"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "15845/4096",
+    "exponents": [
+     "0",
+     "5/2",
+     "2"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "13911/8192",
+    "exponents": [
+     "0",
+     "2",
+     "3"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-13169/4096",
+    "exponents": [
+     "0",
+     "2",
+     "3"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "-8357/262144",
+    "exponents": [
+     "1",
+     "0",
+     "4"
+    ],
+    "term_types": [
+     "signed",
+     "abs",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "2501/8192",
+    "exponents": [
+     "0",
+     "3/2",
+     "4"
+    ],
+    "term_types": [
+     "abs",
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-57/2048",
+    "exponents": [
+     "0",
+     "1",
+     "5"
+    ],
+    "term_types": [
+     "abs",
+     "signed",
+     "signed"
+    ]
+   }
+  ]
+ },
+ "brackets": {},
+ "corners": [
+  {
+   "assignment": {},
+   "corner_label": "rational gains only"
+  }
+ ],
+ "gain_point": {
+  "system": "pidsmc",
+  "factory": "create_pidsmc_spec",
+  "module": "gf_framework.systems.pidsmc",
+  "channel": 2,
+  "note": "PID-like SMC (Perez-Ventura et al. 2021). The factory scales the gains by delta**(2/3), delta**(1/2), delta; at delta = 1 the scaling is the identity, but the float power collapses Fractions back to float64, so the repair pass in exact_dynamics is what makes lambda1 and lambda2 exact here.",
+  "printed_rational": {
+   "delta": "1",
+   "lambda1": "27/10",
+   "lambda2": "1069/200",
+   "lambda3": "11/10"
+  },
+  "roles": {
+   "delta": "scaling",
+   "lambda1": "gain",
+   "lambda2": "gain",
+   "lambda3": "gain"
+  },
+  "provenance": {
+   "delta": "system module default (pidsmc.py, delta = 1.0)",
+   "lambda1": "system module default (pidsmc.py, lambda1 = 2.7)",
+   "lambda2": "system module default (pidsmc.py, lambda2 = 5.345)",
+   "lambda3": "system module default (pidsmc.py, lambda3 = 1.1)"
+  },
+  "brackets": {},
+  "n_corners": 1,
+  "bracket_digits": 15
+ },
+ "encoding": {
+  "float64": "hex (float.hex(), exact round trip)",
+  "exact": "rational string p/q; gains, delta0, margin and bracket endpoints are never float encoded",
+  "container": "gzip (stdlib), compact JSON separators",
+  "shared_W": null
+ },
+ "coverage": {
+  "octants_per_form": 8,
+  "bracket_corners": 1,
+  "inclusion_endpoints": 2,
+  "rule": "nominal: one dynamics, 2^n octants for V and 2^n for W per corner. perturbed: 2^n for V, and 2 endpoints x 2^n octants per corner."
+ },
+ "shared_W_witness": false,
+ "source_artifacts": [
+  {
+   "role": "row",
+   "path": "artifacts/campaign_2026-09/X9/printed_2026-09-25/tierB/c8.2_x5_rl1_delta1_m7_xfix/b14/run/m7/row.json",
+   "sha256": "e24f089e7ea9217a62952d3f36eace87dcf0258bb0e02853cc6225e86c6b047b"
+  },
+  {
+   "role": "exact_phase",
+   "path": "artifacts/campaign_2026-09/X9/printed_2026-09-25/tierB/c8.2_x5_rl1_delta1_m7_xfix/b14/run/m7/exact.json",
+   "sha256": "2af85fc728f6b3f5f325d005dcd8bd44f16aa1de3dd319f2c41aacf3d517c7ce"
+  },
+  {
+   "role": "grams",
+   "path": "artifacts/campaign_2026-09/X9/printed_2026-09-25/tierB/c8.2_x5_rl1_delta1_m7_xfix/b14/run/m7/exact_grams.json.gz",
+   "sha256": "c1ec6e19ef93c017a237f3081918f14233bb9057129d253c50f017af7980763c"
+  },
+  {
+   "role": "gain_point_registry",
+   "path": "src/gf_framework/systems/printed_gains.py",
+   "sha256": "d1d9be77d42a82e0b6025fb2082767ccb21cad8fc6a5847392bdd7dfed203b9f",
+   "gain_point_digest": "a162b2092723e229055692e9731d042961debda59f2b3a926b1ed64be95bff6e"
+  }
+ ],
+ "env": {
+  "timestamp_utc": "2026-09-25T08:59:32.117240+00:00",
+  "python_version": "3.12.3",
+  "platform": "Linux-6.17.0-1032-nvidia-aarch64-with-glibc2.39",
+  "hostname": "spark-91bc",
+  "cpu": "aarch64",
+  "ram": "121.7 GiB",
+  "packages": {
+   "numpy": "2.4.2",
+   "scipy": "1.17.0",
+   "sympy": "1.14.0",
+   "cvxpy": "1.8.1",
+   "clarabel": "0.11.1",
+   "scs": "3.2.11"
+  },
+  "mosek_version": "11.1.11",
+  "git_sha": "3607b568ecdb1276ecb32172d91182cd673226b9",
+  "git_dirty": true
+ },
+ "provenance": {
+  "note": "unverified provenance, not part of the proved statement; the portable verifier ignores every key in this object",
+  "emitter": "scripts/emit_certificate_record.py",
+  "emitter_options": {
+   "gain_point": "benchmark",
+   "share_w_grams": false,
+   "margin_policy": null,
+   "source_shape": "row_and_exact"
+  },
+  "margin_policy_override": null,
+  "source_reported_eps_certified": {
+   "note": "the source stage's reported achieved margin, UNVERIFIED by the portable stage; the record's own eps_certified is the verifier's derivation whenever self-verification ran",
+   "value": 9.923952235670432e-07,
+   "exact": "4686453941532933/4722366482869645213696",
+   "exact_is_float_transcription": true
+  },
+  "shared_W_grams_requested": false,
+  "source_claim": "certify_gain_point (WP TB): design stage fixed_v_row_not_D; NOT on the D -> X chain (no MOSEK_DIRECT design bundle); the exact phase re-solved its own witness, adopted resolve (MOSEK_DIRECT)",
+  "exact_stage": {
+   "note": "the exact phase's OWN reported numbers, kept for audit; the portable verifier derives its own",
+   "worst_charge_ratio": 0.007604776432956857,
+   "eps_certified": 9.923952235670432e-07,
+   "v_input_hash": null,
+   "gram_bundle_sha256": null,
+   "gram_bundle_fingerprint": null
+  },
+  "printed_coefficients": {
+   "tool": "scripts/round_certificate.py canonicalize",
+   "tier": "B (fixed-V re-solve witness)",
+   "unit": "bits",
+   "n": 14,
+   "emitted_record": "artifacts/campaign_2026-09/X9/printed_2026-09-25/tierB/c8.2_x5_rl1_delta1_m7_xfix/b14/run/m7/portable/pidsmc_x9b_b14_delta1.record.json.gz",
+   "emitted_record_sha256": "1903be3a1a810e1cc660fce28420e45461039fe8209e36ff8f918f32ae6e0d1a",
+   "rounded_row": "artifacts/campaign_2026-09/X9/printed_2026-09-25/tierB/c8.2_x5_rl1_delta1_m7_xfix/b14/row_b14.json",
+   "note": "V's coefficients rewritten from EM's hex floats to the exact printed strings; the values are identical (asserted exactly), nothing else changed."
+  }
+ },
+ "grams_file": "pidsmc_x9b_b14_delta1.grams.json.gz",
+ "worst_charge_over_eps": {
+  "V": 1.1141507520387038e-05,
+  "W": 0.007604776432956858,
+  "overall": 0.007604776432956858
+ },
+ "verifier": {
+  "acceptance_rule": "charge < eps (strict, exact rational); WP P2-14 / decision D-l",
+  "eps_certified_exact": "16102533130475393163343698871/16225927682921336339157801028812800",
+  "worst_charge_over_eps": {
+   "V": 1.1141507520387038e-05,
+   "W": 0.007604776432956858,
+   "overall": 0.007604776432956858
+  }
+ }
+}

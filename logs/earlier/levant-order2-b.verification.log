@@ -1,0 +1,11 @@
+$ /usr/bin/python3 verification/standalone/verify_certificate.py artifacts/campaign_2026-10/SHORT_COEFFS/levant2_b09/point1/m8/portable/levant3d_lev2_b09_e7_point1_delta1.record.json.gz --json artifacts/campaign_2026-10/SHORT_COEFFS/levant2_b09/point1/m8/portable/levant3d_lev2_b09_e7_point1_delta1.verification.json
+
+[1/5] V admissible (C^1, homogeneous of degree 8, 29 terms)
+[2/5] bracket lambda2: lo^2 < 27/4 < hi^2 verified in Q
+[3/5] V positivity: all 8 octants PASS (worst charge/eps 1.65e-06; 45 basis -> 4 parity blocks, largest 15)
+[4/5] W: 4 endpoint x corner combinations, all 8 octants each, PASS (worst charge/eps 2.38e-05; 36 basis -> 4 parity blocks, largest 10)
+[5/5] levant3d: certificate VERIFIED — V > 0 and -dV/dt > 0 (margin form) on every octant, both inclusion endpoints, every gain-bracket corner; exact rational arithmetic throughout (deck-group parity blocked LDL^T), delta0 = 1, epsilon = 944473296573929/9444732965739290427392, kappa = -1 (derived from the rebuilt dynamics)
+      accepted under: charge < eps (strict, exact rational); WP P2-14 / decision D-l
+      eps_certified = eps - charge = 3345032005670454423053024982060415234679/33451117797795934712303577408972542258970624000 (~9.999762e-08); worst charge/eps 2.38e-05
+      note_half_margin_holds (charge <= eps/2, the inequality printed in the Automatica note; reported, never enforced): yes [40/40 octants]
+      summary written to artifacts/campaign_2026-10/SHORT_COEFFS/levant2_b09/point1/m8/portable/levant3d_lev2_b09_e7_point1_delta1.verification.json

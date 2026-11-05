@@ -1,0 +1,98 @@
+{
+ "id": "twisting",
+ "note": "recorded configuration of the run that produced this certificate, read from the run records named below; see CONFIGURATION.md for the procedure. Not a proof input: the verifier reads none of it.",
+ "design": {
+  "run": "artifacts/campaign_2026-09/X4/delta2047_4096_rl1/run.json",
+  "driver": "scripts/certify_gain_point.py",
+  "args": {
+   "system": "twisting",
+   "gains": [
+    "r1=2,r2=3/2"
+   ],
+   "bracket": [],
+   "box": [],
+   "point": null,
+   "delta0": "2047/4096",
+   "degrees": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "design_epsilon": 0.0001,
+   "design_solver": "MOSEK_DIRECT",
+   "sparsify": "rl1",
+   "witness_solver": "MOSEK",
+   "fallback_solver": "CLARABEL",
+   "margin_policy": "achieved"
+  },
+  "degree_ladder": [
+   {
+    "m": 5,
+    "design_status": "designed",
+    "solver_status": "standard_sos:MOSEK_DIRECT",
+    "n_terms": 5,
+    "mu": [
+     4,
+     2
+    ],
+    "library": {
+     "diag": 2,
+     "cross": 8
+    },
+    "n_vertices": 2,
+    "sparsify": {
+     "method": "design_sparse_lyapunov (robust-aware rl1 over the full corner x endpoint vertex list, gate-aware support ladder, backward elimination off)",
+     "n_terms_dense": 10,
+     "n_terms_sparse": 5,
+     "n_rl1_iters": 4,
+     "weighting": "normalized",
+     "mu_guard": "reject",
+     "gate_solver": "MOSEK",
+     "design_epsilon": null,
+     "message": "sparse design [normalized weights]: 5/10 terms after 4 reweighted-\u2113\u2081 solves (support stable)"
+    },
+    "exact": {
+     "eps_certified": 9.999995163344253e-05,
+     "witness_source": "design_bundle"
+    }
+   }
+  ],
+  "certified_degree": 5,
+  "status": "certified_and_emitted"
+ },
+ "degree_loop_evidence": null,
+ "rounding": {
+  "tier": "B",
+  "bits": 4,
+  "epsilon": "1e-4",
+  "witness": "MOSEK fixed-V re-solve (spark-91bc, 2026-09-25)",
+  "shorter_rejected": "1 to 3 bits (X9 tier B scan)",
+  "evidence": "artifacts/campaign_2026-09/X9/printed_2026-09-25/tierB/c7.2_x4_rl1_2047_4096/tierB_summary.json"
+ },
+ "even_part": null,
+ "exact_stage_of_source": {
+  "note": "the exact phase's OWN reported numbers, kept for audit; the portable verifier derives its own",
+  "worst_charge_ratio": 2.6537553305721652e-08,
+  "eps_certified": 9.999999734624467e-05,
+  "v_input_hash": null,
+  "gram_bundle_sha256": null,
+  "gram_bundle_fingerprint": null
+ },
+ "witness": {
+  "source": "resolve",
+  "witness_source": "resolve",
+  "witness_solver": "MOSEK",
+  "witness_solver_used": "MOSEK_DIRECT",
+  "witness_charge_ratio": 2.6537553305721652e-08,
+  "parity_expanded": false
+ },
+ "representative_p": null,
+ "margin_policy": "achieved",
+ "emitter": "scripts/emit_certificate_record.py",
+ "printed_coefficients": {
+  "tool": "scripts/round_certificate.py canonicalize",
+  "unit": "bits",
+  "n": 4
+ }
+}

@@ -1,0 +1,96 @@
+# levant-order3-b: Levant's differentiator of order three, tuning b, 83-term function
+# role: reported; derived from levant-order3-b-dense
+# paper: Section 6.2, Order three; Table 2, row k = 3 tuning b; Theorem 2 (k = 3, tuning b, L0 = 1/16)
+# system: levant4d_2003print (Levant's differentiator of order three, error inclusion (same equations as levant4d; the system key names the gain point))
+#   e_i' = -l_i [e1]^((4-i)/4) + e_(i+1) (i < 4),  e4' = -l4 [e1]^0 + delta
+# weights r = (4, 3, 2, 1), homogeneity degree m = 9, 83 terms, 0 odd terms
+# delta0 = 1/16; rational gains {'lambda1': '5/2', 'lambda4': '11/160'}; brackets {"lambda2": {"lo": "4386026607319299/2000000000000000", "hi": "8772053214638599/4000000000000000", "power_k": 3, "power_target": "675/64"}, "lambda3": {"lo": "1110661957261773/2000000000000000", "hi": "4442647829047093/8000000000000000", "power_k": 6, "power_target": "492075/16777216"}}
+# scale: the record's gains are lambda_i p^i and delta0 = p^4 with p = 1/2, i.e. lambda_i L0^(i/4) and delta0 = L0 with L0 = p^4 = 1/16; Corollary 1 transfers the conclusions to every L > 0
+# record: certificates/levant-order3-b/levant4d_2003print_x9b_b15_delta1_16.printed_b15.even.record.json (sha256 1d0d37819d73045fa9fe546e0552515cd1150448f66ce373cd7ccba6bd39824a)
+# notation: |x|^a = |x| to the power a;  [x]^a = sign(x)|x|^a;  x = [x]^1;
+#           V(x) = sum_j alpha_j t_j(x); exact coefficients alpha_j as p/q
+#
+# j	alpha_j	t_j	parity
+1	1	|e1|^(9/4)	even
+2	23701/16384	|e2|^3	even
+3	9711/8192	|e3|^(9/2)	even
+4	3901/128	|e4|^9	even
+5	-15219/16384	[e1]^(3/2) * e2	even
+6	505/512	|e1|^(5/4) * |e2|^(4/3)	even
+7	16543/16384	[e1]^(5/4) * [e2]^(4/3)	even
+8	-19999/8192	e1 * [e2]^(5/3)	even
+9	25123/131072	[e1]^(7/4) * e3	even
+10	22577/16384	|e1|^(3/2) * |e3|^(3/2)	even
+11	-29635/16384	[e1]^(3/2) * [e3]^(3/2)	even
+12	31503/131072	[e1]^2 * e4	even
+13	705/256	|e1|^(5/4) * |e3|^2	even
+14	17523/32768	[e1]^(5/4) * [e3]^2	even
+15	-14159/8192	|e1|^(5/4) * e2 * e4	even
+16	-26513/8192	[e2]^(7/3) * e3	even
+17	3551/2048	e1 * |e2|^(4/3) * e4	even
+18	-1617/32768	|e2|^2 * |e3|^(3/2)	even
+19	-28231/32768	[e2]^2 * [e3]^(3/2)	even
+20	-9029/4096	e1 * [e3]^(5/2)	even
+21	-20593/8192	|e1|^(3/2) * e3 * e4	even
+22	27145/8192	|e2|^(5/3) * |e3|^2	even
+23	22479/16384	[e2]^(5/3) * [e3]^2	even
+24	8717/32768	[e2]^(8/3) * e4	even
+25	-12819/8192	|e1|^(5/4) * [e3]^(3/2) * e4	even
+26	-17859/262144	[e1]^(5/4) * |e3|^(3/2) * e4	even
+27	28735/2048	|e1|^(7/4) * |e4|^2	even
+28	-4697/8192	[e1]^(7/4) * [e4]^2	even
+29	27369/16384	|e2|^(4/3) * |e3|^(5/2)	even
+30	19907/65536	[e2]^(4/3) * [e3]^(5/2)	even
+31	-9703/2048	e2 * [e3]^3	even
+32	-18015/32768	|e2|^2 * e3 * e4	even
+33	623/128	e1 * |e3|^2 * e4	even
+34	-20327/1024	e1 * e2 * |e4|^2	even
+35	-6197/2048	|e2|^(5/3) * [e3]^(3/2) * e4	even
+36	-10135/8192	[e2]^(5/3) * |e3|^(3/2) * e4	even
+37	28393/4096	|e1|^(5/4) * e3 * [e4]^2	even
+38	24755/8192	[e1]^(5/4) * e3 * |e4|^2	even
+39	23315/8192	|e2|^(4/3) * [e3]^2 * e4	even
+40	23619/16384	[e2]^(4/3) * |e3|^2 * e4	even
+41	22865/4096	|e2|^(7/3) * |e4|^2	even
+42	11769/16384	[e2]^(7/3) * [e4]^2	even
+43	12359/4096	e2 * |e3|^(5/2) * e4	even
+44	-23695/16384	e1 * |e3|^(3/2) * [e4]^2	even
+45	-29701/8192	e1 * [e3]^(3/2) * |e4|^2	even
+46	17979/2048	|e1|^(3/2) * |e4|^3	even
+47	17103/8192	[e1]^(3/2) * [e4]^3	even
+48	10171/65536	|e2|^(5/3) * e3 * [e4]^2	even
+49	-447/64	[e2]^(5/3) * e3 * |e4|^2	even
+50	-16075/262144	|e2|^(4/3) * |e3|^(3/2) * |e4|^2	even
+51	-9353/4096	|e2|^(4/3) * [e3]^(3/2) * [e4]^2	even
+52	12617/2048	[e2]^(4/3) * |e3|^(3/2) * [e4]^2	even
+53	30685/16384	[e2]^(4/3) * [e3]^(3/2) * |e4|^2	even
+54	-2237/512	[e3]^4 * e4	even
+55	-12557/2048	e2 * |e3|^2 * [e4]^2	even
+56	31625/16384	e2 * [e3]^2 * |e4|^2	even
+57	22115/8192	|e2|^2 * |e4|^3	even
+58	-27007/8192	[e2]^2 * [e4]^3	even
+59	-12295/1024	e1 * e3 * |e4|^3	even
+60	1063/64	|e1|^(5/4) * |e4|^4	even
+61	3905/512	[e1]^(5/4) * [e4]^4	even
+62	-575/64	|e2|^(4/3) * e3 * [e4]^3	even
+63	-4743/8192	[e2]^(4/3) * e3 * |e4|^3	even
+64	30683/4096	|e3|^(7/2) * |e4|^2	even
+65	-4439/4096	[e3]^(7/2) * [e4]^2	even
+66	-19819/8192	e2 * |e3|^(3/2) * [e4]^3	even
+67	-28767/32768	e2 * [e3]^(3/2) * |e4|^3	even
+68	9861/1024	|e2|^(5/3) * |e4|^4	even
+69	1971/1024	[e2]^(5/3) * [e4]^4	even
+70	25729/2048	|e3|^3 * |e4|^3	even
+71	23249/32768	[e3]^3 * [e4]^3	even
+72	18655/4096	e2 * e3 * |e4|^4	even
+73	-23695/4096	e1 * [e4]^5	even
+74	6319/512	|e2|^(4/3) * |e4|^5	even
+75	8199/1024	[e2]^(4/3) * [e4]^5	even
+76	-139/8	|e3|^(5/2) * |e4|^4	even
+77	-30753/1024	[e3]^(5/2) * [e4]^4	even
+78	863/32	|e3|^2 * |e4|^5	even
+79	-8543/4096	[e3]^2 * [e4]^5	even
+80	-31733/1024	e2 * [e4]^6	even
+81	9869/256	|e3|^(3/2) * |e4|^6	even
+82	27343/1024	[e3]^(3/2) * [e4]^6	even
+83	-2365/32	e3 * [e4]^7	even

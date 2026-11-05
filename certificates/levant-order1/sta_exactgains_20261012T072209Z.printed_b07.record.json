@@ -1,0 +1,197 @@
+{
+ "timestamp_utc": "20261012T072209Z",
+ "git_sha": "07e63924262816409bb625b78c4c74c382c686ed",
+ "system": "sta",
+ "row_source": "row_b07.json",
+ "delta0_exact": "1",
+ "epsilon": 1e-06,
+ "epsilon_exact": "4722366482869645/4722366482869645213696",
+ "witness_solver": "CLARABEL",
+ "witness_fallback_solver": null,
+ "out_dir": "artifacts/campaign_2026-10/WORKED_STA/tierB/b07/exact",
+ "rational_gains": {
+  "k1": "3/2",
+  "k2": "11/10"
+ },
+ "V": {
+  "degree_m": 6,
+  "weights_r": [
+   2,
+   1
+  ],
+  "terms": [
+   {
+    "coefficient": "1/1",
+    "exponents": [
+     "3",
+     "0"
+    ],
+    "term_types": [
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "43/1024",
+    "exponents": [
+     "0",
+     "6"
+    ],
+    "term_types": [
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-29/16",
+    "exponents": [
+     "2",
+     "2"
+    ],
+    "term_types": [
+     "signed",
+     "signed"
+    ]
+   },
+   {
+    "coefficient": "111/64",
+    "exponents": [
+     "3/2",
+     "3"
+    ],
+    "term_types": [
+     "abs",
+     "abs"
+    ]
+   },
+   {
+    "coefficient": "-17/32",
+    "exponents": [
+     "1",
+     "4"
+    ],
+    "term_types": [
+     "signed",
+     "signed"
+    ]
+   }
+  ]
+ },
+ "brackets": {},
+ "corners": [
+  {
+   "V": {
+    "exact_ok": true,
+    "worst_charge_ratio": 3.896882816434366e-07
+   },
+   "exact_pass": true,
+   "worst_charge_ratio": 3.896882816434366e-07,
+   "time_s": 0.34,
+   "v_reused": false,
+   "v_input_hash": "a1ee666779d4d327c65780dc6f6b340758d74ea1dce8a685624f9095970c8813",
+   "v_fingerprint": "168e53cab2dd6145cfcecf923dd3c921e3c6bc5cb7e078278c6eb085efa50948",
+   "W_plus": {
+    "resolve_feasible": true,
+    "exact_ok": true,
+    "worst_charge_ratio": 2.3270274596144204e-08,
+    "lie_crosscheck": {
+     "support_match": true,
+     "max_coeff_diff": 4.440892098500626e-16
+    }
+   },
+   "W_minus": {
+    "resolve_feasible": true,
+    "exact_ok": true,
+    "worst_charge_ratio": 2.3270274596144204e-08,
+    "lie_crosscheck": {
+     "support_match": true,
+     "max_coeff_diff": 4.440892098500626e-16
+    }
+   },
+   "witness": {
+    "source": "resolve",
+    "witness_source": "resolve",
+    "witness_solver": "CLARABEL",
+    "witness_solver_used": "CLARABEL",
+    "witness_charge_ratio": 3.896882816434366e-07,
+    "witness_attempts": [
+     {
+      "index": 0,
+      "source": "resolve",
+      "solver": "CLARABEL",
+      "solver_used": "CLARABEL",
+      "ok": true,
+      "worst_charge_ratio": 3.896882816434366e-07,
+      "worst_charge_over_eps": 3.896882816434366e-07,
+      "shortfall": "",
+      "detail": "",
+      "adopted": true,
+      "time_s": 0.343
+     }
+    ],
+    "n_witness_attempts": 1,
+    "gram_bundle_fingerprint": "",
+    "parity_expanded": false,
+    "v_reused": false,
+    "v_proof_cache": {
+     "enabled": false,
+     "hit": false,
+     "stored": false,
+     "reason": "vproof_cache_disabled",
+     "store_reason": "",
+     "detail": "",
+     "root": "",
+     "path": "",
+     "key": "",
+     "revalidated": false,
+     "code_version": "",
+     "written_by_pid": null,
+     "written_at": "",
+     "entry_bytes": 0,
+     "load_s": 0.0,
+     "revalidate_s": 0.0,
+     "store_s": 0.0
+    },
+    "parallel": {
+     "scope": "octant",
+     "jobs": 1,
+     "enabled": false,
+     "start_method": "",
+     "max_workers": 1,
+     "n_octant_batches": 0,
+     "n_octants": 0,
+     "cpu_count": 4
+    },
+    "margin_policy": "achieved",
+    "eps_certified": 9.999996103117183e-07,
+    "worst_charge_over_eps": 3.896882816434366e-07,
+    "note_half_margin_holds": true,
+    "V": [],
+    "endpoints": [
+     [],
+     []
+    ]
+   },
+   "assignment": {},
+   "corner_label": "rational gains only"
+  }
+ ],
+ "v_dedup": {
+  "enabled": true,
+  "protocol": "V is gain-independent (exact_octant_target consumes only the V terms, mu, octant signs and epsilon), so it is proved once at corner 0 and reused at the remaining corners under the exact content hash verification.exact_phase.v_input_hash; a mismatch raises instead of reusing. --no-dedup re-proves every corner."
+ },
+ "exact_pass_all": true,
+ "grams_file": "sta_exactgains_grams_20261012T072209Z.json",
+ "provenance": {
+  "printed_coefficients": {
+   "tool": "scripts/round_certificate.py canonicalize",
+   "tier": "B (fixed-V re-solve witness)",
+   "unit": "bits",
+   "n": 7,
+   "emitted_record": "artifacts/campaign_2026-10/WORKED_STA/tierB/b07/exact/sta_exactgains_20261012T072209Z.json",
+   "emitted_record_sha256": "0971691243efaf7c4a97fc07c972803f430f072ccf44e28fba15791f3f296aeb",
+   "rounded_row": "artifacts/campaign_2026-10/WORKED_STA/tierB/b07/row_b07.json",
+   "note": "V's coefficients rewritten from EM's hex floats to the exact printed strings; the values are identical (asserted exactly), nothing else changed."
+  }
+ }
+}

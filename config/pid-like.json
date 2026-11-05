@@ -1,0 +1,97 @@
+{
+ "id": "pid-like",
+ "note": "recorded configuration of the run that produced this certificate, read from the run records named below; see CONFIGURATION.md for the procedure. Not a proof input: the verifier reads none of it.",
+ "design": {
+  "run": "artifacts/campaign_2026-09/X5/delta1_eps1e-6_rl1_fix_xfix/run.json",
+  "driver": "scripts/certify_gain_point.py",
+  "args": {
+   "system": "pidsmc",
+   "gains": [
+    "lambda1=27/10,lambda2=1069/200,lambda3=11/10"
+   ],
+   "bracket": [],
+   "box": [],
+   "point": [],
+   "delta0": "1",
+   "degrees": [
+    7,
+    8
+   ],
+   "design_epsilon": 1e-06,
+   "design_solver": "MOSEK_DIRECT",
+   "sparsify": "rl1",
+   "witness_solver": "MOSEK",
+   "fallback_solver": "CLARABEL",
+   "margin_policy": "achieved"
+  },
+  "degree_ladder": [
+   {
+    "m": 7,
+    "design_status": "designed",
+    "solver_status": "standard_sos:MOSEK_DIRECT",
+    "n_terms": 21,
+    "mu": [
+     6,
+     4,
+     2
+    ],
+    "library": {
+     "diag": 3,
+     "cross": 42
+    },
+    "n_vertices": 2,
+    "sparsify": {
+     "method": "design_sparse_lyapunov (robust-aware rl1 over the full corner x endpoint vertex list, gate-aware support ladder, backward elimination off)",
+     "n_terms_dense": 45,
+     "n_terms_sparse": 21,
+     "n_rl1_iters": 5,
+     "weighting": "normalized",
+     "mu_guard": "reject",
+     "gate_solver": "MOSEK",
+     "design_epsilon": 1e-06,
+     "message": "sparse design [normalized weights]: 21/45 terms after 5 reweighted-\u2113\u2081 solves (support stable)"
+    },
+    "exact": {
+     "eps_certified": 9.998120320423175e-07,
+     "witness_source": "resolve"
+    }
+   }
+  ],
+  "certified_degree": 7,
+  "status": "certified_and_emitted"
+ },
+ "degree_loop_evidence": null,
+ "rounding": {
+  "tier": "B",
+  "bits": 14,
+  "epsilon": "1e-6",
+  "witness": "MOSEK fixed-V re-solve (spark-91bc, 2026-09-25)",
+  "shorter_rejected": "1 to 13 bits at eps 1e-6, 1e-7 and 1e-9 (X9 tier B scan and SHORT_COEFFS pid_bNN_eK)",
+  "evidence": "artifacts/campaign_2026-10/SHORT_COEFFS/README.md, artifacts/campaign_2026-10/SHORT_COEFFS/summary.tsv"
+ },
+ "even_part": null,
+ "exact_stage_of_source": {
+  "note": "the exact phase's OWN reported numbers, kept for audit; the portable verifier derives its own",
+  "worst_charge_ratio": 0.007604776432956857,
+  "eps_certified": 9.923952235670432e-07,
+  "v_input_hash": null,
+  "gram_bundle_sha256": null,
+  "gram_bundle_fingerprint": null
+ },
+ "witness": {
+  "source": "resolve",
+  "witness_source": "resolve",
+  "witness_solver": "MOSEK",
+  "witness_solver_used": "MOSEK_DIRECT",
+  "witness_charge_ratio": 0.007604776432956857,
+  "parity_expanded": false
+ },
+ "representative_p": null,
+ "margin_policy": "achieved",
+ "emitter": "scripts/emit_certificate_record.py",
+ "printed_coefficients": {
+  "tool": "scripts/round_certificate.py canonicalize",
+  "unit": "bits",
+  "n": 14
+ }
+}

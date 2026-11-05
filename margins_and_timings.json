@@ -1,0 +1,1249 @@
+{
+ "environment_this_machine": {
+  "python": "3.13.16",
+  "implementation": "CPython",
+  "platform": "Linux-6.18.44-fc-v236-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "cpu_count": 4,
+  "cpu_model": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+  "ram_total_kb": 16472088,
+  "verifier_sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5",
+  "started_utc": "20261105T131043Z",
+  "python_used_for_verifier": "/usr/bin/python3",
+  "finished_utc": "20261105T132009Z"
+ },
+ "rows": [
+  {
+   "id": "levant-order1",
+   "role": "reported",
+   "n_terms": 5,
+   "n_states": 2,
+   "degree_m": 6,
+   "epsilon": {
+    "exact": "4722366482869645/4722366482869645213696",
+    "float": 1e-06
+   },
+   "record_bytes": 4743,
+   "grams_bytes": 12826,
+   "structure_source": "bases of the Gram bundle",
+   "structure": {
+    "V": {
+     "gram_max": 7,
+     "block_max": 4,
+     "n_blocks_min": 2,
+     "y_degree": 12,
+     "mu": [
+      4,
+      2
+     ]
+    },
+    "W": {
+     "gram_max": 6,
+     "block_max": 3,
+     "n_blocks_min": 2,
+     "y_degree": 10,
+     "mu": [
+      4,
+      2
+     ]
+    }
+   },
+   "this_machine": {
+    "verdict": "VERIFIED",
+    "exit_code": 0,
+    "wall_s": 0.084,
+    "peak_rss_kb": 21120,
+    "eps_certified_exact": "356811784131064741581864406086449449143/356811923176489970264571492362373784095686656",
+    "worst_charge_over_eps": {
+     "V": 3.896882816434366e-07,
+     "W": 2.3270274596144204e-08,
+     "overall": 3.896882816434366e-07
+    },
+    "psd_shift_eta": "eta = 0 on all 12 octants (the Gram itself is PSD; charge = ||E||_1)",
+    "log_basis_lines": {
+     "V": {
+      "n_basis_max": 7,
+      "n_blocks_min": 2,
+      "largest_block": 4
+     },
+     "W": {
+      "n_basis_max": 6,
+      "n_blocks_min": 2,
+      "largest_block": 3
+     }
+    }
+   }
+  },
+  {
+   "id": "levant-order2-a",
+   "role": "reported",
+   "n_terms": 29,
+   "n_states": 3,
+   "degree_m": 8,
+   "epsilon": {
+    "exact": "944473296573929/9444732965739290427392",
+    "float": 1e-07
+   },
+   "record_bytes": 3025,
+   "grams_bytes": 365515,
+   "structure_source": "bases of the Gram bundle",
+   "structure": {
+    "V": {
+     "gram_max": 45,
+     "block_max": 15,
+     "n_blocks_min": 4,
+     "y_degree": 16,
+     "mu": [
+      6,
+      4,
+      2
+     ]
+    },
+    "W": {
+     "gram_max": 36,
+     "block_max": 10,
+     "n_blocks_min": 4,
+     "y_degree": 14,
+     "mu": [
+      6,
+      4,
+      2
+     ]
+    }
+   },
+   "this_machine": {
+    "verdict": "VERIFIED",
+    "exit_code": 0,
+    "wall_s": 1.025,
+    "peak_rss_kb": 28328,
+    "eps_certified_exact": "71341998424075849889387670337470552789547/713623846352979940529142984724747568191373312000",
+    "worst_charge_over_eps": {
+     "V": 1.6546433791924422e-06,
+     "W": 0.00028567166478987444,
+     "overall": 0.00028567166478987444
+    },
+    "psd_shift_eta": "eta = 0 on all 40 octants (the Gram itself is PSD; charge = ||E||_1)",
+    "log_basis_lines": {
+     "V": {
+      "n_basis_max": 45,
+      "n_blocks_min": 4,
+      "largest_block": 15
+     },
+     "W": {
+      "n_basis_max": 36,
+      "n_blocks_min": 4,
+      "largest_block": 10
+     }
+    }
+   }
+  },
+  {
+   "id": "levant-order2-b",
+   "role": "reported",
+   "n_terms": 29,
+   "n_states": 3,
+   "degree_m": 8,
+   "epsilon": {
+    "exact": "944473296573929/9444732965739290427392",
+    "float": 1e-07
+   },
+   "record_bytes": 3032,
+   "grams_bytes": 365417,
+   "structure_source": "bases of the Gram bundle",
+   "structure": {
+    "V": {
+     "gram_max": 45,
+     "block_max": 15,
+     "n_blocks_min": 4,
+     "y_degree": 16,
+     "mu": [
+      6,
+      4,
+      2
+     ]
+    },
+    "W": {
+     "gram_max": 36,
+     "block_max": 10,
+     "n_blocks_min": 4,
+     "y_degree": 14,
+     "mu": [
+      6,
+      4,
+      2
+     ]
+    }
+   },
+   "this_machine": {
+    "verdict": "VERIFIED",
+    "exit_code": 0,
+    "wall_s": 1.111,
+    "peak_rss_kb": 28340,
+    "eps_certified_exact": "3345032005670454423053024982060415234679/33451117797795934712303577408972542258970624000",
+    "worst_charge_over_eps": {
+     "V": 1.6546433791924422e-06,
+     "W": 2.3847965147566177e-05,
+     "overall": 2.3847965147566177e-05
+    },
+    "psd_shift_eta": "eta = 0 on all 40 octants (the Gram itself is PSD; charge = ||E||_1)",
+    "log_basis_lines": {
+     "V": {
+      "n_basis_max": 45,
+      "n_blocks_min": 4,
+      "largest_block": 15
+     },
+     "W": {
+      "n_basis_max": 36,
+      "n_blocks_min": 4,
+      "largest_block": 10
+     }
+    }
+   }
+  },
+  {
+   "id": "levant-order2-box",
+   "role": "reported",
+   "n_terms": 96,
+   "n_states": 3,
+   "degree_m": 11,
+   "epsilon": {
+    "exact": "7378697629483821/73786976294838206464",
+    "float": 0.0001
+   },
+   "record_bytes": 27146,
+   "grams_bytes": 3286756,
+   "structure_source": "bases of the Gram bundle",
+   "structure": {
+    "V": {
+     "gram_max": 78,
+     "block_max": 21,
+     "n_blocks_min": 4,
+     "y_degree": 22,
+     "mu": [
+      6,
+      4,
+      2
+     ]
+    },
+    "W": {
+     "gram_max": 66,
+     "block_max": 21,
+     "n_blocks_min": 4,
+     "y_degree": 20,
+     "mu": [
+      6,
+      4,
+      2
+     ]
+    }
+   },
+   "this_machine": {
+    "verdict": "VERIFIED",
+    "exit_code": 0,
+    "wall_s": 9.977,
+    "peak_rss_kb": 74556,
+    "eps_certified_exact": "194709999609081582874636760368487/1947111321950560360698936123457536000",
+    "worst_charge_over_eps": {
+     "V": 6.4809624561101945e-09,
+     "W": 5.81674998082767e-06,
+     "overall": 5.81674998082767e-06
+    },
+    "psd_shift_eta": "eta = 0 on all 72 octants (the Gram itself is PSD; charge = ||E||_1)",
+    "log_basis_lines": {
+     "V": {
+      "n_basis_max": 78,
+      "n_blocks_min": 4,
+      "largest_block": 21
+     },
+     "W": {
+      "n_basis_max": 66,
+      "n_blocks_min": 4,
+      "largest_block": 21
+     }
+    }
+   },
+   "prior_cloud_wall_s": 9.715
+  },
+  {
+   "id": "levant-order3-a",
+   "role": "reported",
+   "n_terms": 83,
+   "n_states": 4,
+   "degree_m": 9,
+   "epsilon": {
+    "exact": "7378697629483821/73786976294838206464",
+    "float": 0.0001
+   },
+   "record_bytes": 30683,
+   "grams_bytes": 6951608,
+   "structure_source": "bases of the Gram bundle",
+   "structure": {
+    "V": {
+     "gram_max": 220,
+     "block_max": 35,
+     "n_blocks_min": 8,
+     "y_degree": 18,
+     "mu": [
+      8,
+      6,
+      4,
+      2
+     ]
+    },
+    "W": {
+     "gram_max": 165,
+     "block_max": 35,
+     "n_blocks_min": 8,
+     "y_degree": 16,
+     "mu": [
+      8,
+      6,
+      4,
+      2
+     ]
+    }
+   },
+   "this_machine": {
+    "verdict": "VERIFIED",
+    "exit_code": 0,
+    "wall_s": 119.104,
+    "peak_rss_kb": 446392,
+    "eps_certified_exact": "12157827698762243865517941/450359962737049600000000000000",
+    "worst_charge_over_eps": {
+     "V": 0.24766553102261568,
+     "W": 0.7300419951881735,
+     "overall": 0.7300419951881735
+    },
+    "psd_shift_eta": "eta = 0 on all 144 octants (the Gram itself is PSD; charge = ||E||_1)",
+    "log_basis_lines": {
+     "V": {
+      "n_basis_max": 220,
+      "n_blocks_min": 8,
+      "largest_block": 35
+     },
+     "W": {
+      "n_basis_max": 165,
+      "n_blocks_min": 8,
+      "largest_block": 35
+     }
+    }
+   },
+   "prior_cloud_wall_s": 115.97
+  },
+  {
+   "id": "levant-order3-b",
+   "role": "reported",
+   "n_terms": 83,
+   "n_states": 4,
+   "degree_m": 9,
+   "epsilon": {
+    "exact": "7378697629483821/73786976294838206464",
+    "float": 0.0001
+   },
+   "record_bytes": 27423,
+   "grams_bytes": 46913320,
+   "structure_source": "bases of the Gram bundle",
+   "structure": {
+    "V": {
+     "gram_max": 220,
+     "block_max": 35,
+     "n_blocks_min": 8,
+     "y_degree": 18,
+     "mu": [
+      8,
+      6,
+      4,
+      2
+     ]
+    },
+    "W": {
+     "gram_max": 165,
+     "block_max": 35,
+     "n_blocks_min": 8,
+     "y_degree": 16,
+     "mu": [
+      8,
+      6,
+      4,
+      2
+     ]
+    }
+   },
+   "this_machine": {
+    "verdict": "VERIFIED",
+    "exit_code": 0,
+    "wall_s": 148.863,
+    "peak_rss_kb": 720016,
+    "eps_certified_exact": "11883945951582837340004524119364845695329/118842243771396506390315925504000000000000000",
+    "worst_charge_over_eps": {
+     "V": 8.059668837243348e-06,
+     "W": 2.3428163923717607e-05,
+     "overall": 2.3428163923717607e-05
+    },
+    "psd_shift_eta": "eta = 0 on all 144 octants (the Gram itself is PSD; charge = ||E||_1)",
+    "log_basis_lines": {
+     "V": {
+      "n_basis_max": 220,
+      "n_blocks_min": 8,
+      "largest_block": 35
+     },
+     "W": {
+      "n_basis_max": 165,
+      "n_blocks_min": 8,
+      "largest_block": 35
+     }
+    }
+   },
+   "prior_cloud_wall_s": 148.405
+  },
+  {
+   "id": "levant-order4",
+   "role": "reported",
+   "n_terms": 507,
+   "n_states": 5,
+   "degree_m": 11,
+   "epsilon": {
+    "exact": "7378697629483821/73786976294838206464",
+    "float": 0.0001
+   },
+   "record_bytes": 124789,
+   "grams_bytes": 73761710,
+   "structure_source": "full homogeneous basis of degree k* m / 2 = m and k* (m - 1) / 2 = m - 1 (k* = 2), equal to the verifier log of the workstation run",
+   "structure": {
+    "V": {
+     "gram_max": 1365,
+     "block_max": 126,
+     "n_blocks_min": 16
+    },
+    "W": {
+     "gram_max": 1001,
+     "block_max": 126,
+     "n_blocks_min": 16
+    }
+   },
+   "prior_run": {
+    "wall_s": 36991,
+    "wall": "10:16:31",
+    "peak_rss_kb": 8674652,
+    "machine": "spark-91bc (Linux aarch64, 20 cores, 121 GiB RAM, CPython 3.12.3 /usr/bin/python3; CPU model not recorded)",
+    "date": "2026-09-25/26",
+    "verifier_sha256": "a90047176958d679049a0a23687ac87d72a373087b25c5a68fab22de5e4e8cf9",
+    "note": "insurance P run, /usr/bin/time -v; ran concurrently with other campaign jobs (shared host)"
+   },
+   "prior_run_summary": {
+    "verifier": "verification/standalone/verify_certificate.py",
+    "verdict": "VERIFIED",
+    "proof_inputs": {
+     "schema": "gf-proof-inputs/1",
+     "verifier": {
+      "path": "<GF Framework checkout>/verification/standalone/verify_certificate.py",
+      "sha256": "a90047176958d679049a0a23687ac87d72a373087b25c5a68fab22de5e4e8cf9"
+     },
+     "record": {
+      "path": "<GF Framework checkout>/artifacts/campaign_2026-09/X9/printed_2026-09-25/tierA/c9.4_e5_levant5d_m11/levant5d_m11_nominal.printed_b26.record.json",
+      "sha256": "3386556ae24bea092195d94ae7fd65f40165b01489d7daff96f116e6007977c6"
+     },
+     "grams": {
+      "path": "<GF Framework checkout>/artifacts/campaign_2026-09/X9/printed_2026-09-25/tierA/c9.4_e5_levant5d_m11/levant5d_m11_nominal.grams.json.gz",
+      "sha256": "15fa28be0cec34636d1e0be2dd37477f495a58707dab13400ea7f01b916306bd"
+     }
+    },
+    "system": "levant5d",
+    "record": "artifacts/campaign_2026-09/X9/printed_2026-09-25/tierA/c9.4_e5_levant5d_m11/levant5d_m11_nominal.printed_b26.record.json",
+    "grams": "artifacts/campaign_2026-09/X9/printed_2026-09-25/tierA/c9.4_e5_levant5d_m11/levant5d_m11_nominal.grams.json.gz",
+    "schema_version": "gf-certificate-record/2",
+    "path": "deck-group parity blocked",
+    "nominal": true,
+    "kappa_derived": "-1/1",
+    "delta0_exact": "0/1",
+    "epsilon_exact": "7378697629483821/73786976294838206464",
+    "epsilon_float": 0.0001,
+    "margin_policy": "achieved",
+    "acceptance_rule": "charge < eps (strict, exact rational); WP P2-14 / decision D-l",
+    "eps_certified_exact": "65503281876540153956895377/9007199254740992000000000000000",
+    "eps_certified_float": 7.272325172784661e-06,
+    "worst_charge_over_eps": {
+     "V": 0.05612239986190983,
+     "W": 0.9272767482721533,
+     "overall": 0.9272767482721533
+    },
+    "worst_charge_over_half_eps_legacy": {
+     "V": 0.11224479972381966,
+     "W": 1.8545534965443067,
+     "overall": 1.8545534965443067
+    },
+    "note_half_margin_rule": "charge <= eps/2, the inequality printed in the Automatica note; reported, never enforced",
+    "note_half_margin_holds": {
+     "V": true,
+     "W": false,
+     "overall": false
+    },
+    "note_half_margin_octants": {
+     "ok": 32,
+     "total": 288
+    }
+   }
+  },
+  {
+   "id": "twisting",
+   "role": "reported",
+   "n_terms": 5,
+   "n_states": 2,
+   "degree_m": 5,
+   "epsilon": {
+    "exact": "7378697629483821/73786976294838206464",
+    "float": 0.0001
+   },
+   "record_bytes": 7960,
+   "grams_bytes": 1703,
+   "structure_source": "bases of the Gram bundle",
+   "structure": {
+    "V": {
+     "gram_max": 6,
+     "block_max": 3,
+     "n_blocks_min": 2,
+     "y_degree": 10,
+     "mu": [
+      4,
+      2
+     ]
+    },
+    "W": {
+     "gram_max": 5,
+     "block_max": 3,
+     "n_blocks_min": 2,
+     "y_degree": 8,
+     "mu": [
+      4,
+      2
+     ]
+    }
+   },
+   "this_machine": {
+    "verdict": "VERIFIED",
+    "exit_code": 0,
+    "wall_s": 0.076,
+    "peak_rss_kb": 21272,
+    "eps_certified_exact": "259614836037198660742765353747/2596148429267413814265248164610048",
+    "worst_charge_over_eps": {
+     "V": 2.248201624899376e-11,
+     "W": 2.6537553305721652e-08,
+     "overall": 2.6537553305721652e-08
+    },
+    "psd_shift_eta": "eta = 0 on all 12 octants (the Gram itself is PSD; charge = ||E||_1)",
+    "log_basis_lines": {
+     "V": {
+      "n_basis_max": 6,
+      "n_blocks_min": 2,
+      "largest_block": 3
+     },
+     "W": {
+      "n_basis_max": 5,
+      "n_blocks_min": 2,
+      "largest_block": 3
+     }
+    }
+   }
+  },
+  {
+   "id": "continuous-twisting",
+   "role": "reported",
+   "n_terms": 9,
+   "n_states": 3,
+   "degree_m": 5,
+   "epsilon": {
+    "exact": "4835703278458517/4835703278458516698824704",
+    "float": 1e-09
+   },
+   "record_bytes": 2739,
+   "grams_bytes": 39019,
+   "structure_source": "bases of the Gram bundle",
+   "structure": {
+    "V": {
+     "gram_max": 21,
+     "block_max": 6,
+     "n_blocks_min": 4,
+     "y_degree": 10,
+     "mu": [
+      6,
+      4,
+      2
+     ]
+    },
+    "W": {
+     "gram_max": 15,
+     "block_max": 6,
+     "n_blocks_min": 4,
+     "y_degree": 8,
+     "mu": [
+      6,
+      4,
+      2
+     ]
+    }
+   },
+   "this_machine": {
+    "verdict": "VERIFIED",
+    "exit_code": 0,
+    "wall_s": 0.158,
+    "peak_rss_kb": 22296,
+    "eps_certified_exact": "17534966849530619856389307593822947314349/17538019647970835018444217992595396235871190515712",
+    "worst_charge_over_eps": {
+     "V": 2.567445876653892e-06,
+     "W": 0.00017406745467806942,
+     "overall": 0.00017406745467806942
+    },
+    "psd_shift_eta": "eta = 0 on all 24 octants (the Gram itself is PSD; charge = ||E||_1)",
+    "log_basis_lines": {
+     "V": {
+      "n_basis_max": 21,
+      "n_blocks_min": 4,
+      "largest_block": 6
+     },
+     "W": {
+      "n_basis_max": 15,
+      "n_blocks_min": 4,
+      "largest_block": 6
+     }
+    }
+   }
+  },
+  {
+   "id": "continuous-twisting-frontier",
+   "role": "reported",
+   "n_terms": 52,
+   "n_states": 3,
+   "degree_m": 9,
+   "epsilon": {
+    "exact": "4722366482869645/4722366482869645213696",
+    "float": 1e-06
+   },
+   "record_bytes": 18483,
+   "grams_bytes": 522073,
+   "structure_source": "bases of the Gram bundle",
+   "structure": {
+    "V": {
+     "gram_max": 55,
+     "block_max": 15,
+     "n_blocks_min": 4,
+     "y_degree": 18,
+     "mu": [
+      6,
+      4,
+      2
+     ]
+    },
+    "W": {
+     "gram_max": 45,
+     "block_max": 15,
+     "n_blocks_min": 4,
+     "y_degree": 16,
+     "mu": [
+      6,
+      4,
+      2
+     ]
+    }
+   },
+   "this_machine": {
+    "verdict": "VERIFIED",
+    "exit_code": 0,
+    "wall_s": 1.2,
+    "peak_rss_kb": 30444,
+    "eps_certified_exact": "31386725221269236366991072746355293563/32667107224410092492483962313449748299776000",
+    "worst_charge_over_eps": {
+     "V": 0.00023468230015695596,
+     "W": 0.03919483884340102,
+     "overall": 0.03919483884340102
+    },
+    "psd_shift_eta": "eta = 0 on all 24 octants (the Gram itself is PSD; charge = ||E||_1)",
+    "log_basis_lines": {
+     "V": {
+      "n_basis_max": 55,
+      "n_blocks_min": 4,
+      "largest_block": 15
+     },
+     "W": {
+      "n_basis_max": 45,
+      "n_blocks_min": 4,
+      "largest_block": 15
+     }
+    }
+   },
+   "prior_cloud_wall_s": 1.269
+  },
+  {
+   "id": "pid-like",
+   "role": "reported",
+   "n_terms": 21,
+   "n_states": 3,
+   "degree_m": 7,
+   "epsilon": {
+    "exact": "4722366482869645/4722366482869645213696",
+    "float": 1e-06
+   },
+   "record_bytes": 11294,
+   "grams_bytes": 138730,
+   "structure_source": "bases of the Gram bundle",
+   "structure": {
+    "V": {
+     "gram_max": 36,
+     "block_max": 10,
+     "n_blocks_min": 4,
+     "y_degree": 14,
+     "mu": [
+      6,
+      4,
+      2
+     ]
+    },
+    "W": {
+     "gram_max": 28,
+     "block_max": 10,
+     "n_blocks_min": 4,
+     "y_degree": 12,
+     "mu": [
+      6,
+      4,
+      2
+     ]
+    }
+   },
+   "this_machine": {
+    "verdict": "VERIFIED",
+    "exit_code": 0,
+    "wall_s": 0.411,
+    "peak_rss_kb": 24068,
+    "eps_certified_exact": "16102533130475393163343698871/16225927682921336339157801028812800",
+    "worst_charge_over_eps": {
+     "V": 1.1141507520387038e-05,
+     "W": 0.007604776432956858,
+     "overall": 0.007604776432956858
+    },
+    "psd_shift_eta": "eta = 0 on all 24 octants (the Gram itself is PSD; charge = ||E||_1)",
+    "log_basis_lines": {
+     "V": {
+      "n_basis_max": 36,
+      "n_blocks_min": 4,
+      "largest_block": 10
+     },
+     "W": {
+      "n_basis_max": 28,
+      "n_blocks_min": 4,
+      "largest_block": 10
+     }
+    }
+   }
+  },
+  {
+   "id": "levant-order2-box-a",
+   "role": "reported",
+   "n_terms": 96,
+   "n_states": 3,
+   "degree_m": 11,
+   "epsilon": {
+    "exact": "7378697629483821/73786976294838206464",
+    "float": 0.0001
+   },
+   "record_bytes": 26410,
+   "grams_bytes": 1895491,
+   "structure_source": "bases of the Gram bundle",
+   "structure": {
+    "V": {
+     "gram_max": 78,
+     "block_max": 21,
+     "n_blocks_min": 4,
+     "y_degree": 22,
+     "mu": [
+      6,
+      4,
+      2
+     ]
+    },
+    "W": {
+     "gram_max": 66,
+     "block_max": 21,
+     "n_blocks_min": 4,
+     "y_degree": 20,
+     "mu": [
+      6,
+      4,
+      2
+     ]
+    }
+   },
+   "this_machine": {
+    "verdict": "VERIFIED",
+    "exit_code": 0,
+    "wall_s": 6.216,
+    "peak_rss_kb": 51852,
+    "eps_certified_exact": "194709999609081582874636760368487/1947111321950560360698936123457536000",
+    "worst_charge_over_eps": {
+     "V": 6.4809624561101945e-09,
+     "W": 5.81674998082767e-06,
+     "overall": 5.81674998082767e-06
+    },
+    "psd_shift_eta": "eta = 0 on all 40 octants (the Gram itself is PSD; charge = ||E||_1)",
+    "log_basis_lines": {
+     "V": {
+      "n_basis_max": 78,
+      "n_blocks_min": 4,
+      "largest_block": 21
+     },
+     "W": {
+      "n_basis_max": 66,
+      "n_blocks_min": 4,
+      "largest_block": 21
+     }
+    }
+   },
+   "prior_cloud_wall_s": 5.783
+  },
+  {
+   "id": "levant-order2-box-b",
+   "role": "reported",
+   "n_terms": 96,
+   "n_states": 3,
+   "degree_m": 11,
+   "epsilon": {
+    "exact": "7378697629483821/73786976294838206464",
+    "float": 0.0001
+   },
+   "record_bytes": 26410,
+   "grams_bytes": 1895980,
+   "structure_source": "bases of the Gram bundle",
+   "structure": {
+    "V": {
+     "gram_max": 78,
+     "block_max": 21,
+     "n_blocks_min": 4,
+     "y_degree": 22,
+     "mu": [
+      6,
+      4,
+      2
+     ]
+    },
+    "W": {
+     "gram_max": 66,
+     "block_max": 21,
+     "n_blocks_min": 4,
+     "y_degree": 20,
+     "mu": [
+      6,
+      4,
+      2
+     ]
+    }
+   },
+   "this_machine": {
+    "verdict": "VERIFIED",
+    "exit_code": 0,
+    "wall_s": 5.819,
+    "peak_rss_kb": 51856,
+    "eps_certified_exact": "194710188163337560604196390911417/1947111321950560360698936123457536000",
+    "worst_charge_over_eps": {
+     "V": 6.4809624561101945e-09,
+     "W": 4.848370546883229e-06,
+     "overall": 4.848370546883229e-06
+    },
+    "psd_shift_eta": "eta = 0 on all 40 octants (the Gram itself is PSD; charge = ||E||_1)",
+    "log_basis_lines": {
+     "V": {
+      "n_basis_max": 78,
+      "n_blocks_min": 4,
+      "largest_block": 21
+     },
+     "W": {
+      "n_basis_max": 66,
+      "n_blocks_min": 4,
+      "largest_block": 21
+     }
+    }
+   },
+   "prior_cloud_wall_s": 5.673
+  },
+  {
+   "id": "levant-order2-box-dense",
+   "role": "source",
+   "n_terms": 189,
+   "n_states": 3,
+   "degree_m": 11,
+   "epsilon": {
+    "exact": "7378697629483821/73786976294838206464",
+    "float": 0.0001
+   },
+   "record_bytes": 41603,
+   "grams_bytes": 2708704,
+   "structure_source": "bases of the Gram bundle",
+   "structure": {
+    "V": {
+     "gram_max": 78,
+     "block_max": 21,
+     "n_blocks_min": 4,
+     "y_degree": 22,
+     "mu": [
+      6,
+      4,
+      2
+     ]
+    },
+    "W": {
+     "gram_max": 66,
+     "block_max": 21,
+     "n_blocks_min": 4,
+     "y_degree": 20,
+     "mu": [
+      6,
+      4,
+      2
+     ]
+    }
+   },
+   "this_machine": {
+    "verdict": "VERIFIED",
+    "exit_code": 0,
+    "wall_s": 9.253,
+    "peak_rss_kb": 61336,
+    "eps_certified_exact": "8112896895460404282478337327819/81129638414606681695789005144064000",
+    "worst_charge_over_eps": {
+     "V": 1.0011997170954456e-08,
+     "W": 8.251731620219183e-06,
+     "overall": 8.251731620219183e-06
+    },
+    "psd_shift_eta": "eta = 0 on all 72 octants (the Gram itself is PSD; charge = ||E||_1)",
+    "log_basis_lines": {
+     "V": {
+      "n_basis_max": 78,
+      "n_blocks_min": 4,
+      "largest_block": 21
+     },
+     "W": {
+      "n_basis_max": 66,
+      "n_blocks_min": 4,
+      "largest_block": 21
+     }
+    }
+   }
+  },
+  {
+   "id": "levant-order2-box-a-dense",
+   "role": "source",
+   "n_terms": 189,
+   "n_states": 3,
+   "degree_m": 11,
+   "epsilon": {
+    "exact": "7378697629483821/73786976294838206464",
+    "float": 0.0001
+   },
+   "record_bytes": 40839,
+   "grams_bytes": 1564071,
+   "structure_source": "bases of the Gram bundle",
+   "structure": {
+    "V": {
+     "gram_max": 78,
+     "block_max": 21,
+     "n_blocks_min": 4,
+     "y_degree": 22,
+     "mu": [
+      6,
+      4,
+      2
+     ]
+    },
+    "W": {
+     "gram_max": 66,
+     "block_max": 21,
+     "n_blocks_min": 4,
+     "y_degree": 20,
+     "mu": [
+      6,
+      4,
+      2
+     ]
+    }
+   },
+   "this_machine": {
+    "verdict": "VERIFIED",
+    "exit_code": 0,
+    "wall_s": 5.309,
+    "peak_rss_kb": 44156,
+    "eps_certified_exact": "778839374969096049020686142230861/7788445287802241442795744493830144000",
+    "worst_charge_over_eps": {
+     "V": 1.0011997170954456e-08,
+     "W": 6.617252786257801e-06,
+     "overall": 6.617252786257801e-06
+    },
+    "psd_shift_eta": "eta = 0 on all 40 octants (the Gram itself is PSD; charge = ||E||_1)",
+    "log_basis_lines": {
+     "V": {
+      "n_basis_max": 78,
+      "n_blocks_min": 4,
+      "largest_block": 21
+     },
+     "W": {
+      "n_basis_max": 66,
+      "n_blocks_min": 4,
+      "largest_block": 21
+     }
+    }
+   }
+  },
+  {
+   "id": "levant-order2-box-b-dense",
+   "role": "source",
+   "n_terms": 189,
+   "n_states": 3,
+   "degree_m": 11,
+   "epsilon": {
+    "exact": "7378697629483821/73786976294838206464",
+    "float": 0.0001
+   },
+   "record_bytes": 40835,
+   "grams_bytes": 1564296,
+   "structure_source": "bases of the Gram bundle",
+   "structure": {
+    "V": {
+     "gram_max": 78,
+     "block_max": 21,
+     "n_blocks_min": 4,
+     "y_degree": 22,
+     "mu": [
+      6,
+      4,
+      2
+     ]
+    },
+    "W": {
+     "gram_max": 66,
+     "block_max": 21,
+     "n_blocks_min": 4,
+     "y_degree": 20,
+     "mu": [
+      6,
+      4,
+      2
+     ]
+    }
+   },
+   "this_machine": {
+    "verdict": "VERIFIED",
+    "exit_code": 0,
+    "wall_s": 5.472,
+    "peak_rss_kb": 44160,
+    "eps_certified_exact": "8112896895460404282478337327819/81129638414606681695789005144064000",
+    "worst_charge_over_eps": {
+     "V": 1.0011997170954456e-08,
+     "W": 8.251731620219183e-06,
+     "overall": 8.251731620219183e-06
+    },
+    "psd_shift_eta": "eta = 0 on all 40 octants (the Gram itself is PSD; charge = ||E||_1)",
+    "log_basis_lines": {
+     "V": {
+      "n_basis_max": 78,
+      "n_blocks_min": 4,
+      "largest_block": 21
+     },
+     "W": {
+      "n_basis_max": 66,
+      "n_blocks_min": 4,
+      "largest_block": 21
+     }
+    }
+   }
+  },
+  {
+   "id": "levant-order3-a-dense",
+   "role": "source",
+   "n_terms": 163,
+   "n_states": 4,
+   "degree_m": 9,
+   "epsilon": {
+    "exact": "7378697629483821/73786976294838206464",
+    "float": 0.0001
+   },
+   "record_bytes": 45044,
+   "grams_bytes": 6152742,
+   "structure_source": "bases of the Gram bundle",
+   "structure": {
+    "V": {
+     "gram_max": 220,
+     "block_max": 35,
+     "n_blocks_min": 8,
+     "y_degree": 18,
+     "mu": [
+      8,
+      6,
+      4,
+      2
+     ]
+    },
+    "W": {
+     "gram_max": 165,
+     "block_max": 35,
+     "n_blocks_min": 8,
+     "y_degree": 16,
+     "mu": [
+      8,
+      6,
+      4,
+      2
+     ]
+    }
+   },
+   "this_machine": {
+    "verdict": "VERIFIED",
+    "exit_code": 0,
+    "wall_s": 115.371,
+    "peak_rss_kb": 434352,
+    "eps_certified_exact": "36473225356696126285318031/1351079888211148800000000000000",
+    "worst_charge_over_eps": {
+     "V": 0.24766755675900448,
+     "W": 0.7300439028443592,
+     "overall": 0.7300439028443592
+    },
+    "psd_shift_eta": "eta = 0 on all 144 octants (the Gram itself is PSD; charge = ||E||_1)",
+    "log_basis_lines": {
+     "V": {
+      "n_basis_max": 220,
+      "n_blocks_min": 8,
+      "largest_block": 35
+     },
+     "W": {
+      "n_basis_max": 165,
+      "n_blocks_min": 8,
+      "largest_block": 35
+     }
+    }
+   }
+  },
+  {
+   "id": "levant-order3-b-dense",
+   "role": "source",
+   "n_terms": 163,
+   "n_states": 4,
+   "degree_m": 9,
+   "epsilon": {
+    "exact": "7378697629483821/73786976294838206464",
+    "float": 0.0001
+   },
+   "record_bytes": 41094,
+   "grams_bytes": 40198822,
+   "structure_source": "bases of the Gram bundle",
+   "structure": {
+    "V": {
+     "gram_max": 220,
+     "block_max": 35,
+     "n_blocks_min": 8,
+     "y_degree": 18,
+     "mu": [
+      8,
+      6,
+      4,
+      2
+     ]
+    },
+    "W": {
+     "gram_max": 165,
+     "block_max": 35,
+     "n_blocks_min": 8,
+     "y_degree": 16,
+     "mu": [
+      8,
+      6,
+      4,
+      2
+     ]
+    }
+   },
+   "this_machine": {
+    "verdict": "VERIFIED",
+    "exit_code": 0,
+    "wall_s": 135.336,
+    "peak_rss_kb": 531288,
+    "eps_certified_exact": "95069381376918928115833401705123313804019/950737950171172051122527404032000000000000000",
+    "worst_charge_over_eps": {
+     "V": 1.2621113175663165e-05,
+     "W": 4.6423309361816416e-05,
+     "overall": 4.6423309361816416e-05
+    },
+    "psd_shift_eta": "eta = 0 on all 144 octants (the Gram itself is PSD; charge = ||E||_1)",
+    "log_basis_lines": {
+     "V": {
+      "n_basis_max": 220,
+      "n_blocks_min": 8,
+      "largest_block": 35
+     },
+     "W": {
+      "n_basis_max": 165,
+      "n_blocks_min": 8,
+      "largest_block": 35
+     }
+    }
+   }
+  },
+  {
+   "id": "continuous-twisting-frontier-dense",
+   "role": "source",
+   "n_terms": 101,
+   "n_states": 3,
+   "degree_m": 9,
+   "epsilon": {
+    "exact": "4722366482869645/4722366482869645213696",
+    "float": 1e-06
+   },
+   "record_bytes": 24950,
+   "grams_bytes": 419646,
+   "structure_source": "bases of the Gram bundle",
+   "structure": {
+    "V": {
+     "gram_max": 55,
+     "block_max": 15,
+     "n_blocks_min": 4,
+     "y_degree": 18,
+     "mu": [
+      6,
+      4,
+      2
+     ]
+    },
+    "W": {
+     "gram_max": 45,
+     "block_max": 15,
+     "n_blocks_min": 4,
+     "y_degree": 16,
+     "mu": [
+      6,
+      4,
+      2
+     ]
+    }
+   },
+   "this_machine": {
+    "verdict": "VERIFIED",
+    "exit_code": 0,
+    "wall_s": 1.157,
+    "peak_rss_kb": 28396,
+    "eps_certified_exact": "5113675704153982176939661276083292661/5444517870735015415413993718908291383296000",
+    "worst_charge_over_eps": {
+     "V": 0.0003433327500279956,
+     "W": 0.06076610903590789,
+     "overall": 0.06076610903590789
+    },
+    "psd_shift_eta": "eta = 0 on all 24 octants (the Gram itself is PSD; charge = ||E||_1)",
+    "log_basis_lines": {
+     "V": {
+      "n_basis_max": 55,
+      "n_blocks_min": 4,
+      "largest_block": 15
+     },
+     "W": {
+      "n_basis_max": 45,
+      "n_blocks_min": 4,
+      "largest_block": 15
+     }
+    }
+   }
+  }
+ ]
+}

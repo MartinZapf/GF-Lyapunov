@@ -1,0 +1,13 @@
+# MOSEK licence files are never committed
+mosek.lic
+*.lic
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+.pytest_cache/
+# new verifier runs (the committed runs are logs/verify_all_cloud_2026-11-05/)
+logs/verify_all_2*/
