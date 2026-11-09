@@ -1,7 +1,7 @@
 # levant-order2-box-a: Levant's differentiator of order two, 96-term function on the box function at lambda1 = 2, lambda2 in [2.121, 2.599] (contains tuning a)
 # role: reported; derived from levant-order2-box-a-dense
 # paper: Section 6.2, Order two (same 96-term function as levant-order2-box, restricted to one edge of the box; supplementary)
-# system: levant3d (Levant's differentiator of order two, error inclusion (paper eq. (11)))
+# system: levant3d (Levant's differentiator of order two, error inclusion (paper eq. (10)))
 #   e1' = -l1 [e1]^(2/3) + e2,  e2' = -l2 [e1]^(1/3) + e3,  e3' = -l3 [e1]^0 + delta
 # weights r = (3, 2, 1), homogeneity degree m = 11, 96 terms, 0 odd terms
 # delta0 = 1; rational gains {'lambda1': '2', 'lambda3': '11/10'}; brackets {"lambda2": {"lo": "2121/1000", "hi": "2599/1000", "power_k": 2, "power_target": "9/2"}}

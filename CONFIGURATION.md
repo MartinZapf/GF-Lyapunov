@@ -57,7 +57,7 @@ affine gains), the bound delta0 (exact rational; 0 = nominal), the margin eps, a
 degrees. `certify_gain_point.py` checks every bracket in Q and the affinity of every varying gain
 (guard R6) before any solve.
 
-## 3. Lift and library (paper Definition 1)
+## 3. Lift and library (paper Definition 2)
 
 k* is the smallest even positive integer such that k* r_i a is an even integer for every exponent
 a of x_i in the field; mu* = k* r. At degree m the library holds the n diagonal terms
@@ -70,7 +70,7 @@ both |x_i|^a and [x_i]^a. Implementation: `enumerate_diagonal_terms(m, r, c1_onl
 reproduces the sizes of every design (14, 69, 189, 163, 507, 10, 16, 101, 45 terms; even terms
 8, 36, 96, 83, 256, 6, 10, 52, 24).
 
-## 4. The design program D (paper eq. (5))
+## 4. The design program D (paper eq. (4))
 
 Variables: the coefficients alpha of the library terms and one PSD Gram matrix per orthant s
 for V and per orthant, vertex and disturbance extreme for W. Constraints, matched coefficient by

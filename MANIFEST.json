@@ -2,13 +2,13 @@
  "schema": "gf-lyapunov-manifest/1",
  "title": "Reproducibility package: Automatic Discovery and Exact Certification of Lyapunov Functions for Homogeneous Sliding-Mode Algorithms (Zapf, Moreno, Horn)",
  "repository": "https://github.com/MartinZapf/GF-Lyapunov",
- "paper_source": "manuscript source of 2026-11-05 (not part of this repository)",
+ "paper_source": "submitted manuscript of 2026-11-09 (not part of this repository)",
  "development_repository_state": {
   "head": "495a56d1aab7522136ec4123d678de2c6914cac7",
   "dirty_paths_under_GF_Framework": 28
  },
  "built": {
-  "by": "tools/build_package.py",
+  "by": "release tooling of the development repository (not part of this repository)",
   "python": "3.13.16"
  },
  "verifier": {
@@ -117,7 +117,7 @@
     "note": "certified at L = 1 (Corollary 1 with L0 = 1)"
    },
    "system": "levant3d",
-   "system_text": "Levant's differentiator of order two, error inclusion (paper eq. (11))",
+   "system_text": "Levant's differentiator of order two, error inclusion (paper eq. (10))",
    "equations": "e1' = -l1 [e1]^(2/3) + e2,  e2' = -l2 [e1]^(1/3) + e3,  e3' = -l3 [e1]^0 + delta",
    "schema_version": "gf-certificate-record/2",
    "n_states": 3,
@@ -201,7 +201,7 @@
     "note": "certified at L = 1 (Corollary 1 with L0 = 1)"
    },
    "system": "levant3d",
-   "system_text": "Levant's differentiator of order two, error inclusion (paper eq. (11))",
+   "system_text": "Levant's differentiator of order two, error inclusion (paper eq. (10))",
    "equations": "e1' = -l1 [e1]^(2/3) + e2,  e2' = -l2 [e1]^(1/3) + e3,  e3' = -l3 [e1]^0 + delta",
    "schema_version": "gf-certificate-record/2",
    "n_states": 3,
@@ -286,7 +286,7 @@
     "note": "certified at L = 1 (Corollary 1 with L0 = 1)"
    },
    "system": "levant3d",
-   "system_text": "Levant's differentiator of order two, error inclusion (paper eq. (11))",
+   "system_text": "Levant's differentiator of order two, error inclusion (paper eq. (10))",
    "equations": "e1' = -l1 [e1]^(2/3) + e2,  e2' = -l2 [e1]^(1/3) + e3,  e3' = -l3 [e1]^0 + delta",
    "schema_version": "gf-certificate-record/2",
    "n_states": 3,
@@ -1014,7 +1014,7 @@
     "note": "certified at L = 1 (Corollary 1 with L0 = 1)"
    },
    "system": "levant3d",
-   "system_text": "Levant's differentiator of order two, error inclusion (paper eq. (11))",
+   "system_text": "Levant's differentiator of order two, error inclusion (paper eq. (10))",
    "equations": "e1' = -l1 [e1]^(2/3) + e2,  e2' = -l2 [e1]^(1/3) + e3,  e3' = -l3 [e1]^0 + delta",
    "schema_version": "gf-certificate-record/2",
    "n_states": 3,
@@ -1096,7 +1096,7 @@
     "note": "certified at L = 1 (Corollary 1 with L0 = 1)"
    },
    "system": "levant3d",
-   "system_text": "Levant's differentiator of order two, error inclusion (paper eq. (11))",
+   "system_text": "Levant's differentiator of order two, error inclusion (paper eq. (10))",
    "equations": "e1' = -l1 [e1]^(2/3) + e2,  e2' = -l2 [e1]^(1/3) + e3,  e3' = -l3 [e1]^0 + delta",
    "schema_version": "gf-certificate-record/2",
    "n_states": 3,
@@ -1176,7 +1176,7 @@
     "note": "certified at L = 1"
    },
    "system": "levant3d",
-   "system_text": "Levant's differentiator of order two, error inclusion (paper eq. (11))",
+   "system_text": "Levant's differentiator of order two, error inclusion (paper eq. (10))",
    "equations": "e1' = -l1 [e1]^(2/3) + e2,  e2' = -l2 [e1]^(1/3) + e3,  e3' = -l3 [e1]^0 + delta",
    "schema_version": "gf-certificate-record/2",
    "n_states": 3,
@@ -1271,7 +1271,7 @@
     "note": "certified at L = 1"
    },
    "system": "levant3d",
-   "system_text": "Levant's differentiator of order two, error inclusion (paper eq. (11))",
+   "system_text": "Levant's differentiator of order two, error inclusion (paper eq. (10))",
    "equations": "e1' = -l1 [e1]^(2/3) + e2,  e2' = -l2 [e1]^(1/3) + e3,  e3' = -l3 [e1]^0 + delta",
    "schema_version": "gf-certificate-record/2",
    "n_states": 3,
@@ -1351,7 +1351,7 @@
     "note": "certified at L = 1"
    },
    "system": "levant3d",
-   "system_text": "Levant's differentiator of order two, error inclusion (paper eq. (11))",
+   "system_text": "Levant's differentiator of order two, error inclusion (paper eq. (10))",
    "equations": "e1' = -l1 [e1]^(2/3) + e2,  e2' = -l2 [e1]^(1/3) + e3,  e3' = -l3 [e1]^0 + delta",
    "schema_version": "gf-certificate-record/2",
    "n_states": 3,
@@ -1776,7 +1776,7 @@
     "twisting_sturm",
     "twisting_V_matches_record"
    ],
-   "kind": "certificate + exact Sturm check (tools/twisting_below_ceiling.py)"
+   "kind": "certificate + exact Sturm check (scripts/twisting_below_ceiling.py)"
   },
   {
    "id": "R8",

@@ -89,7 +89,7 @@
 [PASS] pid-like: reported function is even (0 odd terms)
 [PASS] levant-order2-box-a: reported function is even (0 odd terms)
 [PASS] levant-order2-box-b: reported function is even (0 odd terms)
-== library of Definition 1 (from the field rebuilt by the verifier)
+== library of Definition 2 (from the field rebuilt by the verifier)
 [PASS] levant-order1: k* = 2, mu* = (4, 2), library at m = 6: 14 terms, 8 even; V uses 5 (all on the library)
 [PASS] levant-order1: library of Section 5 has 14 terms
 [PASS] levant-order2-a: k* = 2, mu* = (6, 4, 2), library at m = 8: 69 terms, 36 even; V uses 29 (all on the library)
@@ -126,7 +126,7 @@
 [PASS] continuous-twisting-frontier-dense: k* = 2, mu* = (6, 4, 2), library at m = 9: 101 terms, 52 even; V uses 101 (all on the library)
 [PASS] continuous-twisting-frontier-dense: library size 101 = paper 101, even terms 52 = paper 52
 [PASS] continuous-twisting-frontier-dense: the dense function uses every library term
-== Levant gains, scale and delta0 (Table 1, eq. (10), Corollary 1)
+== Levant gains, scale and delta0 (Table 1, eq. (9), Corollary 1)
 [PASS] levant-order1: gains = lambda_i p^i of Table 1 with p = 1 (brackets enclose them, in Q)
 [PASS] levant-order1: delta0 = 1
 [PASS] levant-order2-a: gains = lambda_i p^i of Table 1 with p = 1 (brackets enclose them, in Q)

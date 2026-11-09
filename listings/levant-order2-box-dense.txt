@@ -1,7 +1,7 @@
 # levant-order2-box-dense: 189-term source certificate of levant-order2-box
 # role: source
 # paper: source of the even part levant-order2-box (Proposition 2); not printed in the paper
-# system: levant3d (Levant's differentiator of order two, error inclusion (paper eq. (11)))
+# system: levant3d (Levant's differentiator of order two, error inclusion (paper eq. (10)))
 #   e1' = -l1 [e1]^(2/3) + e2,  e2' = -l2 [e1]^(1/3) + e3,  e3' = -l3 [e1]^0 + delta
 # weights r = (3, 2, 1), homogeneity degree m = 11, 189 terms, 93 odd terms
 # delta0 = 1; rational gains {'lambda3': '11/10'}; brackets {"lambda1": {"lo": "2", "hi": "3", "power_k": 1, "power_target": "5/2"}, "lambda2": {"lo": "2121/1000", "hi": "2599/1000", "power_k": 1, "power_target": "59/25"}}

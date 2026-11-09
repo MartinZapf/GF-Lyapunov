@@ -12,7 +12,7 @@ otherwise have to take from the text:
   manifest   every record's sha256, system, weights, degree, term count,
              delta0, margin, gains and brackets equal MANIFEST.json, and every
              listing in listings/ equals its record term for term;
-  library    the library of Definition 1 at each certified degree, built from
+  library    the library of Definition 2 at each certified degree, built from
              the exponents of the field that the VERIFIER rebuilds: its size,
              its number of even terms, and that every dense function uses all
              of it and every even part all of its even terms;
@@ -20,7 +20,7 @@ otherwise have to take from the text:
              number of signed factors);
   gains      the rational gains and the bracket power targets of every
              Levant record equal (lambda_i p^i)^k for the non-recursive gains
-             converted from Levant's recursive tunings (paper eq. (10),
+             converted from Levant's recursive tunings (paper eq. (9),
              Table 1), with p = 1 (orders one, two, four) or p = 1/2 (order
              three, L0 = p^4 = 1/16), and delta0 = p^4 or 0;
   box        2.121 < (3/2) sqrt 2 and (3/2) sqrt 3 < 2.599, so the order-two
@@ -87,7 +87,7 @@ def n_signed(key) -> int:
 
 
 # ---------------------------------------------------------------------------
-# Library of Definition 1, from the field the verifier rebuilds
+# Library of Definition 2, from the field the verifier rebuilds
 # ---------------------------------------------------------------------------
 
 def k_star(dyn, weights) -> int:
@@ -149,7 +149,7 @@ def library(weights, m, kstar):
 # ---------------------------------------------------------------------------
 
 def nonrecursive(recursive):
-    """lambda_i as {index j of the recursive gain: exponent}, eq. (10):
+    """lambda_i as {index j of the recursive gain: exponent}, eq. (9):
     lambda_1 = h_{n-1}, lambda_i = h_{n-i} lambda_{i-1}^((n-i)/(n-i+1))."""
     n = len(recursive)
     lam = [{n - 1: Fraction(1)}]
@@ -257,7 +257,7 @@ def main() -> int:
             continue
         check(odd == 0, f"{cid}: reported function is even ({odd} odd terms)")
 
-    print("== library of Definition 1 (from the field rebuilt by the verifier)")
+    print("== library of Definition 2 (from the field rebuilt by the verifier)")
     expect = {  # paper's numbers (source comments of main.tex and Section 5)
         "levant-order1": None, "levant-order2-box-dense": (189, 96),
         "levant-order3-a-dense": (163, 83), "levant-order3-b-dense": (163, 83),
@@ -293,7 +293,7 @@ def main() -> int:
             check(support == even_lib, f"{cid}: the even part uses every even library term "
                                        f"({len(support)} = {len(even_lib)})")
 
-    print("== Levant gains, scale and delta0 (Table 1, eq. (10), Corollary 1)")
+    print("== Levant gains, scale and delta0 (Table 1, eq. (9), Corollary 1)")
     for cid, p, d0 in (("levant-order1", Fraction(1), Fraction(1)),
                        ("levant-order2-a", Fraction(1), Fraction(1)),
                        ("levant-order2-b", Fraction(1), Fraction(1)),
