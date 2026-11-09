@@ -482,6 +482,12 @@
      "ok": 32,
      "total": 288
     }
+   },
+   "psd_no_shift_check": {
+    "result": "eta = 0: all 64 Gram matrices (32 of V, 32 shared of W) are PSD without a shift",
+    "date": "2026-11-09",
+    "log": "logs/order4_psd_2026-11-09/result.json",
+    "verifier_sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5"
    }
   },
   {

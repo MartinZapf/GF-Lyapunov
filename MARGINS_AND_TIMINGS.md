@@ -12,7 +12,7 @@ Margins, problem sizes and verification times of every certificate, with the mac
 | `levant-order2-box` | 3 | 11 | 96 | 1e-04 | 1.000e-04 | 1.000e-04 | 6.48e-09; 5.82e-06 | yes, all 72 orthants | 78 / 66 | 21 / 21 | 27.1 kB / 3.3 MB | 9.98 s, 73 MiB (here) |
 | `levant-order3-a` | 4 | 9 | 83 | 1e-04 | 7.523e-05 | 2.700e-05 | 2.48e-01; 7.30e-01 | yes, all 144 orthants | 220 / 165 | 35 / 35 | 30.7 kB / 7.0 MB | 1 min 59 s, 436 MiB (here) |
 | `levant-order3-b` | 4 | 9 | 83 | 1e-04 | 1.000e-04 | 1.000e-04 | 8.06e-06; 2.34e-05 | yes, all 144 orthants | 220 / 165 | 35 / 35 | 27.4 kB / 46.9 MB | 2 min 29 s, 703 MiB (here) |
-| `levant-order4` | 5 | 11 | 507 | 1e-04 | 9.439e-05 | 7.272e-06 | 5.61e-02; 9.27e-01 | not reported by that verifier version | 1365 / 1001 | 126 / 126 | 124.8 kB / 73.8 MB | 10:16:31, 8471 MiB (spark-91bc) |
+| `levant-order4` | 5 | 11 | 507 | 1e-04 | 9.439e-05 | 7.272e-06 | 5.61e-02; 9.27e-01 | yes, all 64 Gram matrices (separate exact check, `logs/order4_psd_2026-11-09/`) | 1365 / 1001 | 126 / 126 | 124.8 kB / 73.8 MB | 10:16:31, 8471 MiB (spark-91bc) |
 | `twisting` | 2 | 5 | 5 | 1e-04 | 1.000e-04 | 1.000e-04 | 2.25e-11; 2.65e-08 | yes, all 12 orthants | 6 / 5 | 3 / 3 | 8.0 kB / 1.7 kB | 0.08 s, 21 MiB (here) |
 | `continuous-twisting` | 3 | 5 | 9 | 1e-09 | 1.000e-09 | 9.998e-10 | 2.57e-06; 1.74e-04 | yes, all 24 orthants | 21 / 15 | 6 / 6 | 2.7 kB / 39.0 kB | 0.16 s, 22 MiB (here) |
 | `continuous-twisting-frontier` | 3 | 9 | 52 | 1e-06 | 9.998e-07 | 9.608e-07 | 2.35e-04; 3.92e-02 | yes, all 24 orthants | 55 / 45 | 15 / 15 | 18.5 kB / 522.1 kB | 1.20 s, 30 MiB (here) |

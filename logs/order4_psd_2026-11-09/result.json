@@ -1,0 +1,1104 @@
+{
+ "check": "Q_hat >= 0 without shift (eta = 0), exact LDL^T over Q on every parity block, by blocks_psd of the released verifier",
+ "date": "2026-11-09",
+ "machine": "4-core x86_64 cloud container, CPython 3.13.18",
+ "verifier_sha256": "1a1908df5bd34b160d269f4cdbda4b356ed769859b181ef7af64c3bbd0113aa5",
+ "grams_sha256": "15fa28be0cec34636d1e0be2dd37477f495a58707dab13400ea7f01b916306bd",
+ "n_gram_matrices": 64,
+ "n_V": 32,
+ "n_W_shared": 32,
+ "all_psd_eta0": true,
+ "all_blocks_are_parity_classes": true,
+ "cpu_seconds_total": 29848,
+ "note": "run in two parts: a time limit of the container stopped the first part after 56 matrices; the remaining 8 were run separately with the same code",
+ "results": [
+  {
+   "kind": "V",
+   "octant": 0,
+   "signs": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 720.6
+  },
+  {
+   "kind": "V",
+   "octant": 1,
+   "signs": [
+    -1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 729.1
+  },
+  {
+   "kind": "V",
+   "octant": 2,
+   "signs": [
+    1,
+    -1,
+    1,
+    1,
+    1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 734.9
+  },
+  {
+   "kind": "V",
+   "octant": 3,
+   "signs": [
+    -1,
+    -1,
+    1,
+    1,
+    1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 722.4
+  },
+  {
+   "kind": "V",
+   "octant": 4,
+   "signs": [
+    1,
+    1,
+    -1,
+    1,
+    1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 735.4
+  },
+  {
+   "kind": "V",
+   "octant": 5,
+   "signs": [
+    -1,
+    1,
+    -1,
+    1,
+    1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 738.4
+  },
+  {
+   "kind": "V",
+   "octant": 6,
+   "signs": [
+    1,
+    -1,
+    -1,
+    1,
+    1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 736.4
+  },
+  {
+   "kind": "V",
+   "octant": 7,
+   "signs": [
+    -1,
+    -1,
+    -1,
+    1,
+    1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 728.9
+  },
+  {
+   "kind": "V",
+   "octant": 8,
+   "signs": [
+    1,
+    1,
+    1,
+    -1,
+    1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 727.3
+  },
+  {
+   "kind": "V",
+   "octant": 9,
+   "signs": [
+    -1,
+    1,
+    1,
+    -1,
+    1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 730.8
+  },
+  {
+   "kind": "V",
+   "octant": 10,
+   "signs": [
+    1,
+    -1,
+    1,
+    -1,
+    1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 726.9
+  },
+  {
+   "kind": "V",
+   "octant": 11,
+   "signs": [
+    -1,
+    -1,
+    1,
+    -1,
+    1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 730.0
+  },
+  {
+   "kind": "V",
+   "octant": 12,
+   "signs": [
+    1,
+    1,
+    -1,
+    -1,
+    1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 725.7
+  },
+  {
+   "kind": "V",
+   "octant": 13,
+   "signs": [
+    -1,
+    1,
+    -1,
+    -1,
+    1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 733.0
+  },
+  {
+   "kind": "V",
+   "octant": 14,
+   "signs": [
+    1,
+    -1,
+    -1,
+    -1,
+    1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 726.3
+  },
+  {
+   "kind": "V",
+   "octant": 15,
+   "signs": [
+    -1,
+    -1,
+    -1,
+    -1,
+    1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 723.6
+  },
+  {
+   "kind": "V",
+   "octant": 16,
+   "signs": [
+    1,
+    1,
+    1,
+    1,
+    -1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 719.5
+  },
+  {
+   "kind": "V",
+   "octant": 17,
+   "signs": [
+    -1,
+    1,
+    1,
+    1,
+    -1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 729.8
+  },
+  {
+   "kind": "V",
+   "octant": 18,
+   "signs": [
+    1,
+    -1,
+    1,
+    1,
+    -1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 733.2
+  },
+  {
+   "kind": "V",
+   "octant": 19,
+   "signs": [
+    -1,
+    -1,
+    1,
+    1,
+    -1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 725.4
+  },
+  {
+   "kind": "V",
+   "octant": 20,
+   "signs": [
+    1,
+    1,
+    -1,
+    1,
+    -1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 724.1
+  },
+  {
+   "kind": "V",
+   "octant": 21,
+   "signs": [
+    -1,
+    1,
+    -1,
+    1,
+    -1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 722.0
+  },
+  {
+   "kind": "V",
+   "octant": 22,
+   "signs": [
+    1,
+    -1,
+    -1,
+    1,
+    -1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 727.2
+  },
+  {
+   "kind": "V",
+   "octant": 23,
+   "signs": [
+    -1,
+    -1,
+    -1,
+    1,
+    -1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 723.4
+  },
+  {
+   "kind": "V",
+   "octant": 24,
+   "signs": [
+    1,
+    1,
+    1,
+    -1,
+    -1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 710.2
+  },
+  {
+   "kind": "V",
+   "octant": 25,
+   "signs": [
+    -1,
+    1,
+    1,
+    -1,
+    -1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 717.7
+  },
+  {
+   "kind": "V",
+   "octant": 26,
+   "signs": [
+    1,
+    -1,
+    1,
+    -1,
+    -1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 723.9
+  },
+  {
+   "kind": "V",
+   "octant": 27,
+   "signs": [
+    -1,
+    -1,
+    1,
+    -1,
+    -1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 716.8
+  },
+  {
+   "kind": "V",
+   "octant": 28,
+   "signs": [
+    1,
+    1,
+    -1,
+    -1,
+    -1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 715.4
+  },
+  {
+   "kind": "V",
+   "octant": 29,
+   "signs": [
+    -1,
+    1,
+    -1,
+    -1,
+    -1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 725.8
+  },
+  {
+   "kind": "V",
+   "octant": 30,
+   "signs": [
+    1,
+    -1,
+    -1,
+    -1,
+    -1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 718.4
+  },
+  {
+   "kind": "V",
+   "octant": 31,
+   "signs": [
+    -1,
+    -1,
+    -1,
+    -1,
+    -1
+   ],
+   "n_basis": 1365,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 711.6
+  },
+  {
+   "kind": "W",
+   "octant": 0,
+   "signs": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 197.8
+  },
+  {
+   "kind": "W",
+   "octant": 1,
+   "signs": [
+    -1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 203.1
+  },
+  {
+   "kind": "W",
+   "octant": 2,
+   "signs": [
+    1,
+    -1,
+    1,
+    1,
+    1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 203.8
+  },
+  {
+   "kind": "W",
+   "octant": 3,
+   "signs": [
+    -1,
+    -1,
+    1,
+    1,
+    1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 200.8
+  },
+  {
+   "kind": "W",
+   "octant": 4,
+   "signs": [
+    1,
+    1,
+    -1,
+    1,
+    1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 207.9
+  },
+  {
+   "kind": "W",
+   "octant": 5,
+   "signs": [
+    -1,
+    1,
+    -1,
+    1,
+    1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 206.9
+  },
+  {
+   "kind": "W",
+   "octant": 6,
+   "signs": [
+    1,
+    -1,
+    -1,
+    1,
+    1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 209.4
+  },
+  {
+   "kind": "W",
+   "octant": 7,
+   "signs": [
+    -1,
+    -1,
+    -1,
+    1,
+    1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 204.2
+  },
+  {
+   "kind": "W",
+   "octant": 8,
+   "signs": [
+    1,
+    1,
+    1,
+    -1,
+    1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 209.1
+  },
+  {
+   "kind": "W",
+   "octant": 9,
+   "signs": [
+    -1,
+    1,
+    1,
+    -1,
+    1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 208.7
+  },
+  {
+   "kind": "W",
+   "octant": 10,
+   "signs": [
+    1,
+    -1,
+    1,
+    -1,
+    1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 210.6
+  },
+  {
+   "kind": "W",
+   "octant": 11,
+   "signs": [
+    -1,
+    -1,
+    1,
+    -1,
+    1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 211.5
+  },
+  {
+   "kind": "W",
+   "octant": 12,
+   "signs": [
+    1,
+    1,
+    -1,
+    -1,
+    1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 206.9
+  },
+  {
+   "kind": "W",
+   "octant": 13,
+   "signs": [
+    -1,
+    1,
+    -1,
+    -1,
+    1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 206.2
+  },
+  {
+   "kind": "W",
+   "octant": 14,
+   "signs": [
+    1,
+    -1,
+    -1,
+    -1,
+    1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 207.9
+  },
+  {
+   "kind": "W",
+   "octant": 15,
+   "signs": [
+    -1,
+    -1,
+    -1,
+    -1,
+    1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 204.5
+  },
+  {
+   "kind": "W",
+   "octant": 16,
+   "signs": [
+    1,
+    1,
+    1,
+    1,
+    -1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 205.8
+  },
+  {
+   "kind": "W",
+   "octant": 17,
+   "signs": [
+    -1,
+    1,
+    1,
+    1,
+    -1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 207.9
+  },
+  {
+   "kind": "W",
+   "octant": 18,
+   "signs": [
+    1,
+    -1,
+    1,
+    1,
+    -1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 206.9
+  },
+  {
+   "kind": "W",
+   "octant": 19,
+   "signs": [
+    -1,
+    -1,
+    1,
+    1,
+    -1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 209.1
+  },
+  {
+   "kind": "W",
+   "octant": 20,
+   "signs": [
+    1,
+    1,
+    -1,
+    1,
+    -1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 212.4
+  },
+  {
+   "kind": "W",
+   "octant": 21,
+   "signs": [
+    -1,
+    1,
+    -1,
+    1,
+    -1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 213.0
+  },
+  {
+   "kind": "W",
+   "octant": 22,
+   "signs": [
+    1,
+    -1,
+    -1,
+    1,
+    -1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 210.9
+  },
+  {
+   "kind": "W",
+   "octant": 23,
+   "signs": [
+    -1,
+    -1,
+    -1,
+    1,
+    -1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 211.1
+  },
+  {
+   "kind": "W",
+   "octant": 24,
+   "signs": [
+    1,
+    1,
+    1,
+    -1,
+    -1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 209.6
+  },
+  {
+   "kind": "W",
+   "octant": 25,
+   "signs": [
+    -1,
+    1,
+    1,
+    -1,
+    -1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 214.6
+  },
+  {
+   "kind": "W",
+   "octant": 26,
+   "signs": [
+    1,
+    -1,
+    1,
+    -1,
+    -1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 214.4
+  },
+  {
+   "kind": "W",
+   "octant": 27,
+   "signs": [
+    -1,
+    -1,
+    1,
+    -1,
+    -1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 214.5
+  },
+  {
+   "kind": "W",
+   "octant": 28,
+   "signs": [
+    1,
+    1,
+    -1,
+    -1,
+    -1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 200.2
+  },
+  {
+   "kind": "W",
+   "octant": 29,
+   "signs": [
+    -1,
+    1,
+    -1,
+    -1,
+    -1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 204.8
+  },
+  {
+   "kind": "W",
+   "octant": 30,
+   "signs": [
+    1,
+    -1,
+    -1,
+    -1,
+    -1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 202.2
+  },
+  {
+   "kind": "W",
+   "octant": 31,
+   "signs": [
+    -1,
+    -1,
+    -1,
+    -1,
+    -1
+   ],
+   "n_basis": 1001,
+   "n_blocks": 16,
+   "largest": 126,
+   "blocks_are_parity_classes": true,
+   "psd_eta0": true,
+   "seconds": 197.4
+  }
+ ]
+}
